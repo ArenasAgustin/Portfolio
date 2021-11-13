@@ -1,0 +1,2 @@
+export const SET_PROYECT = 'SET_PROYECT';
+export const RESET_PROYECT = 'RESET_PROYECT';
