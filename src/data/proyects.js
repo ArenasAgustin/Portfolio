@@ -85,7 +85,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ToDoApp2.0",
   },
   {
-    _id: 5,
+    _id: 6,
     title: "AgusWeather",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {
@@ -100,7 +100,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/AgusWeather",
   },
   {
-    _id: 6,
+    _id: 7,
     title: "To do App",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {
@@ -114,7 +114,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ToDoApp",
   },
   {
-    _id: 7,
+    _id: 8,
     title: "Friends page",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {
@@ -128,7 +128,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/FriendsPage",
   },
   {
-    _id: 8,
+    _id: 9,
     title: "Responsive Web",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {
@@ -142,7 +142,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ResponsiveWeb",
   },
   {
-    _id: 9,
+    _id: 10,
     title: "GrootBash",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {
@@ -155,7 +155,7 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/GrootBash",
   },
   {
-    _id: 10,
+    _id: 11,
     title: "MyPromises",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
     description: {

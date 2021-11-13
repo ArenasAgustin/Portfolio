@@ -1,0 +1,26 @@
+.introduction {
+  align-items: center;
+  display: flex;
+  font-weight: 400;
+  height: 100vh;
+  min-height: 100vh;
+  padding: 0 5.6rem;
+}
+
+.introduction-title {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+  text-align: left;
+}
+
+.introduction-title h1{
+    margin: 0;
+}
+
+.introduction-title-name{
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: var(--background-image-gradient);
+    color: var(--color-gradient);
+}
