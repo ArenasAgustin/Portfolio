@@ -4,9 +4,8 @@
   font-weight: 400;
   height: 100vh;
   min-height: 100vh;
-  padding: 0 5.6rem;
-  width: 100%;
-  margin-left: 15em;
+  width: calc(100% - 20em);
+  margin-left: 10em;
   max-width: 1700px;
 }
 
