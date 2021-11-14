@@ -31,8 +31,8 @@ export default function Modal({ showModal, setShowModal }) {
                                 <div className='modalContent'>
                                     <h1>{proyects?.title}</h1>
                                     <p>{proyects?.description?.txt}</p>
-                                    <a href={proyects?.github} target='_blank'>Github</a>
-                                    <a href={proyects?.deploy} target='_blank'>Deploy</a>
+                                    <a href={proyects?.github} target='_blank' rel="noreferrer">Github</a>
+                                    <a href={proyects?.deploy} target='_blank' rel="noreferrer">Deploy</a>
                                 </div>
 
                                 <button

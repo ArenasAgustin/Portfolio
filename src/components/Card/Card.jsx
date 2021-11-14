@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
-import { setProyect } from '../../redux/actions/index'
-import Modal from "../Modal/Modal";
+import { setProyect } from '../../redux/actions/index';
 import './Card.css';
 
 export default function Card({ title, image, description, deploy, github, setShowModal, showModal }) {
@@ -19,7 +18,7 @@ export default function Card({ title, image, description, deploy, github, setSho
                     <img src={image} alt={title} className='imgCard' />
                 </div>
 
-                <div class='cardTitle'>
+                <div className='cardTitle'>
                     <span>&lt; </span> {title} <span> &#47;&gt;</span>
                 </div>
             </div>

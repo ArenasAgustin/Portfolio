@@ -1,7 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "../src/pages/Home/Home.";
-import About from "../src/pages/About/About";
+import Home from "./pages/Home";
 import "./App.css";
 
 function App() {
@@ -9,7 +8,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/about" element={<About />} />
       </Routes>
     </div>
   );

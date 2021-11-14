@@ -1,0 +1,22 @@
+.about {
+  background-image: var(--background-image-gradient);
+  color: var(--color-primary);
+  clip-path: var(--clip-path);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+}
+
+.about-container {
+  width: 100%;
+  max-width: 1700px;
+}
+
+.about-card {
+  max-width: 65em;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
