@@ -1,3 +1,10 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .introduction {
   align-items: center;
   display: flex;
@@ -5,6 +12,9 @@
   height: 100vh;
   min-height: 100vh;
   padding: 0 5.6rem;
+  width: 100%;
+  margin-left: 15em;
+  max-width: 1700px;
 }
 
 .introduction-title {
@@ -14,13 +24,36 @@
   text-align: left;
 }
 
-.introduction-title h1{
-    margin: 0;
+.introduction-title h1 {
+  margin: 0;
 }
 
-.introduction-title-name{
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-image: var(--background-image-gradient);
-    color: var(--color-gradient);
+.introduction-title-name {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: var(--background-image-gradient);
+  color: var(--color-gradient);
+}
+
+.about {
+  background-image: var(--background-image-gradient);
+  color: var(--color-primary);
+  clip-path: var(--clip-path);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1700px;
+}
+
+.about-container{
+width: 100%;
+  max-width: 1700px;
+}
+
+.about-card {
+  max-width: 65em;
+  margin-top: 2em;
+  margin-bottom: 3em;
 }

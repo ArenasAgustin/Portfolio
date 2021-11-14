@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { resetProyect } from '../../redux/actions/index'
+import { resetProyect } from '../../redux/actions/index';
 import './Modal.css';
 
 export default function Modal({ showModal, setShowModal }) {
