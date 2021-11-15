@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../Card/Card";
 import { proyects } from "../../data/proyects";
 import './Cards.css'
 
 export default function Cards() {
+    const [proyectsArray, setProyectsArray] = useState(proyects.slice(0, 4));
+    const [showButton, setShowButton] = useState(true);
+
+    const handleClick = () => {
+        setProyectsArray(proyects);
+        setShowButton(false);
+    }
 
     return (
         <div className="products">
@@ -11,7 +18,7 @@ export default function Cards() {
 
             <div className="cards">
                 {
-                    proyects.map(proyecto => (
+                    proyectsArray.map(proyecto => (
                         <Card
                             key={proyecto._id}
                             image={proyecto.image}
@@ -23,6 +30,19 @@ export default function Cards() {
                     ))
                 }
             </div>
+
+            {
+                showButton
+                    ? <div className="see-more-div">
+                        <a className="see-more" onClick={handleClick}>
+                            <p className="see-more-txt">
+                                Ver más
+                            </p>
+                        </a>
+                    </div>
+
+                    : null
+            }
         </div>
 
     );
