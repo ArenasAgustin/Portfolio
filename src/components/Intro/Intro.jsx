@@ -3,7 +3,7 @@ import './Intro.css';
 
 export default function Intro() {
     return (
-        <div className='introduction'>
+        <div className='introduction' id='home'>
             <div className='introduction-title'>
                 <h1>Hola, soy <span className='introduction-title-name'>Agustin Arenas</span></h1>
                 <h1>Soy Full Stack Web Developer</h1>

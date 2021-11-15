@@ -3,6 +3,8 @@
 :root {
   --color-primary: #fff;
   --color-secondary: #272341;
+  --color-tertiary: #02aab0;
+  --color-quaternary: #00cdac;
   --background-image-gradient: linear-gradient(135deg, #02aab0, #00cdac);
   --color-gradient: transparent;
   --clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
