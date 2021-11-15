@@ -2,7 +2,7 @@ export const proyects = [
   {
     _id: 1,
     title: "Wave Music",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982756/WaveMusic_ndbdix.png",
     description: {
       technologies: [
         "Javascript",
@@ -20,7 +20,7 @@ export const proyects = [
   {
     _id: 2,
     title: "Pikemons",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636994071/Pikemons_dhqzqp.png",
     description: {
       technologies: [
         "Javascript",
@@ -37,7 +37,7 @@ export const proyects = [
   {
     _id: 3,
     title: "Curriculum vitae",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982494/Cv_j5gdme.png",
     description: {
       technologies: [
         "Javascript",
@@ -53,7 +53,7 @@ export const proyects = [
   {
     _id: 4,
     title: "To do App (Typescript)",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
       technologies: [
         "Typescript",
@@ -70,7 +70,7 @@ export const proyects = [
   {
     _id: 5,
     title: "To do App (Javascript)",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
       technologies: [
         "Javascript",
@@ -87,7 +87,7 @@ export const proyects = [
   {
     _id: 6,
     title: "AgusWeather",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/AgusWeather_yoj48m.png",
     description: {
       technologies: [
         "Javascript",
@@ -102,7 +102,7 @@ export const proyects = [
   {
     _id: 7,
     title: "To do App",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636984067/ToDoApp_izqdem.png",
     description: {
       technologies: [
         "Javascript",
@@ -116,7 +116,7 @@ export const proyects = [
   {
     _id: 8,
     title: "Friends page",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983427/FriendsPage_jrht96.png",
     description: {
       technologies: [
         "Javascript",
@@ -130,7 +130,7 @@ export const proyects = [
   {
     _id: 9,
     title: "Responsive Web",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983674/ResponsiveWeb_ukiizg.png",
     description: {
       technologies: [
         "Javascript",
@@ -144,7 +144,7 @@ export const proyects = [
   {
     _id: 10,
     title: "GrootBash",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983143/GrootBash_erd6qn.png",
     description: {
       technologies: [
         "Javascript",
@@ -157,7 +157,7 @@ export const proyects = [
   {
     _id: 11,
     title: "MyPromises",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636750278/Captura_de_pantalla_2021-11-12_174857_ulujwa.png",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982419/Promesas_vnmfhs.png ",
     description: {
       technologies: [
         "Javascript",

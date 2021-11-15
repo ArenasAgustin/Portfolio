@@ -21,11 +21,23 @@ export default function Card({ title, image, description, deploy, github }) {
                     </div>
 
                     <div className="card-links">
-                        <a href={deploy} target='_blank' rel="noreferrer" className="deploy-link">
-                            <p className="deploy-link-deploy">Deploy</p>
+                        <a
+                            href={deploy}
+                            target='_blank'
+                            rel="noreferrer"
+                            className={`deploy-link ${deploy ? '' : 'no-link'}`}
+                        >
+                            <p className={`deploy-link-deploy ${deploy ? '' : 'no-link-deploy'}`}>Deploy</p>
                         </a>
 
-                        <a href={github} target='_blank' rel="noreferrer" className="deploy-link-github">Github</a>
+                        <a
+                            href={github}
+                            target='_blank'
+                            rel="noreferrer"
+                            className="deploy-link-github"
+                        >
+                            Github
+                        </a>
                     </div>
                 </div>
 
