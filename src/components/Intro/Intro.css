@@ -4,8 +4,8 @@
   font-weight: 400;
   height: 100vh;
   min-height: 100vh;
-  width: calc(100% - 20em);
-  margin-left: 10em;
+  width: 85%;
+  margin-left: 15%;
   max-width: 1700px;
 }
 
@@ -89,4 +89,27 @@
 
 .div-btn:hover .btn-intro:after {
   background-image: var(--background-image-gradient);
+}
+
+@media(max-width: 800px) {
+  .introduction-title {
+    font-size: 1.5rem;
+    padding-right: 3%;
+  }
+
+  .div-btn{
+    font-size: 1.2rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .introduction-title {
+    font-size: 1.5rem;
+    padding-right: 3%;
+  }
+
+  .div-btn{
+    font-size: 1.3rem;
+    width: 7em;
+  }
 }

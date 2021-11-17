@@ -140,6 +140,15 @@
   transform: translateX(0.05em);
 }
 
+.img-div-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: auto;
+}
+
 .img-card {
   width: 90%;
   max-width: 800px;

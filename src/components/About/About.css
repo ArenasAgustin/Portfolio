@@ -10,6 +10,13 @@
   padding: 3rem 0 7rem 0;
 }
 
+@media (max-width: 768px) {
+  .about {
+    clip-path: var(--clip-path-3);
+    padding: 3rem 0 3rem 0;
+  }
+}
+
 .about-title {
   font-size: 2.2rem;
   margin-bottom: 1rem;
@@ -21,6 +28,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about-image {

@@ -10,6 +10,7 @@
   --color-gradient: transparent;
   --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   --clip-path-2: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
+  --clip-path-3: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 body {

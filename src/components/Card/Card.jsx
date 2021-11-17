@@ -41,7 +41,7 @@ export default function Card({ title, image, description, deploy, github }) {
                     </div>
                 </div>
 
-                <div>
+                <div className='img-div-card'>
                     <img src={image} alt={title} className='img-card' />
                 </div>
             </div>
