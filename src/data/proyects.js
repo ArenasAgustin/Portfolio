@@ -1,6 +1,5 @@
 export const proyects = [
   {
-    _id: 1,
     title: "Wave Music",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982756/WaveMusic_ndbdix.png",
     description: {
@@ -18,7 +17,6 @@ export const proyects = [
     deploy: "https://proyecto-grupal-18c81.web.app/",
   },
   {
-    _id: 2,
     title: "Pikemons",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636994071/Pikemons_dhqzqp.png",
     description: {
@@ -30,12 +28,11 @@ export const proyects = [
         "PostgreSQL",
         "CSS",
       ],
-      txt: "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella econtras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado.",
+      txt: "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella encontras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado.",
     },
     github: "https://github.com/ArenasAgustin/Pikemons",
   },
   {
-    _id: 3,
     title: "Curriculum vitae",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982494/Cv_j5gdme.png",
     description: {
@@ -51,7 +48,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/Cv2.0",
   },
   {
-    _id: 4,
     title: "To do App (Typescript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
@@ -68,7 +64,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/TodoAppTypescript0",
   },
   {
-    _id: 5,
     title: "To do App (Javascript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
@@ -85,7 +80,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ToDoApp2.0",
   },
   {
-    _id: 6,
     title: "AgusWeather",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/AgusWeather_yoj48m.png",
     description: {
@@ -100,7 +94,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/AgusWeather",
   },
   {
-    _id: 7,
     title: "To do App",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636984067/ToDoApp_izqdem.png",
     description: {
@@ -114,7 +107,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ToDoApp",
   },
   {
-    _id: 8,
     title: "Friends page",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983427/FriendsPage_jrht96.png",
     description: {
@@ -128,7 +120,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/FriendsPage",
   },
   {
-    _id: 9,
     title: "Responsive Web",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983674/ResponsiveWeb_ukiizg.png",
     description: {
@@ -142,7 +133,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/ResponsiveWeb",
   },
   {
-    _id: 10,
     title: "GrootBash",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983143/GrootBash_erd6qn.png",
     description: {
@@ -155,7 +145,6 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/GrootBash",
   },
   {
-    _id: 11,
     title: "MyPromises",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982419/Promesas_vnmfhs.png ",
     description: {

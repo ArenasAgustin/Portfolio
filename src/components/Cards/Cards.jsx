@@ -18,9 +18,9 @@ export default function Cards() {
 
             <div className="cards">
                 {
-                    proyectsArray.map(proyecto => (
+                    proyectsArray.map((proyecto, index) => (
                         <Card
-                            key={proyecto._id}
+                            key={index}
                             image={proyecto.image}
                             description={proyecto.description}
                             deploy={proyecto.deploy}
