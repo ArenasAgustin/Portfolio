@@ -48,6 +48,32 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/Cv2.0",
   },
   {
+    title: "Gastly",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637431214/Gastly_eevzkk.png",
+    description: {
+      technologies: [
+        "HTML",
+        "CSS",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
+    },
+    deploy: "https://arenasagustin.github.io/gastly-page/",
+    github: "https://github.com/ArenasAgustin/gastly-page",
+  },
+  {
+    title: "Haunter",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637699554/Haunter-page_yddcm1.png",
+    description: {
+      technologies: [
+        "HTML",
+        "CSS",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
+    },
+    deploy: "https://arenasagustin.github.io/haunter-page/",
+    github: "https://github.com/ArenasAgustin/haunter-page",
+  },
+  {
     title: "To do App (Typescript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
@@ -62,19 +88,6 @@ export const proyects = [
     },
     deploy: "https://arenasagustin.github.io/TodoAppTypescript/",
     github: "https://github.com/ArenasAgustin/TodoAppTypescript0",
-  },
-  {
-    title: "Gastly",
-    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637431214/Gastly_eevzkk.png",
-    description: {
-      technologies: [
-        "HTML",
-        "CSS",
-      ],
-      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
-    },
-    deploy: "https://arenasagustin.github.io/gastly-page/",
-    github: "https://github.com/ArenasAgustin/gastly-page",
   },
   {
     title: "To do App (Javascript)",
