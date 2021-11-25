@@ -74,6 +74,19 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/haunter-page",
   },
   {
+    title: "Cubo de Rubik",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637793053/cubo_de_rubik_t2itlp.png",
+    description: {
+      technologies: [
+        "HTML",
+        "CSS",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
+    },
+    deploy: "https://arenasagustin.github.io/cubo-rubik/",
+    github: "https://github.com/ArenasAgustin/cubo-rubik",
+  },
+  {
     title: "To do App (Typescript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
