@@ -87,6 +87,34 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/cubo-rubik",
   },
   {
+    title: "Christmas Tree",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1639164816/Merry_Christmas_tjap8x.png",
+    description: {
+      technologies: [
+        "HTML",
+        "SCSS",
+        "Javascript",
+        "React",
+      ],
+      txt: "Proyecto festejar que se aserca la noche de navidad.",
+    },
+    deploy: "https://arenasagustin.github.io/merry-christmas/",
+    github: "https://github.com/ArenasAgustin/merry-christmas",
+  },
+  {
+    title: "Celular con Css",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640105905/celular-css_ksa5ei.png",
+    description: {
+      technologies: [
+        "HTML",
+        "CSS",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
+    },
+    deploy: "https://arenasagustin.github.io/celular-css/",
+    github: "https://github.com/ArenasAgustin/celular-css",
+  },
+  {
     title: "To do App (Typescript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
