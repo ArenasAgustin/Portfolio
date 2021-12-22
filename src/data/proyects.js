@@ -115,6 +115,19 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/celular-css",
   },
   {
+    title: "Pokeball",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640132857/pokeball_h9oi3f.png",
+    description: {
+      technologies: [
+        "HTML",
+        "CSS",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
+    },
+    deploy: "https://arenasagustin.github.io/pokeball-css/",
+    github: "https://github.com/ArenasAgustin/pokeball-css",
+  },
+  {
     title: "To do App (Typescript)",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
