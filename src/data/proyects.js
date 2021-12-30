@@ -102,6 +102,21 @@ export const proyects = [
     github: "https://github.com/ArenasAgustin/merry-christmas",
   },
   {
+    title: "My avatar en pixelart",
+    image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640877216/My-avatar_pldgug.png",
+    description: {
+      technologies: [
+        "HTML",
+        "SCSS",
+        "Javascript",
+        "React",
+      ],
+      txt: "Proyecto para poder mejorar en el uso de Css, HTML y React.",
+    },
+    deploy: "https://arenasagustin.github.io/pixelart-logo/",
+    github: "https://github.com/ArenasAgustin/pixelart-logo",
+  },
+  {
     title: "Celular con Css",
     image: "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640105905/celular-css_ksa5ei.png",
     description: {
