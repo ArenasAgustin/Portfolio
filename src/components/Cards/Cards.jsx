@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
-import { proyects } from "../../data/proyects";
+import { projects } from "../../data/projects";
 import './Cards.css'
 
 export default function Cards() {
-    const [proyectsArray, setProyectsArray] = useState(proyects.slice(0, 4));
+    const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
     const [showButton, setShowButton] = useState(true);
 
     const handleClick = () => {
-        setProyectsArray(proyects);
+        setProjectsArray(projects);
         setShowButton(false);
     }
 
@@ -18,14 +18,14 @@ export default function Cards() {
 
             <div className="cards">
                 {
-                    proyectsArray.map((proyecto, index) => (
+                    projectsArray.map((project, index) => (
                         <Card
                             key={index}
-                            image={proyecto.image}
-                            description={proyecto.description}
-                            deploy={proyecto.deploy}
-                            github={proyecto.github}
-                            title={proyecto.title}
+                            image={project.image}
+                            description={project.description}
+                            deploy={project.deploy}
+                            github={project.github}
+                            title={project.title}
                         />
                     ))
                 }
