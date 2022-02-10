@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "Brain Games Es",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1644522692/Brain_Games_Es_fixlbo.png",
+    description: {
+      technologies: [
+        "Typescript",
+        "React",
+        "Redux",
+        "Node.js",
+        "SCSS",
+      ],
+      txt: "Les presento un proyecto que llamo Brain Games Es, es un juego que consta (por el momento) de 10 niveles para descifrar una palabra encriptada, puntaje y pistas.",
+    },
+    github: "https://github.com/ArenasAgustin/brain-games",
+    deploy: "https://arenasagustin.github.io/brain-games/",
+  },
+
+  {
     title: "Wave Music",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982756/WaveMusic_ndbdix.png",
