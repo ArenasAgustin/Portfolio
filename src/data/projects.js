@@ -37,6 +37,25 @@ export const projects = [
   },
 
   {
+    title: "Blackparadox - portfolio",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645539715/Blackparadox-portfolio_ohcdwg.png",
+    description: {
+      technologies: [
+        "Javascript",
+        "HTML",
+        "SASS",
+        "JQuery",
+        "Ajax",
+        "PHP",
+        "Prepross"
+      ],
+      txt: "Proyecto realizado a partir de un curso en Udemy para mejorar en tecnologías como HTML, SASS, JQuery, Ajax y aprender un poco de PHP  y Prepross.",
+    },
+    github: "https://github.com/ArenasAgustin/udemy-blackparadox",
+  },
+
+  {
     title: "Pikemons",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636994071/Pikemons_dhqzqp.png",
