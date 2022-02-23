@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
 import { projects } from "../../data/projects";
-import './Cards.css'
+import './Cards.scss'
 
 export default function Cards() {
     const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
@@ -13,8 +13,8 @@ export default function Cards() {
     }
 
     return (
-        <div className="products">
-            <h2 className="products-title">PROYECTOS</h2>
+        <div className="projects">
+            <h2 className="projects-title">PROYECTOS</h2>
 
             <div className="cards">
                 {

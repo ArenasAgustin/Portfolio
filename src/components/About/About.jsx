@@ -1,7 +1,7 @@
 import React from "react";
-import Cv from '../../assets/resume.pdf';
+import Cv from '../../assets/CV Agustin Arenas - Full Stack Web Developer.pdf';
 import Profile from '../../assets/profile.jpg';
-import './About.css';
+import './About.scss';
 
 export default function About() {
     return (
