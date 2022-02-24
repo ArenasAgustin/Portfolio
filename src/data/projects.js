@@ -4,13 +4,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1644522692/Brain_Games_Es_fixlbo.png",
     description: {
-      technologies: [
-        "Typescript",
-        "React",
-        "Redux",
-        "Node.js",
-        "SCSS",
-      ],
+      technologies: ["Typescript", "React", "Redux", "Node.js", "SCSS"],
       txt: "Les presento un proyecto que llamo Brain Games Es, es un juego que consta (por el momento) de 10 niveles para descifrar una palabra encriptada, puntaje y pistas.",
     },
     github: "https://github.com/ArenasAgustin/brain-games",
@@ -48,7 +42,7 @@ export const projects = [
         "JQuery",
         "Ajax",
         "PHP",
-        "Prepross"
+        "Prepross",
       ],
       txt: "Proyecto realizado a partir de un curso en Udemy para mejorar en tecnologías como HTML, SASS, JQuery, Ajax y aprender un poco de PHP  y Prepross.",
     },
@@ -71,6 +65,27 @@ export const projects = [
       txt: "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella encontras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado.",
     },
     github: "https://github.com/ArenasAgustin/Pikemons",
+  },
+
+  {
+    title: "Extriman Dapp",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645735133/Extrimian-Dapp_wdqgmn.png",
+    description: {
+      technologies: [
+        "TypeScript",
+        "React",
+        "Node.js",
+        "Ethers.js",
+        "Solidity",
+        "Truffle",
+        "Ganache",
+        "Solc",
+        "Scss",
+      ],
+      txt: "Este proyecto es una Dapp, para un test de aplicación de Extrimian, que se comunica con un smart contract desplegado en una red testnet blockchain ethereum. El proyecto se conecta con la cuenta de Metamask de la persona que usa la app para poder mostrar las primeras 10 transacciones realizadas con la cuenta, las transacciones las obtiene de la API Rinkeby. La app guarda en la blockchain la cuenta y la cambia al conectar una cuenta nueva.",
+    },
+    github: "https://github.com/ArenasAgustin/extrimian-dapp",
   },
 
   {
