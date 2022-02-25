@@ -22,6 +22,7 @@ export const projects = [
         "Redux",
         "Node.js",
         "MongoDB",
+        "Express",
         "CSS",
       ],
       txt: "En este proyecto se utilizó para poder comprender el github flow, la metodología de scrum y las responsabilidades del trabajo en equipo. En el deploy se utilizó Mongo Atlas para la base de datos, Heroku para el servidor y Firebase para el front.",
@@ -68,7 +69,7 @@ export const projects = [
   },
 
   {
-    title: "Extriman Dapp",
+    title: "Extriman Dapp Test",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645735133/Extrimian-Dapp_wdqgmn.png",
     description: {
@@ -194,6 +195,24 @@ export const projects = [
     },
     deploy: "https://arenasagustin.github.io/pokeball-css/",
     github: "https://github.com/ArenasAgustin/pokeball-css",
+  },
+
+  {
+    title: "Valienta Frontend Test",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645756725/R_M-Test_krkuzj.png",
+    description: {
+      technologies: [
+        "SCSS",
+        "Javascript",
+        "React",
+        "Redux",
+        "MongoDB",
+        "Express",
+      ],
+      txt: "Este proyecto es un test de aplicación de Valienta, la app consta de un front que se comunica con una api para buscar y guardar en MongoDB personajes de Rick y Morty, Episodios y Lugares.",
+    },
+    github: "https://github.com/ArenasAgustin/valienta-front-test",
   },
 
   {
