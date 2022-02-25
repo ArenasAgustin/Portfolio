@@ -18,7 +18,7 @@ export default function About() {
                         Programador y web developer, imaginativo, curioso y capaz de resolver diversos problemas. Soy un programador dispuesto a ayudar a mis colegas.
                     </p>
                     <p className="about-txt">
-                        Tengo interés por el estudio de diferentes tecnologías. En la actualidad estoy aprendiendo por mi cuenta el uso de Typescript y React Native. También disfruto con la música y el dibujo.
+                        Tengo interés por el estudio de diferentes tecnologías. También disfruto con la música y el dibujo.
                     </p>
 
                     <a download href={Cv} className="about-btn-a">
