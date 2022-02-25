@@ -14,6 +14,10 @@ En esta sección se muestran los proyectos que he realizado. En cada uno de ello
 
 En esta descripción se muestra mi dirección de correo electrónico y mi número de teléfono.
 
+## Video de muestra
+
+https://user-images.githubusercontent.com/72575052/155804660-9449344a-78b1-4ca6-b870-a57e21fabe9c.mp4
+
 ### Link del deploy
 
 [Link](https://portfolio-agustin-arenas.web.app/)
