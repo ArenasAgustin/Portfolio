@@ -6,7 +6,7 @@
   --color-tertiary: #00cc91;
   --color-quaternary: #00d8cf;
   --background-image-gradient: linear-gradient(135deg, var(--color-tertiary), var(--color-quaternary));
-  --background-image-gradient-grey: linear-gradient(135deg, #606060 , #acacac);
+  --background-image-gradient-grey: linear-gradient(135deg, #606060, #acacac);
   --color-gradient: transparent;
   --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
   --clip-path-2: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
@@ -36,8 +36,7 @@ code {
   font-style: normal;
   font-family: "Circular-Loom";
 
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2")
-    format("woff2");
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2") format("woff2");
 }
 
 @font-face {
@@ -45,8 +44,7 @@ code {
   font-style: normal;
   font-family: "Circular-Loom";
 
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2")
-    format("woff2");
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2") format("woff2");
 }
 
 @font-face {
@@ -54,8 +52,7 @@ code {
   font-style: normal;
   font-family: "Circular-Loom";
 
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2")
-    format("woff2");
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2") format("woff2");
 }
 
 @font-face {
@@ -63,8 +60,7 @@ code {
   font-style: normal;
   font-family: "Circular-Loom";
 
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
-    format("woff2");
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2") format("woff2");
 }
 
 a,

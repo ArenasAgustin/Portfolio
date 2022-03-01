@@ -4,11 +4,11 @@ import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 
-import './Home.scss';
+import "./Home.scss";
 
 export default function Home() {
   return (
-    <div className='home'>
+    <div className="home">
       <Intro />
 
       <About />

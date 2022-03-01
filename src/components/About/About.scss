@@ -44,7 +44,7 @@ $breakpoints:(md: 768px,
         overflow-x: hidden;
         overflow-y: visible;
 
-        &:before{
+        &:before {
             content: '';
             position: absolute;
             top: 0;
@@ -70,8 +70,8 @@ $breakpoints:(md: 768px,
             @extend .transitionSlowXS;
         }
 
-        &:hover{
-            &:before{
+        &:hover {
+            &:before {
                 right: 100%;
                 left: -100%;
             }
