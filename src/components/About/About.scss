@@ -30,7 +30,7 @@ $breakpoints:(md: 768px,
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 3rem 0 7rem 0;
+    padding: 3rem 0 9rem 0;
 
     @include media-up-max(md) {
         clip-path: var(--clip-path-3);
@@ -192,6 +192,29 @@ $breakpoints:(md: 768px,
                 font-weight: 700;
                 z-index: 2;
                 @extend .transitionSlow;
+            }
+        }
+
+        .about-technology {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: .5em;
+
+            .about-technology__txt{
+                font-size: .9em;
+                margin: .2em;
+            }
+
+            .about-technology__img{
+                width: 2em;
+                height: 2em;
+                margin: .2em;
+
+                &.mongoose {
+                    width: 3em;
+                }
             }
         }
     }
