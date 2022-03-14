@@ -9,7 +9,7 @@ export default function Intro() {
           Hola, soy{" "}
           <span className="introduction-title-name">Agustin Arenas</span>
         </h1>
-        <h1>Soy Full Stack Web Developer</h1>
+        <h1>Soy Full Stack Web Developer dedicado al Front-end</h1>
 
         <a rel="noreferrer" className="div-btn" href="#about">
           <p className="btn-intro">Conocer más</p>
