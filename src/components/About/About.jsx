@@ -37,6 +37,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             className="about-technology__img"
+            alt="javascript"
           />
         </div>
 
@@ -46,6 +47,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
             className="about-technology__img"
+            alt="typescript"
           />
         </div>
 
@@ -55,6 +57,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
             className="about-technology__img"
+            alt="react"
           />
         </div>
 
@@ -64,6 +67,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
             className="about-technology__img"
+            alt="redux"
           />
         </div>
 
@@ -73,6 +77,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
             className="about-technology__img"
+            alt="nodejs"
           />
         </div>
 
@@ -82,6 +87,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
             className="about-technology__img"
+            alt="css"
           />
         </div>
 
@@ -91,6 +97,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
             className="about-technology__img"
+            alt="sass"
           />
         </div>
 
@@ -100,6 +107,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg"
             className="about-technology__img"
+            alt="less"
           />
         </div>
 
@@ -109,6 +117,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
             className="about-technology__img"
+            alt="html"
           />
         </div>
 
@@ -118,6 +127,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
             className="about-technology__img"
+            alt="postgresql"
           />
         </div>
 
@@ -127,6 +137,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"
             className="about-technology__img"
+            alt="sequelize"
           />
         </div>
 
@@ -136,6 +147,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
             className="about-technology__img"
+            alt="mongodb"
           />
         </div>
 
@@ -145,6 +157,7 @@ export default function About() {
           <img
             src="https://mongoosejs.com/docs/images/mongoose5_62x30_transparent.png"
             className="about-technology__img mongoose"
+            alt="mongoose"
           />
         </div>
 
@@ -154,6 +167,7 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
             className="about-technology__img"
+            alt="express"
           />
         </div>
 
@@ -163,6 +177,7 @@ export default function About() {
           <img
             src="https://cdn.worldvectorlogo.com/logos/json.svg"
             className="about-technology__img"
+            alt="json"
           />
         </div>
 
@@ -172,6 +187,27 @@ export default function About() {
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
             className="about-technology__img"
+            alt="git"
+          />
+        </div>
+
+        <div className="about-technology">
+          <span className="about-technology__txt">GitHub</span>
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            className="about-technology__img"
+            alt="github"
+          />
+        </div>
+
+        <div className="about-technology">
+          <span className="about-technology__txt">GitLab</span>
+
+          <img
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg"
+            className="about-technology__img"
+            alt="gitlab"
           />
         </div>
       </div>

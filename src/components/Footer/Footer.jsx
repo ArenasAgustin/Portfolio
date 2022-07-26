@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub, FaGitlab } from "react-icons/fa";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -26,6 +26,14 @@ export default function Footer() {
             className="footer-link-a"
           >
             <FaGithub />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://gitlab.com/ArenasAgustin"
+            className="footer-link-a"
+          >
+            <FaGitlab />
           </a>
         </div>
 
