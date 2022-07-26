@@ -14,6 +14,7 @@ export default function Footer() {
         <div className="footer-links">
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.linkedin.com/in/agustin-arenas-barea/"
             className="footer-link-a"
           >
@@ -22,6 +23,7 @@ export default function Footer() {
 
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://github.com/ArenasAgustin"
             className="footer-link-a"
           >
@@ -30,6 +32,7 @@ export default function Footer() {
 
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://gitlab.com/ArenasAgustin"
             className="footer-link-a"
           >

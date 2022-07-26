@@ -19,6 +19,7 @@ export default function Contact() {
           <a
             target="_blank"
             href="mailto:arenasagustin7@gmail.com"
+            rel="noopener noreferrer"
             className="contact-info-item-txt"
           >
             arenasagustin7@gmail.com
@@ -35,6 +36,7 @@ export default function Contact() {
           <a
             target="_blank"
             href="https://walink.co/44734e"
+            rel="noopener noreferrer"
             className="contact-info-item-txt"
           >
             +54 9 351-7738914
