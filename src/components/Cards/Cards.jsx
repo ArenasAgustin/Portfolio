@@ -4,12 +4,27 @@ import { projects } from "../../data/projects";
 import "./Cards.scss";
 
 export default function Cards() {
+  const [counter, setCounter] = useState(4);
   const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
-  const [showButton, setShowButton] = useState(true);
+  const [seeMore, setSeeMore] = useState(true);
 
-  const handleClick = () => {
-    setProjectsArray(projects);
-    setShowButton(false);
+  const handleClick = async () => {
+    let newCounter = counter + 4;
+
+    if (seeMore) {
+      if (newCounter < projects.length)
+        setProjectsArray(projects.slice(0, newCounter));
+      else {
+        setProjectsArray(projects);
+        setSeeMore(false);
+      }
+
+      setCounter(newCounter);
+    } else {
+      setProjectsArray(projects.slice(0, 4));
+
+      setSeeMore(true);
+    }
   };
 
   return (
@@ -29,13 +44,11 @@ export default function Cards() {
         ))}
       </div>
 
-      {showButton ? (
-        <div className="see-more-div">
-          <a className="see-more" onClick={handleClick}>
-            <p className="see-more-txt">Ver más</p>
-          </a>
-        </div>
-      ) : null}
+      <div className="see-more-div">
+        <a className="see-more" onClick={handleClick}>
+          <p className="see-more-txt">{seeMore ? "Ver más" : "Ver menos"}</p>
+        </a>
+      </div>
     </div>
   );
 }
