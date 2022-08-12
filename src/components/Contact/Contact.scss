@@ -147,6 +147,12 @@ $breakpoints:(md: 768px,
                     }
                 }
             }
+
+            .contact-info-item-txt{
+                &:hover{
+                    color: var(--color-primary-dark);
+                }
+            }
         }
     }
 }
