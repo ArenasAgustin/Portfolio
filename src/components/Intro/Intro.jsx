@@ -7,7 +7,7 @@ export default function Intro() {
       <div className="introduction-title">
         <h1>
           Hola, soy{" "}
-          <span className="introduction-title-name">Agustin Arenas</span>
+          <span className="introduction-title-name">Agustín Arenas</span>
         </h1>
         <h1>Soy Full Stack Web Developer dedicado al Front-end</h1>
 

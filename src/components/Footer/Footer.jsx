@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="footer-copy">
           <p>
             &copy; 2021 - Portfolio by{" "}
-            <a href="https://github.com/ArenasAgustin" target="_blank">
+            <a href="https://github.com/ArenasAgustin" target="_blank" rel="noopener noreferrer">
               Agustín Arenas
             </a>
             .

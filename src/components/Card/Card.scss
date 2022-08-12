@@ -108,11 +108,11 @@
                 &:after {
                     content: "";
                     position: absolute;
-                    top: 0;
                     right: 110%;
+                    top: 0;
                     bottom: 0;
                     left: 0;
-                    margin: -4px;
+                    margin: 0;
                     border-radius: inherit;
                     background: var(--background-image-gradient);
                     @extend .transitionSlow;
@@ -125,11 +125,11 @@
 
                     .deploy-link-deploy {
                         -webkit-text-fill-color: var(--color-primary);
-
-                        /* &:after {
-                            background-image: var(--background-image-gradient);
-                        } */
                     }
+                }
+
+                &.no-link {
+                    cursor: not-allowed;
                 }
 
                 &.no-link:before,
