@@ -139,6 +139,7 @@
 
                 .deploy-link-deploy {
                     -webkit-text-fill-color: var(--color-gradient);
+                    background-clip: text;
                     -webkit-background-clip: text;
                     background-image: var(--background-image-gradient);
                     color: var(--color-gradient);
@@ -156,6 +157,7 @@
             .deploy-link-github {
                 -webkit-text-fill-color: var(--color-gradient);
                 -webkit-background-clip: text;
+                background-clip: text;
                 background-image: var(--background-image-gradient);
                 color: var(--color-gradient);
                 border-image-slice: 1;

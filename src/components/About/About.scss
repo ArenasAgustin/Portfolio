@@ -185,6 +185,7 @@ $breakpoints:(md: 768px,
 
             .btn-about {
                 -webkit-text-fill-color: var(--color-primary);
+                background-clip: text;
                 -webkit-background-clip: text;
                 background-image: var(--color-primary);
                 color: var(--color-gradient);
