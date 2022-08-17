@@ -55,58 +55,13 @@ $breakpoints:(md: 768px,
             align-items: center;
             flex-wrap: wrap;
 
-            span {
-                display: inline-block;
-            }
-
             .introduction-title-name {
                 -webkit-text-fill-color: var(--color-gradient);
                 -webkit-background-clip: text;
                 background-clip: text;
                 background-image: var(--background-image-gradient);
                 color: var(--color-gradient);
-                position: relative;
-                overflow-x: hidden;
-                overflow-y: visible;
                 margin-left: 10px;
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 3px;
-                    background: var(--background-image-gradient);
-                    right: -100%;
-                    left: 100%;
-                    @extend .transitionSlowXS;
-                }
-
-                &:after {
-                    content: "";
-                    display: block;
-                    width: 100%;
-                    height: 3px;
-                    background: var(--background-image-gradient);
-                    position: absolute;
-                    bottom: 0;
-                    right: 100%;
-                    left: -100%;
-                    @extend .transitionSlowXS;
-                }
-
-                &:hover {
-                    &:before {
-                        right: 100%;
-                        left: -100%;
-                    }
-
-                    &:after {
-                        right: -100%;
-                        left: 100%;
-                    }
-                }
             }
         }
     }
