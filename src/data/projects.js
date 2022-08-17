@@ -4,7 +4,18 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1644522692/Brain_Games_Es_fixlbo.png",
     description: {
-      technologies: ["Typescript", "React", "Redux", "Node.js", "SCSS"],
+      technologies: [
+        "Typescript",
+        "SCSS",
+        "React",
+        "Redux",
+        "Node.js",
+        "MongoDB",
+        "Mongoose",
+        "Express",
+        "Github Pages",
+        "Heroku",
+      ],
       txt: "Les presento un proyecto que llamo Brain Games Es, es un juego que consta (por el momento) de 10 niveles para descifrar una palabra encriptada, puntaje y pistas.",
     },
     github: "https://github.com/ArenasAgustin/brain-games",
@@ -18,12 +29,14 @@ export const projects = [
     description: {
       technologies: [
         "Javascript",
+        "CSS",
         "React",
         "Redux",
         "Node.js",
         "MongoDB",
         "Express",
-        "CSS",
+        "Heroku",
+        "Firebase",
       ],
       txt: "En este proyecto se utilizó para poder comprender el github flow, la metodología de scrum y las responsabilidades del trabajo en equipo. En el deploy se utilizó Mongo Atlas para la base de datos, Heroku para el servidor y Firebase para el front.",
     },
@@ -57,11 +70,11 @@ export const projects = [
     description: {
       technologies: [
         "Javascript",
+        "CSS",
         "React",
         "Redux",
         "Node.js",
         "PostgreSQL",
-        "CSS",
       ],
       txt: "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella encontras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado.",
     },
@@ -75,6 +88,7 @@ export const projects = [
     description: {
       technologies: [
         "TypeScript",
+        "Scss",
         "React",
         "Node.js",
         "Ethers.js",
@@ -82,7 +96,6 @@ export const projects = [
         "Truffle",
         "Ganache",
         "Solc",
-        "Scss",
       ],
       txt: "Este proyecto es una Dapp, para un test de aplicación de Extrimian, que se comunica con un smart contract desplegado en una red testnet blockchain ethereum. El proyecto se conecta con la cuenta de Metamask de la persona que usa la app para poder mostrar las primeras 10 transacciones realizadas con la cuenta, las transacciones las obtiene de la API Rinkeby. La app guarda en la blockchain la cuenta y la cambia al conectar una cuenta nueva.",
     },
@@ -94,7 +107,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982494/Cv_j5gdme.png",
     description: {
-      technologies: ["Javascript", "React", "Node.js", "CSS"],
+      technologies: ["Javascript", "CSS", "React", "Node.js", "Github Pages"],
       txt: "Proyecto para poder mostrar mi Cv de manera mas practica y poder compartirlo.",
     },
     deploy: "https://arenasagustin.github.io/Cv2.0/",
@@ -106,7 +119,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637431214/Gastly_eevzkk.png",
     description: {
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
     },
     deploy: "https://arenasagustin.github.io/gastly-page/",
@@ -118,7 +131,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637699554/Haunter-page_yddcm1.png",
     description: {
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
     },
     deploy: "https://arenasagustin.github.io/haunter-page/",
@@ -130,7 +143,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637793053/cubo_de_rubik_t2itlp.png",
     description: {
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
     },
     deploy: "https://arenasagustin.github.io/cubo-rubik/",
@@ -142,7 +155,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1641389910/Merry_Christmas_2.0_x6i8lr.png",
     description: {
-      technologies: ["HTML", "SCSS", "Javascript", "React"],
+      technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto festejar que se aserca la época navideña.",
     },
     deploy: "https://arenasagustin.github.io/merry-christmas/",
@@ -154,7 +167,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1639164816/Merry_Christmas_tjap8x.png",
     description: {
-      technologies: ["HTML", "SCSS", "Javascript", "React"],
+      technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto festejar que se aserca la noche de navidad.",
     },
     deploy: "https://arenasagustin.github.io/merry-christmas/",
@@ -166,7 +179,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640877216/My-avatar_pldgug.png",
     description: {
-      technologies: ["HTML", "SCSS", "Javascript", "React"],
+      technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css, HTML y React.",
     },
     deploy: "https://arenasagustin.github.io/pixelart-logo/",
@@ -178,7 +191,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640105905/celular-css_ksa5ei.png",
     description: {
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
     },
     deploy: "https://arenasagustin.github.io/celular-css/",
@@ -190,7 +203,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640132857/pokeball_h9oi3f.png",
     description: {
-      technologies: ["HTML", "CSS"],
+      technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
     },
     deploy: "https://arenasagustin.github.io/pokeball-css/",
@@ -220,7 +233,14 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
-      technologies: ["Typescript", "React", "Redux", "Node.js", "CSS"],
+      technologies: [
+        "Typescript",
+        "React",
+        "Redux",
+        "Node.js",
+        "CSS",
+        "Github Pages",
+      ],
       txt: "Este proyecto lo utilice para poder aprender a utilizar el lenguaje Typescript.",
     },
     deploy: "https://arenasagustin.github.io/TodoAppTypescript/",
@@ -232,7 +252,14 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
     description: {
-      technologies: ["Javascript", "React", "Redux", "Node.js", "CSS"],
+      technologies: [
+        "Javascript",
+        "React",
+        "Redux",
+        "Node.js",
+        "CSS",
+        "Github Pages",
+      ],
       txt: "Con este proyecto evaluaron cuanto aprendi sobre el funcionamiento de react + redux.",
     },
     deploy: "https://arenasagustin.github.io/ToDoApp2.0/",
@@ -244,7 +271,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/AgusWeather_yoj48m.png",
     description: {
-      technologies: ["Javascript", "Node.js", "CSS"],
+      technologies: ["Javascript", "Node.js", "CSS", "Github Pages"],
       txt: "Con esta app aprendi la utilizacion e implementación de una Api en un proyecto.",
     },
     deploy: "https://arenasagustin.github.io/AgusWeather/",

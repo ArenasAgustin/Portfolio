@@ -6,10 +6,10 @@ export default function Intro() {
     <div className="introduction" id="home">
       <div className="introduction-title">
         <h1>
-          Hola, soy{" "}
+          <span>Hola, soy </span>
           <span className="introduction-title-name">Agustín Arenas</span>
         </h1>
-        <h1>Soy Full Stack Web Developer dedicado al Front-end</h1>
+        <h1>Soy Full Stack Web Developer especializado en Front-end</h1>
 
         <a rel="noreferrer" className="div-btn" href="#about">
           <p className="btn-intro">Conocer más</p>
