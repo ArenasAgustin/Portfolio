@@ -40,7 +40,7 @@ export default function Card({ title, image, description, deploy, github }) {
               href={github}
               target="_blank"
               rel="noreferrer"
-              className="deploy-link-github"
+              className={`deploy-link-github ${github ? "" : "no-link-github"}`}
             >
               Github
             </a>

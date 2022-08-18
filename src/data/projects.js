@@ -1,5 +1,29 @@
 export const projects = [
   {
+    title: "Last Horde - Marketplace",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1660781721/LastHorde_mgv8e6.png",
+    description: {
+      technologies: [
+        "Javascript",
+        "SCSS",
+        "Bootstrap",
+        "React",
+        "Redux",
+        "Node.js",
+        "Sequelize",
+        "Express",
+        "InnoDB",
+        "MySQL",
+        "phpMyAdmin",
+        "web3",
+      ],
+      txt: "Marketplace del juego de cartas Last Horde, donde se pueden comprar y abrir paquetes de cartas, ademas de poder comprar, vender y enviar cartas.",
+    },
+    deploy: "https://app.lasthorde.com/",
+  },
+
+  {
     title: "Brain Games Es",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1644522692/Brain_Games_Es_fixlbo.png",
@@ -75,6 +99,8 @@ export const projects = [
         "Redux",
         "Node.js",
         "PostgreSQL",
+        "Express",
+        "Sequelize",
       ],
       txt: "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella encontras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado.",
     },

@@ -110,4 +110,3 @@ const config = {
 };
 
 particlesJS(config);
-particlesJS2(config);

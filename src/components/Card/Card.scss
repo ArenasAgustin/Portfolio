@@ -168,6 +168,10 @@
                 &:hover {
                     transform: translateX(0.3em);
                 }
+
+                &.no-link-github {
+                    background-image: var(--background-image-gradient-grey);
+                }
             }
         }
     }
