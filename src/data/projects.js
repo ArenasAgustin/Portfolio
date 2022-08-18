@@ -1,5 +1,5 @@
 export const projects = [
-  {
+  /* {
     title: "Last Horde - Marketplace",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1660781721/LastHorde_mgv8e6.png",
@@ -21,7 +21,7 @@ export const projects = [
       txt: "Marketplace del juego de cartas Last Horde, donde se pueden comprar y abrir paquetes de cartas, ademas de poder comprar, vender y enviar cartas.",
     },
     deploy: "https://app.lasthorde.com/",
-  },
+  }, */
 
   {
     title: "Brain Games Es",
