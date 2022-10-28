@@ -64,6 +64,18 @@ export const projects = [
   },
 
   {
+    title: "Dungeon Game",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1666968084/dungeon_game_glkan4.png",
+    description: {
+      technologies: ["Javascript", "HTML", "CSS"],
+      txt: "Es un juego hecho solamente en Html , Css y Javascript . Se puede mover con las flechas del teclado o con los botones de la cruz, consta de 3 niveles donde tenes que buscar la llave y escapar del nivel sin que te alcancen los monstruos. Para jugar hay que prender la gameboy.",
+    },
+    deploy: "https://arenasagustin.github.io/Juegos-HTML/",
+    github: "https://github.com/ArenasAgustin/Juegos-HTML",
+  },
+
+  {
     title: "Pikemons",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636994071/Pikemons_dhqzqp.png",
@@ -160,7 +172,7 @@ export const projects = [
       technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto festejar que se aserca la época navideña.",
     },
-    deploy: "https://arenasagustin.github.io/merry-christmas/",
+    deploy: "https://arenasagustin.github.io/merry-christmas2.0/",
     github: "https://github.com/ArenasAgustin/merry-christmas2.0",
   },
 
