@@ -1,12 +1,21 @@
 import React from "react";
 import Cv from "../../assets/CV Agustin Arenas - Full Stack Web Developer.pdf";
 import Profile from "../../assets/profile.jpg";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./About.scss";
 
 export default function About() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
-    <div className="about" id="about">
-      <h1 className="about-title">SOBRE MI</h1>
+    <div className="about" id="about" data-aos="fade-up">
+      <h1 className="about-title" data-aos="flip-left">SOBRE MI</h1>
 
       <div className="about-container">
         <div className="about-image">

@@ -41,21 +41,6 @@ $breakpoints:(md: 768px,
         font-size: 2.2rem;
         margin-bottom: 1rem;
         position: relative;
-        overflow-x: hidden;
-        overflow-y: visible;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: var(--color-primary);
-            right: -100%;
-            left: 100%;
-            @extend .transitionSlowXS;
-        }
 
         &:after {
             content: "";
@@ -64,22 +49,9 @@ $breakpoints:(md: 768px,
             height: 3px;
             background-color: var(--color-primary);
             position: absolute;
-            bottom: 0;
+            bottom: -5px;
             right: 100%;
-            left: -100%;
-            @extend .transitionSlowXS;
-        }
-
-        &:hover {
-            &:before {
-                right: 100%;
-                left: -100%;
-            }
-
-            &:after {
-                right: -100%;
-                left: 100%;
-            }
+            left: 0;
         }
     }
 
@@ -199,12 +171,12 @@ $breakpoints:(md: 768px,
             align-items: center;
             margin: .5em;
 
-            .about-technology__txt{
+            .about-technology__txt {
                 font-size: .9em;
                 margin: .2em;
             }
 
-            .about-technology__img{
+            .about-technology__img {
                 width: 2em;
                 height: 2em;
                 margin: .2em;

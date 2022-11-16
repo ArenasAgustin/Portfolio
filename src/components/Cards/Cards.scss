@@ -23,21 +23,6 @@
     .projects-title {
         font-size: 2.2rem;
         position: relative;
-        overflow-x: hidden;
-        overflow-y: visible;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 3px;
-            background-color: var(--color-secondary);
-            right: -100%;
-            left: 100%;
-            @extend .transitionSlowXS;
-        }
 
         &:after {
             content: "";
@@ -46,22 +31,9 @@
             height: 3px;
             background-color: var(--color-secondary);
             position: absolute;
-            bottom: 0;
+            bottom: -5px;
             right: 100%;
-            left: -100%;
-            @extend .transitionSlowXS;
-        }
-
-        &:hover {
-            &:before {
-                right: 100%;
-                left: -100%;
-            }
-
-            &:after {
-                right: -100%;
-                left: 100%;
-            }
+            left: 0;
         }
     }
 
@@ -130,10 +102,6 @@
 
                 .see-more-txt {
                     -webkit-text-fill-color: var(--color-primary);
-
-                    /* &:after {
-                        background-image: var(--background-image-gradient);
-                    } */
                 }
             }
 

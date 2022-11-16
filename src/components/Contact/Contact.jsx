@@ -1,11 +1,22 @@
 import React from "react";
 import { FiSmartphone, FiMail } from "react-icons/fi";
+import { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import "./Contact.scss";
 
 export default function Contact() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+    });
+  }, []);
+
   return (
     <div className="contact">
-      <h1 className="contact-title">CONTACTO</h1>
+      <h1 className="contact-title" data-aos="flip-left">
+        CONTACTO
+      </h1>
 
       <div className="contact-line"></div>
 
