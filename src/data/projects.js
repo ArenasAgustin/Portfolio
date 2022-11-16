@@ -96,7 +96,19 @@ export const projects = [
   },
 
   {
-    title: "Extriman Dapp Test",
+    title: "Box | Custodia y gestión digital - Test",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1666984230/JornalYa_g6flnm.png",
+    description: {
+      technologies: ["CSS", "Javascript", "React", "Redux"],
+      txt: "Este proyecto es un test de aplicación de Box | Custodia y gestión digital, la app consta de un front que se comunica con una api para buscar documentos y mostrar los pdf.",
+    },
+    github: "https://github.com/ArenasAgustin/boxcustodia-test",
+    deploy: "https://boxcustodia-test.vercel.app/",
+  },
+
+  {
+    title: "Extriman Dapp - Test",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645735133/Extrimian-Dapp_wdqgmn.png",
     description: {
@@ -225,7 +237,7 @@ export const projects = [
   },
 
   {
-    title: "Valienta Frontend Test",
+    title: "Valienta Frontend - Test",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645756725/R_M-Test_krkuzj.png",
     description: {
