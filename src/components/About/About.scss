@@ -187,4 +187,25 @@ $breakpoints:(md: 768px,
             }
         }
     }
+
+    &.dark {
+        color: var(--color-secondary);
+
+        .about-title:after {
+            background-color: var(--color-secondary);
+        }
+
+        .about-btn-a {
+
+            &:before,
+            &:after {
+                background: var(--color-secondary) !important;
+            }
+            
+            .btn-about{
+                -webkit-text-fill-color: var(--color-secondary);
+                background-image: var(--color-secondary);
+            }
+        }
+    }
 }

@@ -1,7 +1,11 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Home from "./pages/Home";
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+
+  const handleChangeTheme = () => setIsDark((prev) => !prev);
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "../../js/particles.min.js";
@@ -21,10 +25,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className={`App ${isDark ? "dark" : ""}`}>
       <div id="particles-js"></div>
 
-      <Home />
+      <Home isDark={isDark} setIsDark={handleChangeTheme} />
     </div>
   );
 }

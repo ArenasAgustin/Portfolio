@@ -1,7 +1,7 @@
 import React from "react";
 import "./Intro.scss";
 
-export default function Intro() {
+export default function Intro({ isDark = false }) {
   return (
     <div className="introduction" id="home">
       <div className="introduction-title">
@@ -11,7 +11,7 @@ export default function Intro() {
         </h1>
         <h1>Soy Full Stack Web Developer especializado en Front-end</h1>
 
-        <a rel="noreferrer" className="div-btn" href="#about">
+        <a rel="noreferrer" className={`div-btn ${isDark ? "dark" : ""}`} href="#about">
           <p className="btn-intro">Conocer más</p>
         </a>
       </div>

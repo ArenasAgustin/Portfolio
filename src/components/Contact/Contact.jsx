@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Contact.scss";
 
-export default function Contact() {
+export default function Contact({ isDark }) {
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -13,7 +13,7 @@ export default function Contact() {
   }, []);
 
   return (
-    <div className="contact">
+    <div className={`contact ${isDark ? "dark" : ""}`}>
       <h1 className="contact-title" data-aos="flip-left">
         CONTACTO
       </h1>

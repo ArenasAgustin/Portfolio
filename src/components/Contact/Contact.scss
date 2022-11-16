@@ -127,4 +127,32 @@ $breakpoints:(md: 768px,
             }
         }
     }
+
+
+
+    &.dark {
+        color: var(--color-secondary);
+
+        .contact-title:after {
+            background-color: var(--color-secondary);
+        }
+
+        .contact-line {
+            border: 1px solid var(--color-secondary);
+        }
+
+        .contact-info-item-icon {
+            span {
+                color: var(--color-secondary) !important;
+            }
+
+            &:hover {
+                background-color: var(--color-secondary) !important;
+
+                span {
+                    color: var(--color-tertiary) !important;
+                }
+            }
+        }
+    }
 }

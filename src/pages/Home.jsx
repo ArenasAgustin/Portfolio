@@ -4,17 +4,20 @@ import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
+import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
 
-export default function Home() {
+export default function Home({ isDark, setIsDark }) {
   return (
     <div className="home">
-      <Intro />
+      <ThemeChanger isDark={isDark} setIsDark={setIsDark} />
 
-      <About />
+      <Intro isDark={isDark} />
 
-      <Cards />
+      <About isDark={isDark} />
 
-      <Contact />
+      <Cards isDark={isDark} />
+
+      <Contact isDark={isDark} />
 
       <Footer />
     </div>

@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Cards.scss";
 
-export default function Cards() {
+export default function Cards({ isDark = false }) {
   const [counter, setCounter] = useState(4);
   const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
   const [seeMore, setSeeMore] = useState(true);
@@ -51,12 +51,13 @@ export default function Cards() {
             deploy={project.deploy}
             github={project.github}
             title={project.title}
+            isDark={isDark}
           />
         ))}
       </div>
 
       <div className="see-more-div">
-        <a className="see-more" onClick={handleClick}>
+        <a className={`see-more ${isDark ? "dark" : ""}`} onClick={handleClick}>
           <p className="see-more-txt">{seeMore ? "Ver más" : "Ver menos"}</p>
         </a>
       </div>

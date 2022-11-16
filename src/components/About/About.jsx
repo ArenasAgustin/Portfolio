@@ -6,7 +6,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./About.scss";
 
-export default function About() {
+export default function About({ isDark }) {
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -14,8 +14,14 @@ export default function About() {
   }, []);
 
   return (
-    <div className="about" id="about" data-aos="fade-up">
-      <h1 className="about-title" data-aos="flip-left">SOBRE MI</h1>
+    <div
+      className={`about ${isDark ? "dark" : ""}`}
+      id="about"
+      data-aos="fade-up"
+    >
+      <h1 className="about-title" data-aos="flip-left">
+        SOBRE MI
+      </h1>
 
       <div className="about-container">
         <div className="about-image">

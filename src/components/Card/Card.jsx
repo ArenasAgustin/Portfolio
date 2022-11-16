@@ -4,7 +4,14 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import "./Card.scss";
 
-export default function Card({ title, image, description, deploy, github }) {
+export default function Card({
+  title,
+  image,
+  description,
+  deploy,
+  github,
+  isDark = false,
+}) {
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -23,7 +30,7 @@ export default function Card({ title, image, description, deploy, github }) {
 
           <div className="card-technologies">
             {description?.technologies.map((tech, index) => (
-              <span key={index} className="tech">
+              <span key={index} className={`tech ${isDark ? "dark" : ""}`}>
                 {tech}
               </span>
             ))}
@@ -34,12 +41,14 @@ export default function Card({ title, image, description, deploy, github }) {
               href={deploy}
               target="_blank"
               rel="noreferrer"
-              className={`deploy-link ${deploy ? "" : "no-link"}`}
+              className={`deploy-link ${deploy ? "" : "no-link"} ${
+                isDark ? "dark" : ""
+              }`}
             >
               <p
                 className={`deploy-link-deploy ${
                   deploy ? "" : "no-link-deploy"
-                }`}
+                } `}
               >
                 Deploy
               </p>
