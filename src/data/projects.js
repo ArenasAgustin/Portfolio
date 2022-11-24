@@ -129,6 +129,18 @@ export const projects = [
   },
 
   {
+    title: "BeGo - Test",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1669248682/BeGo-test_io64qf.png",
+    description: {
+      technologies: ["SCSS", "Javascript", "React"],
+      txt: "Este proyecto es un test de aplicación de Be Go, La app consta de un front diseñado con Scss, Javascript y React.",
+    },
+    github: "https://github.com/ArenasAgustin/bego-test",
+    deploy: "https://arenasagustin.github.io/bego-test/",
+  },
+
+  {
     title: "Curriculum vitae",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982494/Cv_j5gdme.png",
