@@ -19,7 +19,7 @@ export const projects = [
       txt: "Les presento un proyecto que llamo Brain Games Es, es un juego que consta (por el momento) de 10 niveles para descifrar una palabra encriptada, puntaje y pistas.",
     },
     github: "https://github.com/ArenasAgustin/brain-games",
-    deploy: "https://arenasagustin.github.io/brain-games/",
+    deploy: "https://brain-games.vercel.app/",
   },
 
   {
