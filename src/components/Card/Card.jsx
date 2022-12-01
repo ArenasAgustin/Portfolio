@@ -1,8 +1,7 @@
-import React from "react";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Card.scss";
+import Button from "../Button/Button";
 
 export default function Card({
   title,
@@ -30,29 +29,20 @@ export default function Card({
 
           <div className="card-technologies">
             {description?.technologies.map((tech, index) => (
-              <span key={index} className={`tech ${isDark ? "dark" : ""}`}>
+              <span key={index} className="tech">
                 {tech}
               </span>
             ))}
           </div>
 
           <div className="card-links">
-            <a
+            <Button
               href={deploy}
               target="_blank"
               rel="noreferrer"
-              className={`deploy-link ${deploy ? "" : "no-link"} ${
-                isDark ? "dark" : ""
-              }`}
-            >
-              <p
-                className={`deploy-link-deploy ${
-                  deploy ? "" : "no-link-deploy"
-                } `}
-              >
-                Deploy
-              </p>
-            </a>
+              txt="Deploy"
+              className={`margin-right ${deploy ? "" : "no-link"}`}
+            />
 
             <a
               href={github}

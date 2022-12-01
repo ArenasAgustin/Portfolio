@@ -1,9 +1,7 @@
-import React from "react";
 import { FiSmartphone, FiMail } from "react-icons/fi";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Contact.scss";
 
 export default function Contact({ isDark }) {
   useEffect(() => {

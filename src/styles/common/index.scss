@@ -1,0 +1,39 @@
+.transitionSlow {
+    transition: all .6s ease-in-out;
+    -o-transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out;
+}
+
+.transitionSlowXS {
+    transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.circle,
+.line {
+    background-color: var(--color-secondary);
+}
+
+.circle {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    box-shadow: #8985a0 3px 3px 6px 0px inset;
+}
+
+.line {
+    border-radius: 10px;
+    width: 10px;
+    height: 115px;
+    position: absolute;
+    top: 60%;
+    left: 30px;
+    transform: translate(-50%, 0);
+    z-index: 0;
+}

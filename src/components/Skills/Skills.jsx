@@ -1,11 +1,8 @@
-import Cv from "../../assets/CV Agustin Arenas - Full Stack Web Developer.pdf";
-import Profile from "../../assets/profile.jpg";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Button from "../Button/Button";
 
-export default function About() {
+export default function Skills({ isDark }) {
   useEffect(() => {
     Aos.init({
       duration: 1500,
@@ -13,7 +10,11 @@ export default function About() {
   }, []);
 
   return (
-    <div className="about" id="about" data-aos="fade-up">
+    <div
+      className={`about ${isDark ? "dark" : ""}`}
+      id="about"
+      data-aos="fade-up"
+    >
       <h1 className="about-title" data-aos="flip-left">
         SOBRE MI
       </h1>
@@ -34,12 +35,9 @@ export default function About() {
             disfruto con la música y el dibujo.
           </p>
 
-          <Button
-            download={true}
-            href={Cv}
-            className="btn-cv"
-            txt="Ver resumen"
-          />
+          <a download href={Cv} className="about-btn-a">
+            <p className="btn-about">Ver resumen</p>
+          </a>
         </div>
       </div>
 

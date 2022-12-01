@@ -1,26 +1,3 @@
-$breakpoints:(md: 768px,
-    md600: 600px,
-    md800: 800px,
-    xl: 1500px);
-
-@mixin media-up-max($breakpoint) {
-    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
-}
-
-.transitionSlow {
-    transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    -webkit-transition: all .6s ease-in-out;
-}
-
-.transitionSlowXS {
-    transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-}
-
 .theme-changer {
     position: fixed;
     z-index: 100;

@@ -1,7 +1,5 @@
-import React from "react";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
-import "./ThemeChanger.scss";
 
 export default function ThemeChanger({ isDark = false, setIsDark }) {
   return (

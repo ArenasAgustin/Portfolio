@@ -1,26 +1,3 @@
-$breakpoints:(md: 768px,
-    md600: 600px,
-    md800: 800px,
-);
-
-@mixin media-up-max($breakpoint) {
-    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
-}
-
-.transitionSlow {
-    transition: all .6s ease-in-out;
-    -o-transition: all .6s ease-in-out;
-    -webkit-transition: all .6s ease-in-out;
-}
-
-.transitionSlowXS {
-    transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-}
-
 .about {
     background-image: var(--background-image-gradient);
     color: var(--color-primary);
@@ -201,8 +178,8 @@ $breakpoints:(md: 768px,
             &:after {
                 background: var(--color-secondary) !important;
             }
-            
-            .btn-about{
+
+            .btn-about {
                 -webkit-text-fill-color: var(--color-secondary);
                 background-image: var(--color-secondary);
             }

@@ -1,12 +1,12 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Card from "../Card/Card";
 import { projects } from "../../data/projects";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import "./Cards.scss";
+import Button from "../Button/Button";
 
-export default function Cards({ isDark = false }) {
+export default function Cards() {
   const [counter, setCounter] = useState(4);
   const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
   const [seeMore, setSeeMore] = useState(true);
@@ -51,15 +51,16 @@ export default function Cards({ isDark = false }) {
             deploy={project.deploy}
             github={project.github}
             title={project.title}
-            isDark={isDark}
           />
         ))}
       </div>
 
       <div className="see-more-div">
-        <a className={`see-more ${isDark ? "dark" : ""}`} onClick={handleClick}>
-          <p className="see-more-txt">{seeMore ? "Ver más" : "Ver menos"}</p>
-        </a>
+        <Button
+          className="btn-see-more"
+          onClick={handleClick}
+          txt={seeMore ? "Ver más" : "Ver menos"}
+        />
       </div>
     </div>
   );

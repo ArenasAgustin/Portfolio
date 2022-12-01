@@ -1,0 +1,137 @@
+.dark {
+    background-color: var(--color-secondary) !important;
+    color: var(--color-primary) !important;
+
+    .theme-changer .theme-changer-svg {
+        color: var(--color-secondary);
+    }
+
+    .btn-a {
+        background: var(--color-secondary);
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        border: 4px solid var(--color-gradient);
+
+        &:hover {
+            .btn-txt {
+                -webkit-text-fill-color: var(--color-secondary);
+            }
+        }
+    }
+
+    .introduction .div-btn,
+    .card .deploy-link {
+        background: var(--color-secondary);
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        border: 4px solid var(--color-gradient);
+
+        &:hover {
+            .btn-intro {
+                -webkit-text-fill-color: var(--color-secondary);
+            }
+        }
+    }
+
+    .about {
+        color: var(--color-secondary) !important;
+
+        .about-title:after {
+            background-color: var(--color-secondary) !important;
+        }
+
+        .about-btn-a {
+
+            &:before,
+            &:after {
+                background: var(--color-secondary) !important;
+            }
+
+            .btn-about {
+                -webkit-text-fill-color: var(--color-secondary) !important;
+            }
+
+            &:hover {
+                .btn-about {
+                    -webkit-text-fill-color: var(--background-image-gradient) !important;
+                }
+            }
+        }
+    }
+
+    .education .education-card {
+        background-color: rgba(255, 255, 255, 0.123) !important;
+
+    }
+
+    .projects .see-more {
+        background: var(--color-secondary);
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        border: 4px solid var(--color-gradient);
+
+        &:hover {
+            .see-more-txt {
+                -webkit-text-fill-color: var(--color-secondary);
+            }
+        }
+    }
+
+    .card {
+        .tech {
+            color: var(--color-secondary) !important;
+        }
+
+        .deploy-link {
+            background: var(--color-secondary) !important;
+            position: relative;
+            box-sizing: border-box;
+            background-clip: padding-box;
+            box-sizing: border-box;
+            border: 4px solid var(--background-image-gradient-grey);
+
+            &:hover {
+                .deploy-link-deploy {
+                    -webkit-text-fill-color: var(--color-secondary) !important;
+                }
+            }
+        }
+    }
+
+    .contact {
+        color: var(--color-secondary) !important;
+
+        .contact-title:after {
+            background-color: var(--color-secondary);
+        }
+
+        .contact-line {
+            border: 1px solid var(--color-secondary);
+        }
+
+        .contact-info-item-icon {
+            span {
+                color: var(--color-secondary) !important;
+            }
+
+            &:hover {
+                background-color: var(--color-secondary) !important;
+
+                span {
+                    color: var(--color-tertiary) !important;
+                }
+            }
+        }
+    }
+
+    .circle,
+    .line {
+        background-color: var(--color-primary);
+    }
+}

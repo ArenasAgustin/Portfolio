@@ -1,7 +1,5 @@
-import React from "react";
 import { IoIosArrowUp } from "react-icons/io";
 import { FaLinkedinIn, FaGithub, FaGitlab } from "react-icons/fa";
-import "./Footer.scss";
 
 export default function Footer() {
   return (
