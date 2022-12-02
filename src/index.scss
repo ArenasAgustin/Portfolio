@@ -1,3 +1,6 @@
+@import 'styles/common/fonts.scss';
+@import 'styles/common/variables.scss';
+@import 'styles/common/mixins.scss';
 @import 'styles/common/index.scss';
 
 @import 'styles/index.scss';
@@ -5,8 +8,9 @@
 @import 'styles/pages/Home.scss';
 
 @import 'styles/components/Button/Button.scss';
-@import 'styles/components/Intro/Intro.scss';
 @import 'styles/components/ThemeChanger/ThemeChanger.scss';
+
+@import 'styles/components/Intro/Intro.scss';
 @import 'styles/components/About/About.scss';
 @import 'styles/components/Education/Education.scss';
 @import 'styles/components/Skills/Skills.scss';

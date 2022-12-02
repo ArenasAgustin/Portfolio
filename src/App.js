@@ -28,7 +28,7 @@ function App() {
     <div className={`App ${isDark ? "dark" : ""}`}>
       <div id="particles-js"></div>
 
-      <Home setIsDark={handleChangeTheme} />
+      <Home setIsDark={handleChangeTheme} isDark={isDark}/>
     </div>
   );
 }

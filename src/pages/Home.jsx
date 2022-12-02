@@ -8,10 +8,10 @@ import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
 import Experience from "../components/Experience/Experience";
 
-export default function Home({ setIsDark }) {
+export default function Home({ setIsDark, isDark }) {
   return (
     <div className="home">
-      <ThemeChanger setIsDark={setIsDark} />
+      <ThemeChanger isDark={isDark} setIsDark={setIsDark} />
 
       <Intro />
 

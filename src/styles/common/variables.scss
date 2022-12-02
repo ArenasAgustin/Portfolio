@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #fff;
+    --color-primary-dark: #e4e4e4;
+    --color-secondary: #272341;
+    --color-secondary-light: #3e3a5a;
+    --color-tertiary: #0091cc;
+    --color-quaternary: #00d8cf;
+    --background-image-gradient: linear-gradient(90deg, var(--color-tertiary), var(--color-quaternary));
+    --background-image-gradient-grey: linear-gradient(90deg, #606060, #acacac);
+    --color-gradient: transparent;
+    --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+    --clip-path-2: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
+    --clip-path-3: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

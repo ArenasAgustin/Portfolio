@@ -1,20 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
-
-:root {
-  --color-primary: #fff;
-  --color-primary-dark: #e4e4e4;
-  --color-secondary: #272341;
-  --color-secondary-light: #3e3a5a;
-  --color-tertiary: #0091cc;
-  --color-quaternary: #00d8cf;
-  --background-image-gradient: linear-gradient(90deg, var(--color-tertiary), var(--color-quaternary));
-  --background-image-gradient-grey: linear-gradient(90deg, #606060, #acacac);
-  --color-gradient: transparent;
-  --clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
-  --clip-path-2: polygon(0 0, 100% 15vh, 100% 100%, 0 100%);
-  --clip-path-3: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-
 body {
   margin: 0;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
@@ -24,74 +7,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-  .App {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    overflow: hidden;
-    @extend .transitionSlowXS;
-  }
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-@font-face {
-  font-weight: 400;
-  font-style: normal;
-  font-family: "Circular-Loom";
-
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2") format("woff2");
-}
-
-@font-face {
-  font-weight: 500;
-  font-style: normal;
-  font-family: "Circular-Loom";
-
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2") format("woff2");
-}
-
-@font-face {
-  font-weight: 700;
-  font-style: normal;
-  font-family: "Circular-Loom";
-
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2") format("woff2");
-}
-
-@font-face {
-  font-weight: 900;
-  font-style: normal;
-  font-family: "Circular-Loom";
-
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2") format("woff2");
-}
-
-a,
-a:active,
-a:hover,
-a:link,
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
-h1,
-h2,
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
 }
 
 .App {
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  overflow: hidden;
+  @extend .transitionSlowXS;
 
   .home {
     z-index: 10;
@@ -107,15 +32,4 @@ p {
   width: 100%;
   height: 100%;
   z-index: 0;
-}
-
-$breakpoints:(md: 768px,
-    md600: 600px,
-    md800: 800px,
-    xl: 1500px);
-
-@mixin media-up-max($breakpoint) {
-    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-        @content;
-    }
 }
