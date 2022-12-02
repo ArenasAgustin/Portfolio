@@ -9,6 +9,11 @@
     width: 100%;
     padding: 3rem 0 9rem 0;
 
+    @include media-up-max(md) {
+        clip-path: var(--clip-path-3);
+        padding: 3em 0 3rem 0;
+    }
+
     .experience-title {
         @extend .common-titles2;
         margin-bottom: 2rem;
@@ -31,7 +36,12 @@
 
         .experience-display {
             position: relative;
-            width: 600px
+            width: 600px;
+
+            @include media-up-max(md) {
+                width: 100%;
+                max-width: 600px;
+            }
         }
 
         .experience-card {

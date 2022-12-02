@@ -1,6 +1,7 @@
 $breakpoints:(md: 768px,
   md600: 600px,
   md800: 800px,
+  md900: 900px,
   xl: 1500px);
 
 @mixin media-up-max($breakpoint) {

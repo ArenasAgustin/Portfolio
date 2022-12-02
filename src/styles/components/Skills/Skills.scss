@@ -27,6 +27,13 @@
         justify-content: start;
         align-items: start;
 
+
+        @include media-up-max(md) {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
         .skills-categories {
             width: 200px;
             display: flex;
@@ -68,6 +75,11 @@
             justify-content: start;
             align-items: start;
             flex-wrap: wrap;
+
+            @include media-up-max(md) {
+                justify-content: center;
+                align-items: center;
+            }
 
             .skill {
                 display: flex;
