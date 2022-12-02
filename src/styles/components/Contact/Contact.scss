@@ -84,10 +84,8 @@
                 }
             }
 
-            .contact-info-item-txt {
-                &:hover {
-                    color: var(--color-primary-dark);
-                }
+            .contact-info-item-txt:hover {
+                color: var(--color-primary-dark);
             }
         }
     }
