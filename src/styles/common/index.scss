@@ -32,6 +32,10 @@ p {
 .line {
     background-color: var(--color-secondary);
     @extend .transitionSlowXS;
+
+    &.invert {
+        background-color: var(--color-primary);
+    }
 }
 
 .circle {

@@ -10,6 +10,15 @@
         background-color: var(--color-secondary);
     }
 
+    .circle,
+    .line {
+        background-color: var(--color-primary);
+
+        &.invert {
+            background-color: var(--color-secondary);
+        }
+    }
+
     .theme-changer .theme-changer-svg {
         color: var(--color-secondary);
     }
@@ -36,7 +45,7 @@
                 -webkit-text-fill-color: var(--color-secondary);
             }
 
-            &::after{
+            &::after {
                 background: var(--color-secondary) !important;
             }
         }
@@ -76,7 +85,6 @@
             background-color: var(--color-secondary) !important;
         }
     }
-
 
     .projects .see-more {
         background: var(--color-secondary);
@@ -137,10 +145,5 @@
         .contact-info-item-txt:hover {
             color: var(--color-secondary-light) !important;
         }
-    }
-
-    .circle,
-    .line {
-        background-color: var(--color-primary);
     }
 }

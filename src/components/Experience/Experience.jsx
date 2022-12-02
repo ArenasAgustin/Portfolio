@@ -16,8 +16,8 @@ export default function Experience() {
         <div className="experience-cards">
           {experienceArray.map((experience, index) => (
             <div className="experience-display" data-aos="fade-right">
-              <div className="circle"></div>
-              <div className="line"></div>
+              <div className="circle invert"></div>
+              <div className="line invert"></div>
 
               <div className="experience-card" key={index}>
                 <h4 className="card-title">{experience.position}</h4>
