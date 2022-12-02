@@ -3,15 +3,11 @@ import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Contact({ isDark }) {
-  useEffect(() => {
-    Aos.init({
-      duration: 1500,
-    });
-  }, []);
+export default function Contact() {
+  useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
-    <div className={`contact ${isDark ? "dark" : ""}`}>
+    <div className="contact">
       <h1 className="contact-title" data-aos="flip-left">
         CONTACTO
       </h1>

@@ -9,13 +9,8 @@ export default function Card({
   description,
   deploy,
   github,
-  isDark = false,
 }) {
-  useEffect(() => {
-    Aos.init({
-      duration: 1500,
-    });
-  }, []);
+  useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
     <>

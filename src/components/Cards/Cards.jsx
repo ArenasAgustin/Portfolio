@@ -30,11 +30,7 @@ export default function Cards() {
     }
   };
 
-  useEffect(() => {
-    Aos.init({
-      duration: 1500,
-    });
-  }, []);
+  useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
     <div className="projects">
