@@ -5,21 +5,24 @@ import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
 import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
 import Education from "../components/Education/Education";
+import Skills from "../components/Skills/Skills";
 
-export default function Home({ isDark, setIsDark }) {
+export default function Home({ setIsDark }) {
   return (
     <div className="home">
-      <ThemeChanger isDark={isDark} setIsDark={setIsDark} />
+      <ThemeChanger setIsDark={setIsDark} />
 
-      <Intro isDark={isDark} />
+      <Intro />
 
-      <About isDark={isDark} />
+      <About />
 
-      <Education isDark={isDark} />
+      <Education />
 
-      <Cards isDark={isDark} />
+      <Skills />
 
-      <Contact isDark={isDark} />
+      <Cards />
+
+      <Contact />
 
       <Footer />
     </div>

@@ -343,7 +343,7 @@ export const projects = [
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983674/ResponsiveWeb_ukiizg.png",
     description: {
-      technologies: ["Javascript", "Node.js", "CSS"],
+      technologies: ["Javascript", "Node.js", "LESS"],
       txt: "Proyecto para poder aprender y enteder Less, en este proyecto se agarro una pagina y se le dio estilos con less para intentar dejarla como en las imagenes de la carpeta diseño.",
     },
     github: "https://github.com/ArenasAgustin/ResponsiveWeb",

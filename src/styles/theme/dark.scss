@@ -48,10 +48,6 @@
     .about {
         color: var(--color-secondary) !important;
 
-        .about-title:after {
-            background-color: var(--color-secondary) !important;
-        }
-
         .about-btn-a {
 
             &:before,
@@ -73,37 +69,35 @@
 
     .education .education-card {
         background-color: rgba(255, 255, 255, 0.123) !important;
-
     }
 
     .skills {
         color: var(--color-secondary);
 
-        .skills-title:after {
-            background-color: var(--color-secondary);
-        }
-    }
+        .skills-category {
+            color: var(--color-secondary) !important;
 
-    .projects {
-        .projects-title:after {
-            background-color: var(--color-primary) !important;
-        }
-
-        .see-more {
-            background: var(--color-secondary);
-            position: relative;
-            box-sizing: border-box;
-            background-clip: padding-box;
-            box-sizing: border-box;
-            border: 4px solid var(--color-gradient);
-
-            &:hover {
-                .see-more-txt {
-                    -webkit-text-fill-color: var(--color-secondary);
-                }
+            &.selected:after {
+                background-color: var(--color-secondary) !important;
             }
         }
     }
+
+    .projects .see-more {
+        background: var(--color-secondary);
+        position: relative;
+        box-sizing: border-box;
+        background-clip: padding-box;
+        box-sizing: border-box;
+        border: 4px solid var(--color-gradient);
+
+        &:hover {
+            .see-more-txt {
+                -webkit-text-fill-color: var(--color-secondary);
+            }
+        }
+    }
+
 
     .card {
         .tech {
@@ -128,10 +122,6 @@
 
     .contact {
         color: var(--color-secondary) !important;
-
-        .contact-title:after {
-            background-color: var(--color-secondary);
-        }
 
         .contact-line {
             border: 1px solid var(--color-secondary);

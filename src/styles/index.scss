@@ -28,6 +28,7 @@ body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     overflow: hidden;
+    @extend .transitionSlowXS;
   }
 }
 
