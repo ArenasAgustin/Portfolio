@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
 import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
+import Experience from "../components/Experience/Experience";
 
 export default function Home({ setIsDark }) {
   return (
@@ -19,6 +20,8 @@ export default function Home({ setIsDark }) {
       <Education />
 
       <Skills />
+
+      <Experience />
 
       <Cards />
 
