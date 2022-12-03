@@ -7,7 +7,7 @@ export default function ThemeChanger({
   setIsDark,
   setEasterEgg,
 }) {
-  const [easterEggCount, setEasterEggCount] = useState(0);
+  const [easterEggCount, setEasterEggCount] = useState(1);
 
   const handleThemeChange = () => {
     setIsDark(!isDark);
@@ -17,7 +17,7 @@ export default function ThemeChanger({
       setEasterEggCount(easterEggCount + 1);
       setEasterEgg(true);
     } else {
-      setEasterEggCount(0);
+      setEasterEggCount(1);
       setEasterEgg(false);
     }
   };
