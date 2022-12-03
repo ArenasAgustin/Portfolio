@@ -1,12 +1,32 @@
+import { useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
 
-export default function ThemeChanger({ isDark = false, setIsDark }) {
+export default function ThemeChanger({
+  isDark = false,
+  setIsDark,
+  setEasterEgg,
+}) {
+  const [easterEggCount, setEasterEggCount] = useState(0);
+
+  const handleThemeChange = () => {
+    setIsDark(!isDark);
+
+    if (easterEggCount < 7) setEasterEggCount(easterEggCount + 1);
+    else if (easterEggCount === 7) {
+      setEasterEggCount(easterEggCount + 1);
+      setEasterEgg(true);
+    } else {
+      setEasterEggCount(0);
+      setEasterEgg(false);
+    }
+  };
+
   return (
     <div className="theme-changer">
       <button
         className={`theme-changer-btn ${isDark ? "dark" : ""}`}
-        onClick={setIsDark}
+        onClick={handleThemeChange}
       >
         {isDark ? (
           <FiSun className="theme-changer-svg" />

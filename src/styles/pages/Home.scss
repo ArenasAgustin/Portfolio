@@ -7,3 +7,37 @@
   padding: 0;
   position: relative;
 }
+
+.easter-egg {
+  position: fixed;
+  width: 40px;
+  height: auto;
+  z-index: -1;
+  animation: floatInSpace 20s linear infinite;
+}
+
+@keyframes floatInSpace {
+  0% {
+    transform: rotate(-80deg);
+    top: 84%;
+    left: -10%;
+  }
+
+  46% {
+    transform: rotate(120deg);
+    top: 25%;
+    left: 34%;
+  }
+
+  72% {
+    transform: rotate(-100deg);
+    top: 68%;
+    left: 76%;
+  }
+
+  100% {
+    transform: rotate(60deg);
+    top: 37%;
+    left: 110%;
+  }
+}
