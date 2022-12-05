@@ -19,6 +19,18 @@
         margin-bottom: 2rem;
     }
 
+    .skills-level_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: .6rem;
+
+        .skills-level {
+            margin-left: 9px;
+        }
+    }
+
     .skills-container {
         width: 100%;
         max-width: 1200px;
@@ -89,7 +101,7 @@
                 margin: .5em;
                 background-color: rgba(255, 255, 255, 0.123);
                 height: 110px;
-                width: 110px;
+                width: 130px;
                 border-radius: 10px;
 
                 .skill-technology {
@@ -112,6 +124,44 @@
                     }
                 }
             }
+        }
+    }
+
+    .skills-level_circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .beginner {
+        color: #ff0245;
+
+        .skills-level_circle,
+        &.skills-level_circle {
+            background-color: #ff0245;
+            box-shadow: #fa5e88 3px 3px 6px 0px inset;
+        }
+    }
+
+    .intermediate {
+        color: #ff8e01;
+
+        .skills-level_circle,
+        &.skills-level_circle {
+            background-color: #ff8e01;
+            box-shadow: #ffc176 3px 3px 6px 0px inset;
+        }
+    }
+
+    .advanced {
+        color: #014dff;
+
+        .skills-level_circle,
+        &.skills-level_circle {
+            background-color: #014dff;
+            box-shadow: #6392ff 3px 3px 6px 0px inset;
         }
     }
 }

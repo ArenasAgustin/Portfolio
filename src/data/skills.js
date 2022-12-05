@@ -5,14 +5,14 @@ const BEGINNER = "beginner";
 export const skills = {
   frontEnd: [
     {
-      technology: "HTML / HTML 5",
+      technology: "HTML",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "CSS / CSS 3",
+      technology: "CSS",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
       expLevel: ADVANCED,
@@ -121,7 +121,7 @@ export const skills = {
     {
       technology: "phpMyAdmin",
       image: "https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg",
-      expLevel: ADVANCED,
+      expLevel: BEGINNER,
     },
 
     {
@@ -165,7 +165,7 @@ export const skills = {
       technology: "GitHub",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-      expLevel: ADVANCED,
+      expLevel: INTERMEDIATE,
     },
 
     {
@@ -251,13 +251,6 @@ export const skills = {
     },
 
     {
-      technology: "Java",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-      expLevel: BEGINNER,
-    },
-
-    {
       technology: "Python",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
@@ -275,6 +268,13 @@ export const skills = {
       technology: "Jupyter",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Java",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
       expLevel: BEGINNER,
     },
 

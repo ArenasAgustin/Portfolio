@@ -19,6 +19,22 @@ export default function Skills() {
         Habilidades
       </h1>
 
+      <div className="skills-level_container">
+        <span>Nivel de experiencia:</span>
+
+        <span className="skills-level beginner">
+          Principiante <div className="skills-level_circle"></div>
+        </span>
+
+        <span className="skills-level intermediate">
+          Intermedio <div className="skills-level_circle"></div>
+        </span>
+
+        <span className="skills-level advanced">
+          Avanzado <div className="skills-level_circle"></div>
+        </span>
+      </div>
+
       <div className="skills-container">
         <div className="skills-categories">
           <button
@@ -60,7 +76,10 @@ export default function Skills() {
                 />
               </div>
 
-              <p className="skill-technology">{skill.technology}</p>
+              <p className="skill-technology">
+                {skill.technology}{" "}
+                <div className={`skills-level_circle ${skill.expLevel}`}></div>
+              </p>
 
               <div className={skill.level}></div>
             </div>
