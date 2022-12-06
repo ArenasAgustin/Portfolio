@@ -1,4 +1,4 @@
-import Cv from "../../assets/CV Agustin Arenas - Full Stack Web Developer.pdf";
+import Cv from "../../assets/CV - Agustin Arenas - Full Stack Web Developer.pdf";
 import Profile from "../../assets/profile.jpg";
 import { useEffect } from "react";
 import Aos from "aos";
