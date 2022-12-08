@@ -17,7 +17,7 @@ export const experience = [
     responsibilities: [
       "Dictado de clases de programación",
       "Planificar/preparar las clases",
-      "Correción de ejercicios y proyecto final",
+      "Corrección de ejercicios y proyecto final",
     ],
     start: "Agosto de 2022",
     end: "Septiembre de 2022",

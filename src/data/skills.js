@@ -132,7 +132,7 @@ export const skills = {
     },
 
     {
-      technology: "PostgresSQL",
+      technology: "PostgreSQL",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
       expLevel: INTERMEDIATE,
