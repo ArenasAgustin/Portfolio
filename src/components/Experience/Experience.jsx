@@ -22,7 +22,7 @@ export default function Experience() {
               <div className="experience-card" key={index}>
                 <h4 className="card-title">{experience.position}</h4>
 
-                <p className="card-institution">{experience.position}</p>
+                <p className="card-institution">{experience.business}</p>
 
                 <p className="card-duration">
                   {experience.start} - {experience.end}
