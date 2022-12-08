@@ -12,6 +12,18 @@ export const experience = [
   },
 
   {
+    business: "Curso básico de programación en Python",
+    position: "Profesor de Programación",
+    responsibilities: [
+      "Dictado de clases de programación",
+      "Planificar/preparar las clases",
+      "Correción de ejercicios y proyecto final",
+    ],
+    start: "Agosto de 2022",
+    end: "Septiembre de 2022",
+  },
+
+  {
     business: "Last Horde",
     position: "Full Stack Developer",
     responsibilities: [
