@@ -54,6 +54,20 @@ export const skills = {
     },
 
     {
+      technology: "Python",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Php",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
       technology: "React",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
@@ -87,9 +101,37 @@ export const skills = {
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
       expLevel: INTERMEDIATE,
     },
+
+    {
+      technology: "Laravel",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+      expLevel: BEGINNER,
+    },
   ],
 
   backEnd: [
+    {
+      technology: "Python",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Php",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Laravel",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+      expLevel: BEGINNER,
+    },
+
     {
       technology: "Node.js",
       image:
@@ -196,6 +238,13 @@ export const skills = {
     },
 
     {
+      technology: "Composer",
+      image:
+        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-line.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
       technology: "Firebase",
       image:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
@@ -214,6 +263,12 @@ export const skills = {
       image:
         "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/512px-Vercel_logo_black.svg.png",
       expLevel: INTERMEDIATE,
+    },
+
+    {
+      technology: "Laragon",
+      image: "https://cdn.worldvectorlogo.com/logos/laragon.svg",
+      expLevel: BEGINNER,
     },
 
     {
@@ -247,13 +302,6 @@ export const skills = {
     {
       technology: "Truffle",
       image: "https://trufflesuite.com/assets/logo.png",
-      expLevel: BEGINNER,
-    },
-
-    {
-      technology: "Python",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       expLevel: BEGINNER,
     },
 
