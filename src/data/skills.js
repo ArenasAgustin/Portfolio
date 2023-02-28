@@ -6,106 +6,91 @@ export const skills = {
   frontEnd: [
     {
       technology: "HTML",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg",
+      image: "html5-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "CSS",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg",
+      image: "css3-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Sass",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+      image: "sass-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Less",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/less/less-plain-wordmark.svg",
+      image: "less-plain-wordmark.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Bootstrap",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+      image: "bootstrap-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "JavaScript",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+      image: "javascript-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "TypeScript",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg",
+      image: "typescript-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Python",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      image: "python-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Php",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+      image: "php-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "React",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      image: "react-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Angular",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-plain.svg",
+      image: "angularjs-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Redux",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      image: "redux-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Next.js",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      image: "nextjs-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "JQuery",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg",
+      image: "jquery-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Laravel",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+      image: "laravel-plain.svg",
       expLevel: BEGINNER,
     },
   ],
@@ -113,84 +98,73 @@ export const skills = {
   backEnd: [
     {
       technology: "Python",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      image: "python-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Php",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg",
+      image: "php-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Laravel",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg",
+      image: "laravel-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Node.js",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      image: "nodejs-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Express.js",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      image: "express-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Sequelize",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
+      image: "sequelize-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Mongoose",
-      image:
-        "https://mongoosejs.com/docs/images/mongoose5_62x30_transparent.png",
+      image: "mongoose5_62x30_transparent.png",
       expLevel: ADVANCED,
     },
 
     {
       technology: "phpMyAdmin",
-      image: "https://www.vectorlogo.zone/logos/phpmyadmin/phpmyadmin-icon.svg",
+      image: "phpmyadmin-icon.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Nginx",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg",
+      image: "nginx-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "PostgreSQL",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg",
+      image: "postgresql-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "MySQL",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      image: "mysql-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "MongoDB",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      image: "mongodb-original.svg",
       expLevel: ADVANCED,
     },
   ],
@@ -198,138 +172,121 @@ export const skills = {
   tools: [
     {
       technology: "Git",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      image: "git-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "GitHub",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      image: "github-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "GitLab",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg",
+      image: "gitlab-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "JSON",
-      image: "https://cdn.worldvectorlogo.com/logos/json.svg",
+      image: "json.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "NPM",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+      image: "npm-original-wordmark.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Yarn",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
+      image: "yarn-original.svg",
       expLevel: ADVANCED,
     },
 
     {
       technology: "Composer",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-line.svg",
+      image: "composer-line.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Firebase",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      image: "firebase-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Heroku",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg",
+      image: "heroku-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Vercel",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Vercel_logo_black.svg/512px-Vercel_logo_black.svg.png",
+      image: "Vercel_logo_black.png",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Laragon",
-      image: "https://cdn.worldvectorlogo.com/logos/laragon.svg",
+      image: "laragon.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Figma",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+      image: "figma-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
       technology: "Solidity",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/solidity/solidity-original.svg",
+      image: "solidity-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Web3.js",
-      image:
-        "https://seeklogo.com/images/W/web3js-logo-62DEE79B50-seeklogo.com.png?v=637807958120000000",
+      image: "web3js-logo-62DEE79B50-seeklogo.com.png",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Ethers.js",
-      image:
-        "https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png",
+      image: "ethers-logo-D5B86204D8-seeklogo.com.png",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Truffle",
-      image: "https://trufflesuite.com/assets/logo.png",
+      image: "logo.png",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Anaconda",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg",
+      image: "anaconda-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Jupyter",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      image: "jupyter-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "Java",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      image: "java-original.svg",
       expLevel: BEGINNER,
     },
 
     {
       technology: "C++",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg",
+      image: "cplusplus-plain.svg",
       expLevel: BEGINNER,
     },
   ],

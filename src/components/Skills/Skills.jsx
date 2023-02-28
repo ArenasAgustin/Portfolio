@@ -70,11 +70,11 @@ export default function Skills() {
             <div className="skill" key={index}>
               <div className="skills-img_container">
                 <img
-                  src={skill.image}
+                  src={`${process.env.PUBLIC_URL}/assets/icons/${skill.image}`}
                   alt={skill.technology}
                   className="skill-img"
                 />
-              </div>
+              </div>  
 
               <p className="skill-technology">
                 {skill.technology}{" "}

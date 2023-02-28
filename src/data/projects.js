@@ -64,6 +64,23 @@ export const projects = [
   },
 
   {
+    title: "Cinema",
+    image:
+      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645539715/Blackparadox-portfolio_ohcdwg.png",
+    description: {
+      technologies: [
+        "Php",
+        "Laravel",
+        "Bootstrap",
+        "Javascript",
+        "MySQL",
+      ],
+      txt: "Proyecto para aprender a utilizar Php y Laravel. En el se puede ver una lista de peliculas, ver los detalles de cada una, agregar peliculas, editarlas y eliminarlas. Tambien se pueden agregar, editar y eliminar tanto generos como usuarios.",
+    },
+    github: "https://github.com/ArenasAgustin/curso_laravel",
+  },
+
+  {
     title: "Dungeon Game",
     image:
       "https://res.cloudinary.com/df7zuvuxu/image/upload/v1666968084/dungeon_game_glkan4.png",
