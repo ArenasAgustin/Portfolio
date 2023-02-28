@@ -13,7 +13,7 @@
   width: 40px;
   height: auto;
   z-index: -1;
-  animation: floatInSpace 20s linear infinite;
+  animation: floatInSpace 20s ease-in-out infinite;
 }
 
 @keyframes floatInSpace {

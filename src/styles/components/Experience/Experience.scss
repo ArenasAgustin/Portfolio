@@ -63,6 +63,10 @@
                 font-weight: 600;
                 margin: 0;
                 margin-bottom: .2em;
+
+                @include media-up-max(md) {
+                    font-size: 1.2rem;
+                }
             }
 
             .card-institution {
@@ -70,6 +74,16 @@
                 font-weight: 400;
                 margin: 0;
                 margin-bottom: .2em;
+
+                @include media-up-max(md) {
+                    font-size: .9rem;
+                }
+            }
+
+            .card-duration{
+                @include media-up-max(md) {
+                    font-size: .9rem;
+                }
             }
         }
     }

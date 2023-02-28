@@ -25,9 +25,16 @@
             }
         }
 
+        .footer-links{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 80%;
+            max-width: 320px;
+        }
+
         .footer-link-a {
             font-size: 35px;
-            margin: 1.5em;
             color: rgba(255, 255, 255, 0.527);
             backface-visibility: hidden;
             @extend .transitionSlowXS;
