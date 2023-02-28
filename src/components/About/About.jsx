@@ -1,5 +1,6 @@
 import Cv from "../../assets/CV - Agustin Arenas - Full Stack Web Developer.pdf";
-import Profile from "../../assets/profile.jpg";
+import Profile from "../../assets/profile.png";
+import ProfileWebp from "../../assets/profile.webp";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -16,7 +17,10 @@ export default function About() {
 
       <div className="about-container">
         <div className="about-image">
-          <img src={Profile} alt="profile" />
+          <picture>
+            <source srcSet={ProfileWebp} type="image/webp" />
+            <img src={Profile} alt="profile" />
+          </picture>
         </div>
 
         <div className="about-card">
