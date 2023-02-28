@@ -12,6 +12,8 @@ export default function Card({
 }) {
   useEffect(() => Aos.init({ duration: 1500 }), []);
 
+  const imageSrc = `${process.env.PUBLIC_URL}/assets/images/${image}`;
+
   return (
     <>
       <div className="card">
@@ -51,7 +53,10 @@ export default function Card({
         </div>
 
         <div className="img-div-card" data-aos="fade-up-left">
-          <img src={image} alt={title} className="img-card" />
+          <picture>
+            <source srcSet={`${imageSrc}.webp`} type="image/webp" alt={title} className="img-card" />
+            <img src={`${imageSrc}.png`} alt={title} className="img-card" />
+          </picture>
         </div>
       </div>
     </>

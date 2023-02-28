@@ -1,8 +1,7 @@
 export const projects = [
   {
     title: "Brain Games Es",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1644522692/Brain_Games_Es_fixlbo.png",
+    image: "Brain_Games_Es",
     description: {
       technologies: [
         "Typescript",
@@ -24,8 +23,7 @@ export const projects = [
 
   {
     title: "Wave Music",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982756/WaveMusic_ndbdix.png",
+    image: "WaveMusic",
     description: {
       technologies: [
         "Javascript",
@@ -46,8 +44,7 @@ export const projects = [
 
   {
     title: "Blackparadox - portfolio",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645539715/Blackparadox-portfolio_ohcdwg.png",
+    image: "Blackparadox-portfolio",
     description: {
       technologies: [
         "Javascript",
@@ -63,10 +60,10 @@ export const projects = [
     github: "https://github.com/ArenasAgustin/udemy-blackparadox",
   },
 
-  {
+  /* {
     title: "Cinema",
     image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645539715/Blackparadox-portfolio_ohcdwg.png",
+      "Blackparadox-portfolio",
     description: {
       technologies: [
         "Php",
@@ -78,12 +75,11 @@ export const projects = [
       txt: "Proyecto para aprender a utilizar Php y Laravel. En el se puede ver una lista de peliculas, ver los detalles de cada una, agregar peliculas, editarlas y eliminarlas. Tambien se pueden agregar, editar y eliminar tanto generos como usuarios.",
     },
     github: "https://github.com/ArenasAgustin/curso_laravel",
-  },
+  }, */
 
   {
     title: "Dungeon Game",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1666968084/dungeon_game_glkan4.png",
+    image: "dungeon_game",
     description: {
       technologies: ["Javascript", "HTML", "CSS"],
       txt: "Es un juego hecho solamente en Html , Css y Javascript . Se puede mover con las flechas del teclado o con los botones de la cruz, consta de 3 niveles donde tenes que buscar la llave y escapar del nivel sin que te alcancen los monstruos. Para jugar hay que prender la gameboy.",
@@ -94,8 +90,7 @@ export const projects = [
 
   {
     title: "Pikemons",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636994071/Pikemons_dhqzqp.png",
+    image: "Pikemons",
     description: {
       technologies: [
         "Javascript",
@@ -114,8 +109,7 @@ export const projects = [
 
   {
     title: "Box | Custodia y gestión digital - Test",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1666984230/JornalYa_g6flnm.png",
+    image: "JornalYa",
     description: {
       technologies: ["CSS", "Javascript", "React", "Redux"],
       txt: "Este proyecto es un test de aplicación de Box | Custodia y gestión digital, la app consta de un front que se comunica con una api para buscar documentos y mostrar los pdf.",
@@ -126,8 +120,7 @@ export const projects = [
 
   {
     title: "Extriman Dapp - Test",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645735133/Extrimian-Dapp_wdqgmn.png",
+    image: "Extrimian-Dapp",
     description: {
       technologies: [
         "TypeScript",
@@ -147,8 +140,7 @@ export const projects = [
 
   {
     title: "BeGo - Test",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1669248682/BeGo-test_io64qf.png",
+    image: "BeGo-test",
     description: {
       technologies: ["SCSS", "Javascript", "React"],
       txt: "Este proyecto es un test de aplicación de Be Go, La app consta de un front diseñado con Scss, Javascript y React.",
@@ -159,8 +151,7 @@ export const projects = [
 
   {
     title: "Curriculum vitae",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982494/Cv_j5gdme.png",
+    image: "Cv",
     description: {
       technologies: ["Javascript", "CSS", "React", "Node.js", "Github Pages"],
       txt: "Proyecto para poder mostrar mi Cv de manera mas practica y poder compartirlo.",
@@ -171,8 +162,7 @@ export const projects = [
 
   {
     title: "Gastly",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637431214/Gastly_eevzkk.png",
+    image: "Gastly",
     description: {
       technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
@@ -183,8 +173,7 @@ export const projects = [
 
   {
     title: "Haunter",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637699554/Haunter-page_yddcm1.png",
+    image: "Haunter-page",
     description: {
       technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
@@ -195,8 +184,7 @@ export const projects = [
 
   {
     title: "Cubo de Rubik",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1637793053/cubo_de_rubik_t2itlp.png",
+    image: "cubo_de_rubik",
     description: {
       technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
@@ -207,8 +195,7 @@ export const projects = [
 
   {
     title: "Christmas Tree 2.0",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1641389910/Merry_Christmas_2.0_x6i8lr.png",
+    image: "Merry_Christmas_2.0",
     description: {
       technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto festejar que se aserca la época navideña.",
@@ -219,8 +206,7 @@ export const projects = [
 
   {
     title: "Christmas Tree",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1639164816/Merry_Christmas_tjap8x.png",
+    image: "Merry_Christmas",
     description: {
       technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto festejar que se aserca la noche de navidad.",
@@ -231,8 +217,7 @@ export const projects = [
 
   {
     title: "My avatar en pixelart",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640877216/My-avatar_pldgug.png",
+    image: "My-avatar",
     description: {
       technologies: ["HTML", "SCSS", "Javascript", "React", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css, HTML y React.",
@@ -243,8 +228,7 @@ export const projects = [
 
   {
     title: "Celular con Css",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640105905/celular-css_ksa5ei.png",
+    image: "celular-css",
     description: {
       technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
@@ -255,8 +239,7 @@ export const projects = [
 
   {
     title: "Pokeball",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1640132857/pokeball_h9oi3f.png",
+    image: "pokeball",
     description: {
       technologies: ["HTML", "CSS", "Github Pages"],
       txt: "Proyecto para poder mejorar en el uso de Css y HTML.",
@@ -267,8 +250,7 @@ export const projects = [
 
   {
     title: "Valienta Frontend - Test",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1645756725/R_M-Test_krkuzj.png",
+    image: "R_M",
     description: {
       technologies: [
         "SCSS",
@@ -285,8 +267,7 @@ export const projects = [
 
   {
     title: "To do App (Typescript)",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
+    image: "ToDoApp2",
     description: {
       technologies: [
         "Typescript",
@@ -304,8 +285,7 @@ export const projects = [
 
   {
     title: "To do App (Javascript)",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/ToDoApp2_bj80sm.png",
+    image: "ToDoApp2",
     description: {
       technologies: [
         "Javascript",
@@ -323,8 +303,7 @@ export const projects = [
 
   {
     title: "AgusWeather",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982641/AgusWeather_yoj48m.png",
+    image: "AgusWeather",
     description: {
       technologies: ["Javascript", "Node.js", "CSS", "Github Pages"],
       txt: "Con esta app aprendi la utilizacion e implementación de una Api en un proyecto.",
@@ -335,8 +314,7 @@ export const projects = [
 
   {
     title: "To do App",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636984067/ToDoApp_izqdem.png",
+    image: "ToDoApp",
     description: {
       technologies: ["Javascript", "Node.js", "CSS"],
       txt: "Primera aproximación de una ToDo App.",
@@ -346,8 +324,7 @@ export const projects = [
 
   {
     title: "Friends page",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983427/FriendsPage_jrht96.png",
+    image: "FriendsPage",
     description: {
       technologies: ["Javascript", "Node.js", "CSS"],
       txt: "En este proyecto me meti en el mundo de AJAX para poder entender y aprender de la tecnologia para poder avanzar con otras tecnologias más inovadoras. Sumado a practicar estilos con Css.",
@@ -357,8 +334,7 @@ export const projects = [
 
   {
     title: "Responsive Web",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983674/ResponsiveWeb_ukiizg.png",
+    image: "ResponsiveWeb",
     description: {
       technologies: ["Javascript", "Node.js", "LESS"],
       txt: "Proyecto para poder aprender y enteder Less, en este proyecto se agarro una pagina y se le dio estilos con less para intentar dejarla como en las imagenes de la carpeta diseño.",
@@ -368,8 +344,7 @@ export const projects = [
 
   {
     title: "GrootBash",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636983143/GrootBash_erd6qn.png",
+    image: "GrootBash",
     description: {
       technologies: ["Javascript", "Node.js"],
       txt: "Este proyecto de escribir mi propia shell utilizada para implementar funcionalidades y herramientas que voy aprendiendo. Inspirado en Bash.",
@@ -379,8 +354,7 @@ export const projects = [
 
   {
     title: "MyPromises",
-    image:
-      "https://res.cloudinary.com/df7zuvuxu/image/upload/v1636982419/Promesas_vnmfhs.png ",
+    image: "Promesas",
     description: {
       technologies: ["Javascript", "Node.js"],
       txt: "En este proyecto desarrolle mis propias promesas para entender por completo el funcionamiento de las Promesas.",
