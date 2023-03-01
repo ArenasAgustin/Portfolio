@@ -60,22 +60,15 @@ export const projects = [
     github: "https://github.com/ArenasAgustin/udemy-blackparadox",
   },
 
-  /* {
+  {
     title: "Cinema",
-    image:
-      "Blackparadox-portfolio",
+    image: "Cinema",
     description: {
-      technologies: [
-        "Php",
-        "Laravel",
-        "Bootstrap",
-        "Javascript",
-        "MySQL",
-      ],
+      technologies: ["Php", "Laravel", "Bootstrap", "Javascript", "MySQL"],
       txt: "Proyecto para aprender a utilizar Php y Laravel. En el se puede ver una lista de peliculas, ver los detalles de cada una, agregar peliculas, editarlas y eliminarlas. Tambien se pueden agregar, editar y eliminar tanto generos como usuarios.",
     },
     github: "https://github.com/ArenasAgustin/curso_laravel",
-  }, */
+  },
 
   {
     title: "Dungeon Game",
