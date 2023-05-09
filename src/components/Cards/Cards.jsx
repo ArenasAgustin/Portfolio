@@ -39,25 +39,28 @@ export default function Cards() {
       </h2>
 
       <div className="cards">
-        {projectsArray.map((project, index) => (
-          <Card
-            key={index}
-            image={project.image}
-            description={project.description}
-            deploy={project.deploy}
-            github={project.github}
-            title={project.title}
-          />
-        ))}
+        {projectsArray?.length &&
+          projectsArray?.map((project, index) => (
+            <Card
+              key={index}
+              image={project.image}
+              description={project.description}
+              deploy={project.deploy}
+              github={project.github}
+              title={project.title}
+            />
+          ))}
       </div>
 
-      <div className="see-more-div">
-        <Button
-          className="btn-see-more"
-          onClick={handleClick}
-          txt={seeMore ? "Ver más" : "Ver menos"}
-        />
-      </div>
+      {projectsArray?.length && (
+        <div className="see-more-div">
+          <Button
+            className="btn-see-more"
+            onClick={handleClick}
+            txt={seeMore ? "Ver más" : "Ver menos"}
+          />
+        </div>
+      )}
     </div>
   );
 }
