@@ -19,6 +19,18 @@ export const experience = [
       "Planificar/preparar las clases",
       "Corrección de ejercicios y proyecto final",
     ],
+    start: "Abril de 2023",
+    end: "Junio de 2023",
+  },
+
+  {
+    business: "Curso básico de programación en Python",
+    position: "Profesor de Programación",
+    responsibilities: [
+      "Dictado de clases de programación",
+      "Planificar/preparar las clases",
+      "Corrección de ejercicios y proyecto final",
+    ],
     start: "Agosto de 2022",
     end: "Septiembre de 2022",
   },
