@@ -9,7 +9,7 @@ export default function Intro({ isDark = false }) {
           <span className="introduction__title-name">Agustín Arenas</span>
         </h1>
 
-        <h1>Soy Full Stack Web Developer especializado en Front-end</h1>
+        <h1 className="introduction__title-h1">Soy Full Stack Web Developer especializado en Front-end</h1>
 
         <Button
           href="#about"
