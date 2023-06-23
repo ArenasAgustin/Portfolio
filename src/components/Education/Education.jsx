@@ -14,11 +14,11 @@ export default function Education() {
 
       <div className="education-cards">
         {educationArray.map((education, index) => (
-          <div className="education-display" data-aos="fade-right">
+          <div className="education-display" data-aos="fade-right" key={index}>
             <div className="circle"></div>
             <div className="line"></div>
 
-            <div className="education-card" key={index}>
+            <div className="education-card">
               <h4 className="card-title">{education.title}</h4>
 
               <p className="card-institution">{education.institution}</p>

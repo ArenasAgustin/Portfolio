@@ -45,9 +45,8 @@ export default function Cards() {
       <div className="cards">
         {projectsArray?.length &&
           projectsArray?.map((project, index) => (
-            <Suspense fallback={renderLoader()}>
+            <Suspense fallback={renderLoader()}  key={index}>
               <Card
-                key={index}
                 image={project.image}
                 description={project.description}
                 deploy={project.deploy}

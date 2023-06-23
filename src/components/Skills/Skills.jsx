@@ -76,10 +76,10 @@ export default function Skills() {
                 />
               </div>  
 
-              <p className="skill-technology">
+              <div className="skill-technology">
                 {skill.technology}{" "}
                 <div className={`skills-level_circle ${skill.expLevel}`}></div>
-              </p>
+              </div>
 
               <div className={skill.level}></div>
             </div>
