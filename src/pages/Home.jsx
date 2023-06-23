@@ -1,36 +1,73 @@
-import Cards from "../components/Cards/Cards";
-import Intro from "../components/Intro/Intro";
-import About from "../components/About/About";
-import Contact from "../components/Contact/Contact";
-import Footer from "../components/Footer/Footer";
-import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
-import Education from "../components/Education/Education";
-import Skills from "../components/Skills/Skills";
-import Experience from "../components/Experience/Experience";
-import { useState } from "react";
+//import Cards from "../components/Cards/Cards";
+//import Intro from "../components/Intro/Intro";
+//import About from "../components/About/About";
+//import Contact from "../components/Contact/Contact";
+//import Footer from "../components/Footer/Footer";
+//import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
+//import Education from "../components/Education/Education";
+//import Skills from "../components/Skills/Skills";
+//import Experience from "../components/Experience/Experience";
+import { lazy, Suspense, useState } from "react";
+import Loader from "../components/Loader/Loader";
+
+const Cards = lazy(() => import("../components/Cards/Cards"));
+const Intro = lazy(() => import("../components/Intro/Intro"));
+const About = lazy(() => import("../components/About/About"));
+const Contact = lazy(() => import("../components/Contact/Contact"));
+const Footer = lazy(() => import("../components/Footer/Footer"));
+const ThemeChanger = lazy(() =>
+  import("../components/ThemeChanger/ThemeChanger")
+);
+const Education = lazy(() => import("../components/Education/Education"));
+const Skills = lazy(() => import("../components/Skills/Skills"));
+const Experience = lazy(() => import("../components/Experience/Experience"));
+
+const renderLoader = () => <Loader />;
 
 export default function Home({ setIsDark, isDark }) {
   const [easterEgg, setEasterEgg] = useState(false);
 
   return (
     <div className="home">
-      <ThemeChanger isDark={isDark} setIsDark={setIsDark} setEasterEgg={setEasterEgg} />
+      <Suspense fallback={renderLoader()}>
+        <ThemeChanger
+          isDark={isDark}
+          setIsDark={setIsDark}
+          setEasterEgg={setEasterEgg}
+        />
+      </Suspense>
 
-      <Intro />
+      <Suspense fallback={renderLoader()}>
+        <Intro />
+      </Suspense>
 
-      <About />
+      <Suspense fallback={renderLoader()}>
+        <About />
+      </Suspense>
 
-      <Education />
+      <Suspense fallback={renderLoader()}>
+        <Education />
+      </Suspense>
 
-      <Skills />
+      <Suspense fallback={renderLoader()}>
+        <Skills />
+      </Suspense>
 
-      <Experience />
+      <Suspense fallback={renderLoader()}>
+        <Experience />
+      </Suspense>
 
-      <Cards />
+      <Suspense fallback={renderLoader()}>
+        <Cards />
+      </Suspense>
 
-      <Contact />
+      <Suspense fallback={renderLoader()}>
+        <Contact />
+      </Suspense>
 
-      <Footer />
+      <Suspense fallback={renderLoader()}>
+        <Footer />
+      </Suspense>
 
       {easterEgg ? (
         <img src="/astronaut.png" alt="easter egg" className="easter-egg" />

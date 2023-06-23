@@ -1,10 +1,14 @@
-import { useState } from "react";
-import Card from "../Card/Card";
+import { lazy, Suspense, useState } from "react";
 import { projects } from "../../data/projects";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
+import Loader from "../Loader/Loader";
+
+const Card = lazy(() => import("../Card/Card"));
+
+const renderLoader = () => <Loader />;
 
 export default function Cards() {
   const [counter, setCounter] = useState(4);
@@ -41,14 +45,16 @@ export default function Cards() {
       <div className="cards">
         {projectsArray?.length &&
           projectsArray?.map((project, index) => (
-            <Card
-              key={index}
-              image={project.image}
-              description={project.description}
-              deploy={project.deploy}
-              github={project.github}
-              title={project.title}
-            />
+            <Suspense fallback={renderLoader()}>
+              <Card
+                key={index}
+                image={project.image}
+                description={project.description}
+                deploy={project.deploy}
+                github={project.github}
+                title={project.title}
+              />
+            </Suspense>
           ))}
       </div>
 
