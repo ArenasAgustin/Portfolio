@@ -8,19 +8,16 @@ function App() {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "../../js/particles.min.js";
+    script.src = "../../js/particlesItInit.js";
     script.async = true;
     script.type = "text/javascript";
 
-    const script2 = script.cloneNode(true);
-    script2.src = "../../js/particlesItInit.js";
+   
 
     document.body.appendChild(script);
-    document.body.appendChild(script2);
 
     return () => {
       document.body.removeChild(script);
-      document.body.appendChild(script2);
     };
   }, []);
 
