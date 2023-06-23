@@ -27,6 +27,8 @@ export default function ThemeChanger({
       <button
         className={`theme-changer-btn ${isDark ? "dark" : ""}`}
         onClick={handleThemeChange}
+        title="Theme changer"
+        aria-label="Theme changer"
       >
         {isDark ? (
           <FiSun className="theme-changer-svg" />

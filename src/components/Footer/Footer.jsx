@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <a href="#home" className="footer-home">
+        <a href="#home" className="footer-home" aria-label="Home">
           <IoIosArrowUp />
         </a>
 
@@ -15,6 +15,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/agustin-arenas-barea/"
             className="footer-link-a"
+            aria-label="LinkedIn"
           >
             <FaLinkedinIn />
           </a>
@@ -24,6 +25,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://github.com/ArenasAgustin"
             className="footer-link-a"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -33,6 +35,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://gitlab.com/ArenasAgustin"
             className="footer-link-a"
+            aria-label="GitLab"
           >
             <FaGitlab />
           </a>
@@ -47,6 +50,7 @@ export default function Footer() {
               href="https://github.com/ArenasAgustin"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
               Agustín Arenas
             </a>
