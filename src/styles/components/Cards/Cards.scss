@@ -1,28 +1,28 @@
 .projects {
-    position: relative;
-    width: 100%;
-    max-width: 1700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4em 0;
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+}
 
-    .projects-title {
-        @extend .common-titles;
-    }
+.projects__title {
+  @extend .common__titles;
+}
 
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: center;
-    }
+.projects__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+}
 
-    .see-more-div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: .5em 0;
-    }
+.projects__see-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em 0;
 }

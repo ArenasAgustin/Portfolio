@@ -1,32 +1,30 @@
 .theme-changer {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    right: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+}
 
-    .theme-changer-btn {
-        background: var(--background-image-gradient);
-        border: none;
-        margin: 0.5rem;
-        width: 2rem;
-        height: 2rem;
-        position: relative;
-        cursor: pointer;
+.theme-changer__btn {
+  background: var(--background-image-gradient);
+  border: none;
+  margin: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  cursor: pointer;
+}
 
-        .theme-changer-svg {
-            color: var(--color-primary);
-            font-size: large;
-            font-weight: 700;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+.theme-changer__svg {
+  color: var(--color-primary);
+  font-size: large;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-        &.dark {
-            .theme-changer-svg {
-                color: var(--color-secondary);
-            }
-        }
-    }
+.theme-changer__svg--dark {
+  color: var(--color-secondary);
 }

@@ -3,27 +3,35 @@ import { education as educationArray } from "../../data/education";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Education() {
+export default function Education({ isDark = false }) {
   useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
     <div className="education">
-      <h2 className="education-title" data-aos="flip-left">
+      <h2 className="education__title" data-aos="flip-left">
         Educación
       </h2>
 
-      <div className="education-cards">
+      <div className="education__cards">
         {educationArray.map((education, index) => (
-          <div className="education-display" data-aos="fade-right" key={index}>
-            <div className="circle"></div>
-            <div className="line"></div>
+          <div className="education__display" data-aos="fade-right" key={index}>
+            <div className={`common__circle ${isDark ? "common__circle--dark " : ""}`}></div>
+            <div
+              className={`common__line ${isDark ? "common__line--dark " : ""}`}
+            ></div>
 
-            <div className="education-card">
-              <h4 className="card-title">{education.title}</h4>
+            <div
+              className={`education__card ${
+                isDark ? "education__card--dark" : ""
+              }`}
+            >
+              <h4 className="education__card-title">{education.title}</h4>
 
-              <p className="card-institution">{education.institution}</p>
+              <p className="education__card-institution">
+                {education.institution}
+              </p>
 
-              <p className="card-duration">
+              <p className="education__card-duration">
                 {education.start} - {education.end}
               </p>
             </div>

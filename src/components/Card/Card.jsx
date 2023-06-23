@@ -9,6 +9,7 @@ export default function Card({
   description,
   deploy,
   github,
+  isDark = false,
 }) {
   useEffect(() => Aos.init({ duration: 1500 }), []);
 
@@ -17,45 +18,59 @@ export default function Card({
   return (
     <>
       <div className="card">
-        <div className="card-txt" data-aos="fade-up-right">
-          <h2 className="card-title">
+        <div className="card__txt" data-aos="fade-up-right">
+          <h2 className="card__txt-title">
             <span>&lt; </span> {title} <span> &#47;&gt;</span>
           </h2>
 
-          <p className="card-description">{description?.txt}</p>
+          <p className="card__txt-description">{description?.txt}</p>
 
-          <div className="card-technologies">
+          <div className="card__txt-technologies">
             {description?.technologies.map((tech, index) => (
-              <span key={index} className="tech">
+              <span key={index} className={`card__txt-technologies-tech ${isDark ? "card__txt-technologies-tech--dark" : ""}`}>
                 {tech}
               </span>
             ))}
           </div>
 
-          <div className="card-links">
+          <div className="card__txt-links">
             <Button
               href={deploy}
               target="_blank"
               rel="noreferrer"
               txt="Deploy"
-              className={`margin-right ${deploy ? "" : "no-link"}`}
+              className={`btn__link--margin-right ${
+                deploy ? "" : "btn__link--no-link"
+              }`}
+              isDark={isDark}
             />
 
             <a
               href={github}
               target="_blank"
               rel="noreferrer"
-              className={`deploy-link-github ${github ? "" : "no-link-github"}`}
+              className={`card__txt-links-github ${
+                github ? "" : "card__txt-links-github--no-link"
+              }`}
             >
               Github
             </a>
           </div>
         </div>
 
-        <div className="img-div-card" data-aos="fade-up-left">
-          <picture>
-            <source srcSet={`${imageSrc}.webp`} type="image/webp" alt={title} className="img-card" />
-            <img src={`${imageSrc}.png`} alt={title} className="img-card" />
+        <div className="card__img" data-aos="fade-up-left">
+          <picture className="card__img-picture">
+            <source
+              srcSet={`${imageSrc}.webp`}
+              type="image/webp"
+              alt={title}
+              className="card__img-card"
+            />
+            <img
+              src={`${imageSrc}.png`}
+              alt={title}
+              className="card__img-card"
+            />
           </picture>
         </div>
       </div>

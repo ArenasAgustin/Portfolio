@@ -1,69 +1,69 @@
 .education {
-    position: relative;
-    width: 100%;
-    max-width: 1700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 4em 0;
+  position: relative;
+  width: 100%;
+  max-width: 1700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4em 0;
+}
 
-    .education-title {
-        @extend .common-titles;
-        margin-bottom: 2rem;
-    }
+.education__title {
+  @extend .common__titles;
+  margin-bottom: 2rem;
+}
 
-    .education-cards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-self: center;
+.education__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
 
-        .education-display {
-            position: relative;
-        }
+.education__display {
+  position: relative;
+}
 
-        .education-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            width: calc(100% - 60px);
-            max-width: 600px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.123);
-            margin: .8em 0;
-            margin-left: 60px;
-            border-radius: 10px;
-            @extend .transitionSlow;
+.education__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: calc(100% - 60px);
+  max-width: 600px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.123);
+  margin: 0.8em 0;
+  margin-left: 60px;
+  border-radius: 10px;
+  @extend .transitionSlow;
+}
 
-            .card-title {
-                font-size: 1.8rem;
-                font-weight: 600;
-                margin: 0;
-                margin-bottom: .2em;
+.education__card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 0.2em;
 
-                @include media-up-max(md) {
-                    font-size: 1.2rem;
-                }
-            }
+  @include media-up-max(md) {
+    font-size: 1.2rem;
+  }
+}
 
-            .card-institution {
-                font-size: 1.2rem;
-                font-weight: 400;
-                margin: 0;
-                margin-bottom: .2em;
+.education__card-institution {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 0.2em;
 
-                @include media-up-max(md) {
-                    font-size: .9rem;
-                }
-            }
+  @include media-up-max(md) {
+    font-size: 0.9rem;
+  }
+}
 
-            .card-duration{
-                @include media-up-max(md) {
-                    font-size: .9rem;
-                }
-            }
-        }
-    }
+.education__card-duration {
+  @include media-up-max(md) {
+    font-size: 0.9rem;
+  }
 }

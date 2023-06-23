@@ -25,15 +25,15 @@ export default function ThemeChanger({
   return (
     <div className="theme-changer">
       <button
-        className={`theme-changer-btn ${isDark ? "dark" : ""}`}
+        className="theme-changer__btn"
         onClick={handleThemeChange}
         title="Theme changer"
         aria-label="Theme changer"
       >
         {isDark ? (
-          <FiSun className="theme-changer-svg" />
+          <FiSun className="theme-changer__svg theme-changer__svg--dark" />
         ) : (
-          <HiOutlineMoon className="theme-changer-svg" />
+          <HiOutlineMoon className="theme-changer__svg" />
         )}
       </button>
     </div>

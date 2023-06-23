@@ -6,30 +6,30 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
 
-export default function About() {
+export default function About({ isDark = false }) {
   useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
-    <div className="about" id="about" data-aos="fade-up">
-      <h1 className="about-title" data-aos="flip-left">
+    <div className={`about ${isDark ? "about--dark" : ""}`} id="about" data-aos="fade-up">
+      <h1 className="about__title" data-aos="flip-left">
         SOBRE MI
       </h1>
 
-      <div className="about-container">
-        <div className="about-image">
+      <div className="about__container">
+        <div className="about__container-image">
           <picture>
             <source srcSet={ProfileWebp} type="image/webp" />
-            <img src={Profile} alt="profile" />
+            <img className="about__container-img" src={Profile} alt="profile" />
           </picture>
         </div>
 
-        <div className="about-card">
+        <div className="about__container-card">
           <p className="about-txt">
             Programador y web developer, imaginativo, curioso y capaz de
             resolver diversos problemas. Soy un programador dispuesto a ayudar a
             mis colegas.
           </p>
-          <p className="about-txt">
+          <p className="about__container-txt">
             Tengo interés por el estudio de diferentes tecnologías. También
             disfruto con la música y el dibujo.
           </p>
@@ -37,8 +37,9 @@ export default function About() {
           <Button
             download={true}
             href={Cv}
-            className="btn-cv"
+            className={`btn__link--cv ${isDark ? "btn__link--cv-dark" : ""}`}
             txt="Ver resumen"
+            isDark={isDark}
           />
         </div>
       </div>

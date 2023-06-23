@@ -1,67 +1,67 @@
 .footer {
-    background-color: #333;
-    color: var(--color-primary);
-    width: 100%;
-    background-clip: border-box;
+  background-color: #333;
+  color: var(--color-primary);
+  width: 100%;
+  background-clip: border-box;
+}
 
-    .footer-container {
-        width: 100%;
-        max-width: 700px;
-        margin: 3em auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: column;
+.footer__container {
+  width: 100%;
+  max-width: 700px;
+  margin: 3em auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 
-        .footer-home {
-            font-size: 50px;
-            margin-bottom: .6em;
-            transform: translateY(0);
-            backface-visibility: hidden;
-            @extend .transitionSlowXS;
+.footer__home {
+  font-size: 50px;
+  margin-bottom: 0.6em;
+  transform: translateY(0);
+  backface-visibility: hidden;
+  @extend .transitionSlowXS;
 
-            &:hover {
-                transform: translateY(-4px);
-            }
-        }
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
 
-        .footer-links{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 80%;
-            max-width: 320px;
-        }
+.footer__links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  max-width: 320px;
+}
 
-        .footer-link-a {
-            font-size: 35px;
-            color: rgba(255, 255, 255, 0.527);
-            backface-visibility: hidden;
-            @extend .transitionSlowXS;
+.footer__links-a {
+  font-size: 35px;
+  color: rgba(255, 255, 255, 0.527);
+  backface-visibility: hidden;
+  @extend .transitionSlowXS;
 
-            &:hover {
-                color: #fff;
-            }
-        }
+  &:hover {
+    color: #fff;
+  }
+}
 
-        hr {
-            width: 90%;
-            border: 0;
-            border-top: 2px solid rgb(94, 93, 93);
-        }
+.footer__hr {
+  width: 90%;
+  border: 0;
+  border-top: 2px solid rgb(94, 93, 93);
+}
 
-        .footer-copy {
-            color: rgb(94, 93, 93);
-            font-size: 0.8em;
-            margin-top: 1em;
+.footer__copy {
+  color: rgb(94, 93, 93);
+  font-size: 0.8em;
+  margin-top: 1em;
 
-            a {
-                @extend .transitionSlowXS;
+  a {
+    @extend .transitionSlowXS;
 
-                &:hover {
-                    color: var(--color-tertiary);
-                }
-            }
-        }
+    &:hover {
+      color: var(--color-tertiary);
     }
+  }
 }

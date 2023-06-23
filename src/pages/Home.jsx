@@ -13,14 +13,14 @@ const Education = lazy(() => import("../components/Education/Education"));
 const Skills = lazy(() => import("../components/Skills/Skills"));
 const Experience = lazy(() => import("../components/Experience/Experience"));
 
-const renderLoader = () => <Loader />;
+const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
-export default function Home({ setIsDark, isDark }) {
+export default function Home({ setIsDark, isDark = false }) {
   const [easterEgg, setEasterEgg] = useState(false);
 
   return (
     <div className="home">
-      <Suspense fallback={renderLoader()}>
+      <Suspense fallback={renderLoader(isDark)}>
         <ThemeChanger
           isDark={isDark}
           setIsDark={setIsDark}
@@ -28,36 +28,36 @@ export default function Home({ setIsDark, isDark }) {
         />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Intro />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Intro isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <About />
+      <Suspense fallback={renderLoader(isDark)}>
+        <About isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Education />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Education isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Skills />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Skills isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Experience />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Experience isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Cards />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Cards isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Contact />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Contact isDark={isDark} />
       </Suspense>
 
-      <Suspense fallback={renderLoader()}>
-        <Footer />
+      <Suspense fallback={renderLoader(isDark)}>
+        <Footer isDark={isDark} />
       </Suspense>
 
       {easterEgg ? (

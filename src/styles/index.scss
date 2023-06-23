@@ -13,18 +13,15 @@ body {
   width: 10px;
 }
 
-
 ::-webkit-scrollbar-track {
   width: 10px;
   background: var(--color-primary-dark);
 }
 
-
 ::-webkit-scrollbar-thumb {
   background: var(--color-tertiary);
   @extend .transitionSlow;
 }
-
 
 ::-webkit-scrollbar-thumb:hover {
   background: #01a1e0;
@@ -38,10 +35,6 @@ body {
   color: var(--color-secondary);
   overflow: hidden;
   @extend .transitionSlowXS;
-
-  .home {
-    z-index: 10;
-  }
 }
 
 #particles-js {

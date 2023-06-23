@@ -3,32 +3,46 @@ import { experience as experienceArray } from "../../data/experience";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Experience() {
+export default function Experience({ isDark = false }) {
   useEffect(() => Aos.init({ duration: 1500 }), []);
 
   return (
-    <div className="experience">
-      <h2 className="experience-title" data-aos="flip-left">
+    <div className={`experience ${isDark ? "experience--dark" : ""}`}>
+      <h2 className="experience__title" data-aos="flip-left">
         Experiencia
       </h2>
 
-      <div className="experience-container">
-        <div className="experience-cards">
+      <div className="experience__container">
+        <div className="experience__cards">
           {experienceArray.map((experience, index) => (
             <div
-              className="experience-display"
+              className="experience__display"
               data-aos="fade-right"
               key={index}
             >
-              <div className="circle invert"></div>
-              <div className="line invert"></div>
+              <div
+                className={`common__circle common__circle--invert ${
+                  isDark
+                    ? "common__circle--dark common__circle--dark-invert"
+                    : ""
+                }`}
+              ></div>
+              <div
+                className={`common__line common__line--invert ${
+                  isDark ? "common__line--dark common__line--dark-invert" : ""
+                }`}
+              ></div>
 
-              <div className="experience-card">
-                <h4 className="card-title">{experience.position}</h4>
+              <div className="experience__card">
+                <h4 className="experience__card-title">
+                  {experience.position}
+                </h4>
 
-                <p className="card-institution">{experience.business}</p>
+                <p className="experience__card-institution">
+                  {experience.business}
+                </p>
 
-                <p className="card-duration">
+                <p className="experience__card-duration">
                   {experience.start} - {experience.end}
                 </p>
               </div>

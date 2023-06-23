@@ -3,7 +3,7 @@ import { skills } from "../../data/skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Skills() {
+export default function Skills({ isDark = false }) {
   const [skillsArray, setSkillsArray] = useState(skills.frontEnd);
   const [selectedCategory, setSelectedCategory] = useState("frontEnd");
 
@@ -14,71 +14,76 @@ export default function Skills() {
   useEffect(() => setSkillsArray(skills[selectedCategory]), [selectedCategory]);
 
   return (
-    <div className="skills" data-aos="fade-up">
-      <h1 className="skills-title" data-aos="flip-left">
+    <div
+      className={`skills ${isDark ? "skills--dark" : ""}`}
+      data-aos="fade-up"
+    >
+      <h1 className="skills__title" data-aos="flip-left">
         Habilidades
       </h1>
 
-      <div className="skills-level_container">
+      <div className="skills__level">
         <span>Nivel de experiencia:</span>
 
-        <span className="skills-level beginner">
-          Principiante <div className="skills-level_circle"></div>
+        <span className="skills__level-item skills__level-item-circle--beginner">
+          Principiante <div className="skills__level-item-circle"></div>
         </span>
 
-        <span className="skills-level intermediate">
-          Intermedio <div className="skills-level_circle"></div>
+        <span className="skills__level-item skills__level-item-circle--intermediate">
+          Intermedio <div className="skills__level-item-circle"></div>
         </span>
 
-        <span className="skills-level advanced">
-          Avanzado <div className="skills-level_circle"></div>
+        <span className="skills__level-item skills__level-item-circle--advanced">
+          Avanzado <div className="skills__level-item-circle"></div>
         </span>
       </div>
 
-      <div className="skills-container">
-        <div className="skills-categories">
+      <div className="skills__container">
+        <div className="skills__categories">
           <button
-            className={`skills-category ${
-              selectedCategory === "frontEnd" && "selected"
-            }`}
+            className={`skills__category ${
+              selectedCategory === "frontEnd" && "skills__category--selected"
+            } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("frontEnd")}
           >
             Front End
           </button>
 
           <button
-            className={`skills-category ${
-              selectedCategory === "backEnd" && "selected"
-            }`}
+            className={`skills__category ${
+              selectedCategory === "backEnd" && "skills__category--selected"
+            } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("backEnd")}
           >
             Back End y Database
           </button>
 
           <button
-            className={`skills-category ${
-              selectedCategory === "tools" && "selected"
-            }`}
+            className={`skills__category ${
+              selectedCategory === "tools" && "skills__category--selected"
+            } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("tools")}
           >
             Herramientas y Extras
           </button>
         </div>
 
-        <div className="skills-list">
+        <div className="skills__list">
           {skillsArray.map((skill, index) => (
-            <div className="skill" key={index}>
-              <div className="skills-img_container">
+            <div className="skills__skill" key={index}>
+              <div className="skills__skill-img">
                 <img
                   src={`${process.env.PUBLIC_URL}/assets/icons/${skill.image}`}
                   alt={skill.technology}
-                  className="skill-img"
+                  className="skills__skill-img-element"
                 />
-              </div>  
+              </div>
 
-              <div className="skill-technology">
+              <div className="skills__skill-technology">
                 {skill.technology}{" "}
-                <div className={`skills-level_circle ${skill.expLevel}`}></div>
+                <div
+                  className={`skills__level-item-circle ${skill.expLevel}`}
+                ></div>
               </div>
 
               <div className={skill.level}></div>
