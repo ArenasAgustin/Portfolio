@@ -18,7 +18,7 @@ export default function Skills({ isDark = false }) {
       className={`skills ${isDark ? "skills--dark" : ""}`}
       data-aos="fade-up"
     >
-      <h1 className="skills__title" data-aos="flip-left">
+      <h1 className={`skills__title ${isDark ? "skills__title--dark" : ""}`} data-aos="flip-left">
         Habilidades
       </h1>
 

@@ -38,7 +38,7 @@ export default function Cards({ isDark = false }) {
 
   return (
     <div className="projects">
-      <h2 className="projects__title" data-aos="flip-left">
+      <h2 className={`projects__title ${isDark ? "projects__title--dark" : ""}`} data-aos="flip-left">
         PROYECTOS
       </h2>
 

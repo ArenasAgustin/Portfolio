@@ -8,7 +8,7 @@ export default function Experience({ isDark = false }) {
 
   return (
     <div className={`experience ${isDark ? "experience--dark" : ""}`}>
-      <h2 className="experience__title" data-aos="flip-left">
+      <h2 className={`experience__title ${isDark ? "experience__title--dark" : ""}`} data-aos="flip-left">
         Experiencia
       </h2>
 

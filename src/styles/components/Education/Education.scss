@@ -14,6 +14,10 @@
   margin-bottom: 2rem;
 }
 
+.education__title--dark {
+  @extend .common__titles--dark;
+}
+
 .education__cards {
   display: flex;
   flex-direction: column;

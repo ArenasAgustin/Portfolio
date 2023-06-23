@@ -94,11 +94,11 @@
   border-color: var(--color-primary) transparent transparent transparent;
 }
 
-.common__titles:after {
+.common__titles--dark:after {
   background-color: var(--color-primary);
 }
 
-.common__titles2:after {
+.common__titles2--dark:after {
   background-color: var(--color-secondary);
 }
 

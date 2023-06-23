@@ -8,7 +8,7 @@ export default function Contact({ isDark = false }) {
 
   return (
     <div className={`contact ${isDark ? "contact--dark" : ""}`}>
-      <h1 className="contact__title" data-aos="flip-left">
+      <h1 className={`contact__title ${isDark ? "contact__title--dark" : ""}`} data-aos="flip-left">
         CONTACTO
       </h1>
 

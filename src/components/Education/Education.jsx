@@ -8,7 +8,7 @@ export default function Education({ isDark = false }) {
 
   return (
     <div className="education">
-      <h2 className="education__title" data-aos="flip-left">
+      <h2 className={`education__title ${isDark ? "education__title--dark" : ""}`} data-aos="flip-left">
         Educación
       </h2>
 

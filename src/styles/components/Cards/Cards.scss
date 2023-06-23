@@ -13,6 +13,10 @@
   @extend .common__titles;
 }
 
+.projects__title--dark {
+  @extend .common__titles--dark;
+}
+
 .projects__cards {
   display: flex;
   flex-wrap: wrap;

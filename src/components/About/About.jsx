@@ -11,7 +11,7 @@ export default function About({ isDark = false }) {
 
   return (
     <div className={`about ${isDark ? "about--dark" : ""}`} id="about" data-aos="fade-up">
-      <h1 className="about__title" data-aos="flip-left">
+      <h1 className={`about__title ${isDark ? "about__title--dark" : ""}`} data-aos="flip-left">
         SOBRE MI
       </h1>
 

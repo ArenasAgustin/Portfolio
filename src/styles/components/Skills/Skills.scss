@@ -20,6 +20,10 @@
   margin-bottom: 2rem;
 }
 
+.skills__title--dark {
+  @extend .common__titles2--dark;
+}
+
 .skills__level {
   display: flex;
   justify-content: center;

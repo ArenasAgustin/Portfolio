@@ -20,6 +20,10 @@
   margin-bottom: 2rem;
 }
 
+.experience__title--dark {
+  @extend .common__titles2--dark;
+}
+
 .experience__container {
   position: relative;
   display: flex;
