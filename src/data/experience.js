@@ -23,6 +23,7 @@ export const experience = [
     end: "Junio de 2023",
   },
 
+  
   {
     business: "Curso básico de programación en Python",
     position: "Profesor de Programación",
