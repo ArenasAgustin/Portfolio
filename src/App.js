@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "../../js/particlesItInit.js";
-    script.async = true;
+    script.defer = true;
     script.type = "text/javascript";
 
    
