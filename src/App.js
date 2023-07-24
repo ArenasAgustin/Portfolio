@@ -12,8 +12,6 @@ function App() {
     script.defer = true;
     script.type = "text/javascript";
 
-   
-
     document.body.appendChild(script);
 
     return () => {
@@ -25,7 +23,7 @@ function App() {
     <div className={`App ${isDark ? "dark" : ""}`}>
       <div id="particles-js"></div>
 
-      <Home setIsDark={handleChangeTheme} isDark={isDark}/>
+      <Home setIsDark={handleChangeTheme} isDark={isDark} />
     </div>
   );
 }
