@@ -1,4 +1,4 @@
-import { lazy, Suspense, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import Loader from "../components/Loader/Loader";
 
 const Cards = lazy(() => import("../components/Cards/Cards"));
@@ -12,11 +12,20 @@ const ThemeChanger = lazy(() =>
 const Education = lazy(() => import("../components/Education/Education"));
 const Skills = lazy(() => import("../components/Skills/Skills"));
 const Experience = lazy(() => import("../components/Experience/Experience"));
+const ScrollToTop = lazy(() => import("../components/ScrollToTop/ScrollToTop"));
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function Home({ setIsDark, isDark = false }) {
   const [easterEgg, setEasterEgg] = useState(false);
+  const [backToTop, setBackToTop] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) setBackToTop(true);
+      else setBackToTop(false);
+    });
+  }, []);
 
   return (
     <div className="home">
@@ -60,8 +69,16 @@ export default function Home({ setIsDark, isDark = false }) {
         <Footer isDark={isDark} />
       </Suspense>
 
+      {backToTop ? (
+        <Suspense fallback={renderLoader(isDark)}>
+          <ScrollToTop isDark={isDark} />
+        </Suspense>
+      ) : null}
+
       {easterEgg ? (
-        <img src="/astronaut.png" alt="easter egg" className="easter-egg" />
+        <Suspense fallback={renderLoader(isDark)}>
+          <img src="/astronaut.png" alt="easter egg" className="easter-egg" />
+        </Suspense>
       ) : null}
     </div>
   );

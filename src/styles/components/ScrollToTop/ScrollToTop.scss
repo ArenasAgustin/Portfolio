@@ -1,0 +1,17 @@
+.scroll-top {
+  @extend .theme-changer;
+  top: auto;
+  bottom: 0;
+}
+
+.scroll-top__btn {
+  @extend .theme-changer__btn;
+}
+
+.scroll-top__svg {
+  @extend .theme-changer__svg;
+}
+
+.scroll-top__svg--dark {
+  @extend .theme-changer__svg--dark;
+}

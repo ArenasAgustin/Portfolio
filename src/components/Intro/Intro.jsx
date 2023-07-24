@@ -3,80 +3,81 @@ import Button from "../Button/Button";
 
 export default function Intro({ isDark = false }) {
   const scramble = useRef(null);
-  class TextScramble {
-    constructor(el) {
-      this.el = el;
-      this.chars = "!<>-_\\/[]{}—=+*^?#________";
-      this.update = this.update.bind(this);
-    }
 
-    setText(newText) {
-      const oldText = this.el.innerText;
-      const length = Math.max(oldText.length, newText.length);
-      const promise = new Promise((resolve) => (this.resolve = resolve));
-      this.queue = [];
-
-      for (let i = 0; i < length; i++) {
-        const from = oldText[i] || "";
-        const to = newText[i] || "";
-        const start = this.randomInt();
-        const end = start + this.randomInt();
-        this.queue.push({ from, to, start, end });
+  useEffect(() => {
+    class TextScramble {
+      constructor(el) {
+        this.el = el;
+        this.chars = "!<>-_\\/[]{}—=+*^?#________";
+        this.update = this.update.bind(this);
       }
 
-      cancelAnimationFrame(this.frameRequest);
-      this.frame = 0;
-      this.update();
-      return promise;
-    }
+      setText(newText) {
+        const oldText = this.el.innerText;
+        const length = Math.max(oldText.length, newText.length);
+        const promise = new Promise((resolve) => (this.resolve = resolve));
+        this.queue = [];
 
-    update() {
-      let output = "";
-      let complete = 0;
+        for (let i = 0; i < length; i++) {
+          const from = oldText[i] || "";
+          const to = newText[i] || "";
+          const start = this.randomInt();
+          const end = start + this.randomInt();
+          this.queue.push({ from, to, start, end });
+        }
 
-      for (let i = 0, n = this.queue.length; i < n; i++) {
-        let { from, to, start, end, char } = this.queue[i];
-        if (this.frame >= end) {
-          complete++;
-          output += to;
-        } else if (this.frame >= start) {
-          if (!char || Math.random() < 0.28) {
-            char = this.randomChar();
-            this.queue[i].char = char;
+        cancelAnimationFrame(this.frameRequest);
+        this.frame = 0;
+        this.update();
+        return promise;
+      }
+
+      update() {
+        let output = "";
+        let complete = 0;
+
+        for (let i = 0, n = this.queue.length; i < n; i++) {
+          let { from, to, start, end, char } = this.queue[i];
+          if (this.frame >= end) {
+            complete++;
+            output += to;
+          } else if (this.frame >= start) {
+            if (!char || Math.random() < 0.28) {
+              char = this.randomChar();
+              this.queue[i].char = char;
+            }
+            output += `<span class="scramble_dud">${char}</span>`;
+          } else {
+            output += from;
           }
-          output += `<span class="scramble_dud">${char}</span>`;
+        }
+
+        this.el.innerHTML = output;
+
+        if (complete === this.queue.length) {
+          this.resolve();
         } else {
-          output += from;
+          this.frameRequest = requestAnimationFrame(this.update);
+          this.frame++;
         }
       }
 
-      this.el.innerHTML = output;
+      randomChar() {
+        return this.chars[this.randomInt(this.chars.length)];
+      }
 
-      if (complete === this.queue.length) {
-        this.resolve();
-      } else {
-        this.frameRequest = requestAnimationFrame(this.update);
-        this.frame++;
+      randomInt(plus = 40) {
+        return Math.floor(Math.random() * plus);
       }
     }
 
-    randomChar() {
-      return this.chars[this.randomInt(this.chars.length)];
-    }
+    const phrases = [
+      "Full Stack Developer",
+      "Frontend Developer",
+      "Web Developer",
+      //"Córdoba, Argentina",
+    ];
 
-    randomInt(plus = 40) {
-      return Math.floor(Math.random() * plus);
-    }
-  }
-
-  const phrases = [
-    "Full Stack Developer",
-    "Frontend Developer",
-    "Web Developer",
-    //"Córdoba, Argentina",
-  ];
-
-  useEffect(() => {
     const fx = new TextScramble(scramble.current);
 
     let counter = 0;
@@ -99,9 +100,12 @@ export default function Intro({ isDark = false }) {
           <span className="introduction__title-name">Agustín Arenas</span>
         </h1>
 
-        <h1 className={`introduction__title-h1 scramble ${
-            isDark ? "scramble-dark" : ""
-          }`} ref={scramble}></h1>
+        <h1
+          className={`introduction__title-h1 scramble ${
+            isDark ? "scramble--dark" : ""
+          }`}
+          ref={scramble}
+        ></h1>
 
         <Button
           href="#about"
