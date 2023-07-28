@@ -105,7 +105,7 @@ export default function Intro({ isDark = false }) {
             isDark ? "scramble--dark" : ""
           }`}
           ref={scramble}
-        ></h1>
+        > </h1>
 
         <Button
           href="#about"

@@ -18,7 +18,7 @@ export default function About({ isDark = false }) {
       <div className="about__container">
         <div className="about__container-image">
           <picture>
-            <source srcSet={ProfileWebp} type="image/webp" />
+            <source className="about__container-img" srcSet={ProfileWebp} type="image/webp" />
             <img className="about__container-img" src={Profile} alt="profile" />
           </picture>
         </div>

@@ -13,6 +13,7 @@ const Education = lazy(() => import("../components/Education/Education"));
 const Skills = lazy(() => import("../components/Skills/Skills"));
 const Experience = lazy(() => import("../components/Experience/Experience"));
 const ScrollToTop = lazy(() => import("../components/ScrollToTop/ScrollToTop"));
+const Avatar = lazy(() => import("../components/Avatar/Avatar"));
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
@@ -67,6 +68,10 @@ export default function Home({ setIsDark, isDark = false }) {
 
       <Suspense fallback={renderLoader(isDark)}>
         <Footer isDark={isDark} />
+      </Suspense>
+
+      <Suspense fallback={renderLoader(isDark)}>
+        <Avatar />
       </Suspense>
 
       {backToTop ? (
