@@ -53,18 +53,20 @@ export default function Cards({ isDark = false }) {
 
       <div className="projects__cards">
         {projectsArray?.length &&
-          projectsArray?.map((project, index) => (
-            <Suspense fallback={renderLoader()} key={index}>
-              <Card
-                image={project.image}
-                description={project.description}
-                deploy={project.deploy}
-                github={project.github}
-                title={project.title}
-                isDark={isDark}
-              />
-            </Suspense>
-          ))}
+          projectsArray?.map((project, index) =>
+            project.title !== "Portfolio" ? (
+              <Suspense fallback={renderLoader()} key={index}>
+                <Card
+                  image={project.image}
+                  description={project.description}
+                  deploy={project.deploy}
+                  github={project.github}
+                  title={project.title}
+                  isDark={isDark}
+                />
+              </Suspense>
+            ) : null
+          )}
       </div>
 
       {projectsArray?.length && (

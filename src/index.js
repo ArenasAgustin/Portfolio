@@ -1,11 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React, { useEffect } from "react";
 import "./index.scss";
 import App from "./App";
+import { createRoot } from "react-dom/client";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+function AppWithCallbackAfterRender() {
+  useEffect(() => {
+    console.log("rendered");
+  });
+
+  return (
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
+}
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<AppWithCallbackAfterRender />);

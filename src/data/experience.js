@@ -1,3 +1,25 @@
+import {
+  BOOTSTRAP,
+  FIGMA,
+  GITHUB,
+  GITLAB,
+  HEROKU,
+  JAVASCRIPT,
+  JQUERY,
+  JUPYTER,
+  MYSQL,
+  NEXT,
+  NGINX,
+  NPM,
+  PHPMYADMIN,
+  PYTHON,
+  REACT,
+  REDUX,
+  SCSS,
+  VERCEL,
+  WEB3,
+} from "./technologies";
+
 export const experience = [
   {
     business: "Sellers Latam",
@@ -9,6 +31,30 @@ export const experience = [
     ],
     start: "Marzo de 2022",
     end: "Actualidad",
+    technologies: [
+      NPM,
+      NPM,
+      JAVASCRIPT,
+      JAVASCRIPT,
+      JAVASCRIPT,
+      JQUERY,
+      BOOTSTRAP,
+      BOOTSTRAP,
+      SCSS,
+      SCSS,
+      GITLAB,
+      GITLAB,
+      GITLAB,
+      VERCEL,
+      VERCEL,
+      REACT,
+      REACT,
+      REDUX,
+      REDUX,
+      FIGMA,
+      NEXT,
+      NEXT,
+    ],
   },
 
   {
@@ -21,6 +67,7 @@ export const experience = [
     ],
     start: "Abril de 2023",
     end: "Junio de 2023",
+    technologies: [PYTHON, PYTHON, JUPYTER, GITHUB],
   },
 
   {
@@ -33,6 +80,7 @@ export const experience = [
     ],
     start: "Agosto de 2022",
     end: "Septiembre de 2022",
+    technologies: [PYTHON, JUPYTER, GITHUB],
   },
 
   {
@@ -45,6 +93,17 @@ export const experience = [
     ],
     start: "Febrero de 2022",
     end: "Julio de 2022",
+    technologies: [
+      JAVASCRIPT,
+      BOOTSTRAP,
+      SCSS,
+      WEB3,
+      NGINX,
+      PHPMYADMIN,
+      MYSQL,
+      HEROKU,
+      HEROKU,
+    ],
   },
 
   {

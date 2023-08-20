@@ -1,3 +1,54 @@
+import {
+  ANACONDA,
+  ANGULAR,
+  BOOTSTRAP,
+  COMPOSER,
+  CPP,
+  CSS,
+  EHTERS,
+  EXPRESS,
+  FIGMA,
+  FIREBASE,
+  GANACHE,
+  GIT,
+  GITHUB,
+  GITHUBPAGES,
+  GITLAB,
+  HEROKU,
+  HTML,
+  JAVA,
+  JAVASCRIPT,
+  JQUERY,
+  JSONCONST,
+  JUPYTER,
+  LARAGON,
+  LARAVEL,
+  LESS,
+  MONGODB,
+  MONGOOSE,
+  MYSQL,
+  NEXT,
+  NGINX,
+  NODE,
+  NPM,
+  PHP,
+  PHPMYADMIN,
+  POSTGRESQL,
+  PREPROS,
+  PYTHON,
+  REACT,
+  REDUX,
+  SCSS,
+  SEQUELIZE,
+  SOLIDITY,
+  TAILWILDCSS,
+  TRUFFLE,
+  TYPESCRIPT,
+  VERCEL,
+  WEB3,
+  YARN,
+} from "./technologies";
+
 const ADVANCED = "skills__level-item-circle--advanced";
 const INTERMEDIATE = "skills__level-item-circle--intermediate";
 const BEGINNER = "skills__level-item-circle--beginner";
@@ -5,97 +56,97 @@ const BEGINNER = "skills__level-item-circle--beginner";
 export const skills = {
   frontEnd: [
     {
-      technology: "HTML",
+      technology: HTML,
       image: "html5-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "CSS",
+      technology: CSS,
       image: "css3-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Scss",
+      technology: SCSS,
       image: "sass-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Less",
+      technology: LESS,
       image: "less-plain-wordmark.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Bootstrap",
+      technology: BOOTSTRAP,
       image: "bootstrap-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Tailwind css",
+      technology: TAILWILDCSS,
       image: "tailwindcss-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "JavaScript",
+      technology: JAVASCRIPT,
       image: "javascript-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "TypeScript",
+      technology: TYPESCRIPT,
       image: "typescript-plain.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Python",
+      technology: PYTHON,
       image: "python-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Php",
+      technology: PHP,
       image: "php-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "React",
+      technology: REACT,
       image: "react-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Angular",
+      technology: ANGULAR,
       image: "angularjs-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Redux",
+      technology: REDUX,
       image: "redux-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Next.js",
+      technology: NEXT,
       image: "nextjs-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "JQuery",
+      technology: JQUERY,
       image: "jquery-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Laravel",
+      technology: LARAVEL,
       image: "laravel-plain.svg",
       expLevel: BEGINNER,
     },
@@ -103,37 +154,37 @@ export const skills = {
 
   backEnd: [
     {
-      technology: "Python",
+      technology: PYTHON,
       image: "python-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Php",
+      technology: PHP,
       image: "php-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Laravel",
+      technology: LARAVEL,
       image: "laravel-plain.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Node.js",
+      technology: NODE,
       image: "nodejs-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Express.js",
+      technology: EXPRESS,
       image: "express-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Sequelize",
+      technology: SEQUELIZE,
       image: "sequelize-original.svg",
       expLevel: ADVANCED,
     },
@@ -151,37 +202,37 @@ export const skills = {
     }, */
 
     {
-      technology: "Mongoose",
+      technology: MONGOOSE,
       image: "mongoose5_62x30_transparent.png",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "phpMyAdmin",
+      technology: PHPMYADMIN,
       image: "phpmyadmin-icon.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Nginx",
+      technology: NGINX,
       image: "nginx-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "PostgreSQL",
+      technology: POSTGRESQL,
       image: "postgresql-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "MySQL",
+      technology: MYSQL,
       image: "mysql-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "MongoDB",
+      technology: MONGODB,
       image: "mongodb-original.svg",
       expLevel: ADVANCED,
     },
@@ -195,139 +246,139 @@ export const skills = {
 
   tools: [
     {
-      technology: "Git",
+      technology: GIT,
       image: "git-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "GitHub",
+      technology: GITHUB,
       image: "github-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "GitLab",
+      technology: GITLAB,
       image: "gitlab-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "JSON",
+      technology: JSONCONST,
       image: "json.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "NPM",
+      technology: NPM,
       image: "npm-original-wordmark.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Yarn",
+      technology: YARN,
       image: "yarn-original.svg",
       expLevel: ADVANCED,
     },
 
     {
-      technology: "Composer",
+      technology: COMPOSER,
       image: "composer-line.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Firebase",
+      technology: FIREBASE,
       image: "firebase-plain.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Heroku",
+      technology: HEROKU,
       image: "heroku-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Github Pages",
+      technology: GITHUBPAGES,
       image: "github-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Vercel",
+      technology: VERCEL,
       image: "Vercel_logo_black.png",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Prepros",
+      technology: PREPROS,
       image: "prepros.png",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Laragon",
+      technology: LARAGON,
       image: "laragon.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Figma",
+      technology: FIGMA,
       image: "figma-original.svg",
       expLevel: INTERMEDIATE,
     },
 
     {
-      technology: "Solidity",
+      technology: SOLIDITY,
       image: "solidity-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Web3.js",
+      technology: WEB3,
       image: "web3js-logo-62DEE79B50-seeklogo.com.png",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Ethers.js",
+      technology: EHTERS,
       image: "ethers-logo-D5B86204D8-seeklogo.com.png",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Truffle",
+      technology: TRUFFLE,
       image: "logo.png",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Ganache",
+      technology: GANACHE,
       image: "ganache-logo.png",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Anaconda",
+      technology: ANACONDA,
       image: "anaconda-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Jupyter",
+      technology: JUPYTER,
       image: "jupyter-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "Java",
+      technology: JAVA,
       image: "java-original.svg",
       expLevel: BEGINNER,
     },
 
     {
-      technology: "C++",
+      technology: CPP,
       image: "cplusplus-plain.svg",
       expLevel: BEGINNER,
     },

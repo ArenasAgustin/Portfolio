@@ -11,8 +11,10 @@ function App() {
     script.src = "../../js/particlesItInit.js";
     script.defer = true;
     script.type = "text/javascript";
+    script.id = "particles-it-init";
 
-    document.body.appendChild(script);
+    if (!document.getElementById("particles-it-init"))
+      document.body.appendChild(script);
 
     return () => {
       document.body.removeChild(script);

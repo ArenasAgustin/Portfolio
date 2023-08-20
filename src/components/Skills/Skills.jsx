@@ -3,14 +3,22 @@ import { skills } from "../../data/skills";
 import { projects } from "../../data/projects";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { experience } from "../../data/experience";
+
+const ADVANCED = "skills__level-item-circle--advanced";
+const INTERMEDIATE = "skills__level-item-circle--intermediate";
+const BEGINNER = "skills__level-item-circle--beginner";
 
 export default function Skills({ isDark = false }) {
   const [skillsArray, setSkillsArray] = useState(skills.frontEnd);
   const [selectedCategory, setSelectedCategory] = useState("frontEnd");
   const [skillMap, setSkillMap] = useState({});
+  const [max, setMax] = useState(1);
 
   const setDefaultSkillMap = () => {
     const skillMap = {};
+    let max = 1;
+
     Object.keys(skills)?.forEach((category) => {
       skills[category]?.forEach((skill) => {
         skillMap[skill?.technology] = 1;
@@ -21,14 +29,33 @@ export default function Skills({ isDark = false }) {
       project?.description?.technologies?.forEach((technology) => {
         if (skillMap[technology]) skillMap[technology] += 1;
         else skillMap[technology] = 1;
+
+        if (skillMap[technology] > max) max = skillMap[technology];
+      });
+    });
+
+    experience?.forEach((job) => {
+      job?.description?.technologies?.forEach((technology) => {
+        if (skillMap[technology]) skillMap[technology] += 1;
+        else skillMap[technology] = 1;
+
+        if (skillMap[technology] > max) max = skillMap[technology];
       });
     });
 
     setSkillMap(skillMap);
-    console.log(skillMap);
+    setMax(max);
   };
 
   const handleSelectCategory = (category) => setSelectedCategory(category);
+
+  const getSkillLevel = (technology) => {
+    const level = skillMap[technology] / max;
+
+    if (level <= 0.25) return BEGINNER;
+    else if (level <= 0.4) return INTERMEDIATE;
+    else return ADVANCED;
+  };
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
@@ -119,7 +146,9 @@ export default function Skills({ isDark = false }) {
               <div className="skills__skill-technology">
                 {skill.technology}{" "}
                 <div
-                  className={`skills__level-item-circle ${skill.expLevel}`}
+                  className={`skills__level-item-circle ${getSkillLevel(
+                    skill.technology
+                  )}`}
                 ></div>
               </div>
 
