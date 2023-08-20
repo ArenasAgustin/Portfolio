@@ -52,8 +52,8 @@ export default function Skills({ isDark = false }) {
   const getSkillLevel = (technology) => {
     const level = skillMap[technology] / max;
 
-    if (level <= 0.25) return BEGINNER;
-    else if (level <= 0.4) return INTERMEDIATE;
+    if (level <= 0.15) return BEGINNER;
+    else if (level <= 0.3) return INTERMEDIATE;
     else return ADVANCED;
   };
 
