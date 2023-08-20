@@ -35,6 +35,12 @@ export const skills = {
     },
 
     {
+      technology: "Tailwind CSS",
+      image: "tailwindcss-plain.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
       technology: "JavaScript",
       image: "javascript-plain.svg",
       expLevel: ADVANCED,
@@ -133,6 +139,18 @@ export const skills = {
     },
 
     {
+      technology: "Docker",
+      image: "docker-plain.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Socket.io",
+      image: "socketio-original.svg",
+      expLevel: BEGINNER,
+    },
+
+    {
       technology: "Mongoose",
       image: "mongoose5_62x30_transparent.png",
       expLevel: ADVANCED,
@@ -166,6 +184,12 @@ export const skills = {
       technology: "MongoDB",
       image: "mongodb-original.svg",
       expLevel: ADVANCED,
+    },
+
+    {
+      technology: "Redis",
+      image: "redis-original.svg",
+      expLevel: BEGINNER,
     },
   ],
 

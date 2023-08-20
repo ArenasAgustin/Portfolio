@@ -61,6 +61,17 @@ export const projects = [
   },
 
   {
+    title: "Morse Decoder",
+    image: "Morse-Decoder",
+    description: {
+      technologies: ["React", "Tailwind css", "Javascript"],
+      txt: "Morse decoder es una aplicación web que permite decodificar mensajes en código morse.",
+    },
+    github: "https://github.com/ArenasAgustin/morce",
+    deploy: "https://morce.vercel.app/",
+  },
+
+  {
     title: "Cinema",
     image: "Cinema",
     description: {
