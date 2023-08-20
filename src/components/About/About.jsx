@@ -7,18 +7,35 @@ import "aos/dist/aos.css";
 import Button from "../Button/Button";
 
 export default function About({ isDark = false }) {
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   return (
-    <div className={`about ${isDark ? "about--dark" : ""}`} id="about" data-aos="fade-up">
-      <h1 className={`about__title ${isDark ? "about__title--dark" : ""}`} data-aos="flip-left">
+    <div
+      className={`about ${isDark ? "about--dark" : ""}`}
+      id="about"
+      data-aos="fade-up"
+    >
+      <h1
+        className={`about__title ${isDark ? "about__title--dark" : ""}`}
+        data-aos="flip-left"
+      >
         SOBRE MI
       </h1>
 
       <div className="about__container">
         <div className="about__container-image">
           <picture>
-            <source className="about__container-img" srcSet={ProfileWebp} type="image/webp" />
+            <source
+              className="about__container-img"
+              srcSet={ProfileWebp}
+              type="image/webp"
+            />
             <img className="about__container-img" src={Profile} alt="profile" />
           </picture>
         </div>

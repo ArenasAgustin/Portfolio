@@ -1,24 +1,61 @@
 import { useEffect, useState } from "react";
 import { skills } from "../../data/skills";
+import { projects } from "../../data/projects";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Skills({ isDark = false }) {
   const [skillsArray, setSkillsArray] = useState(skills.frontEnd);
   const [selectedCategory, setSelectedCategory] = useState("frontEnd");
+  const [skillMap, setSkillMap] = useState({});
+
+  const setDefaultSkillMap = () => {
+    const skillMap = {};
+    Object.keys(skills)?.forEach((category) => {
+      skills[category]?.forEach((skill) => {
+        skillMap[skill?.technology] = 1;
+      });
+    });
+
+    projects?.forEach((project) => {
+      project?.description?.technologies?.forEach((technology) => {
+        if (skillMap[technology]) skillMap[technology] += 1;
+        else skillMap[technology] = 1;
+      });
+    });
+
+    setSkillMap(skillMap);
+    console.log(skillMap);
+  };
 
   const handleSelectCategory = (category) => setSelectedCategory(category);
 
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+    setDefaultSkillMap();
 
-  useEffect(() => setSkillsArray(skills[selectedCategory]), [selectedCategory]);
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
+
+  useEffect(() => {
+    setSkillsArray(skills[selectedCategory]);
+
+    return () => {
+      setSkillsArray(skills[selectedCategory]);
+    };
+  }, [selectedCategory]);
 
   return (
     <div
       className={`skills ${isDark ? "skills--dark" : ""}`}
       data-aos="fade-up"
     >
-      <h1 className={`skills__title ${isDark ? "skills__title--dark" : ""}`} data-aos="flip-left">
+      <h1
+        className={`skills__title ${isDark ? "skills__title--dark" : ""}`}
+        data-aos="flip-left"
+      >
         Habilidades
       </h1>
 

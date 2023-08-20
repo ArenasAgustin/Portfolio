@@ -11,7 +11,13 @@ export default function Card({
   github,
   isDark = false,
 }) {
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   const imageSrc = `${process.env.PUBLIC_URL}/assets/images/${image}`;
 
@@ -27,7 +33,12 @@ export default function Card({
 
           <div className="card__txt-technologies">
             {description?.technologies.map((tech, index) => (
-              <span key={index} className={`card__txt-technologies-tech ${isDark ? "card__txt-technologies-tech--dark" : ""}`}>
+              <span
+                key={index}
+                className={`card__txt-technologies-tech ${
+                  isDark ? "card__txt-technologies-tech--dark" : ""
+                }`}
+              >
                 {tech}
               </span>
             ))}

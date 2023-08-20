@@ -4,11 +4,22 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Experience({ isDark = false }) {
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   return (
     <div className={`experience ${isDark ? "experience--dark" : ""}`}>
-      <h2 className={`experience__title ${isDark ? "experience__title--dark" : ""}`} data-aos="flip-left">
+      <h2
+        className={`experience__title ${
+          isDark ? "experience__title--dark" : ""
+        }`}
+        data-aos="flip-left"
+      >
         Experiencia
       </h2>
 

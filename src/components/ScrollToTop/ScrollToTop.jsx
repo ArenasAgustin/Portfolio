@@ -10,8 +10,14 @@ export default function ScrollToTop({ isDark = false }) {
       behavior: "smooth",
     });
   };
-  
-  useEffect(() => Aos.init({ duration: 500 }), []);
+
+  useEffect(() => {
+    Aos.init({ duration: 500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   return (
     <div className="scroll-top" data-aos="fade-up">

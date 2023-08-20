@@ -11,6 +11,10 @@ export default function Avatar() {
     const avatars = [Avatar1, Avatar2, Avatar3, Avatar4];
     const random = Math.floor(Math.random() * avatars.length);
     setRandomAvatar(avatars[random]);
+
+    return () => {
+      setRandomAvatar(avatars[random]);
+    };
   }, []);
 
   return (

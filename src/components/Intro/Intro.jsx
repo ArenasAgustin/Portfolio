@@ -90,6 +90,13 @@ export default function Intro({ isDark = false }) {
     };
 
     next();
+
+    return () => {
+      fx.setText(phrases[counter]).then(() => {
+        setTimeout(next, 1200);
+      });
+      counter = (counter + 1) % phrases.length;
+    };
   }, []);
 
   return (
@@ -105,7 +112,9 @@ export default function Intro({ isDark = false }) {
             isDark ? "scramble--dark" : ""
           }`}
           ref={scramble}
-        > </h1>
+        >
+          {" "}
+        </h1>
 
         <Button
           href="#about"

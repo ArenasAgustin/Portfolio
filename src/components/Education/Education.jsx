@@ -4,18 +4,31 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Education({ isDark = false }) {
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   return (
     <div className="education">
-      <h2 className={`education__title ${isDark ? "education__title--dark" : ""}`} data-aos="flip-left">
+      <h2
+        className={`education__title ${isDark ? "education__title--dark" : ""}`}
+        data-aos="flip-left"
+      >
         Educación
       </h2>
 
       <div className="education__cards">
         {educationArray.map((education, index) => (
           <div className="education__display" data-aos="fade-right" key={index}>
-            <div className={`common__circle ${isDark ? "common__circle--dark " : ""}`}></div>
+            <div
+              className={`common__circle ${
+                isDark ? "common__circle--dark " : ""
+              }`}
+            ></div>
             <div
               className={`common__line ${isDark ? "common__line--dark " : ""}`}
             ></div>

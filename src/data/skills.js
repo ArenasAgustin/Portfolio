@@ -17,7 +17,7 @@ export const skills = {
     },
 
     {
-      technology: "Sass",
+      technology: "Scss",
       image: "sass-original.svg",
       expLevel: ADVANCED,
     },
@@ -35,7 +35,7 @@ export const skills = {
     },
 
     {
-      technology: "Tailwind CSS",
+      technology: "Tailwind css",
       image: "tailwindcss-plain.svg",
       expLevel: BEGINNER,
     },
@@ -138,17 +138,17 @@ export const skills = {
       expLevel: ADVANCED,
     },
 
-    {
+    /* {
       technology: "Docker",
       image: "docker-plain.svg",
       expLevel: BEGINNER,
-    },
+    }, */
 
-    {
+    /* {
       technology: "Socket.io",
       image: "socketio-original.svg",
       expLevel: BEGINNER,
-    },
+    }, */
 
     {
       technology: "Mongoose",
@@ -186,11 +186,11 @@ export const skills = {
       expLevel: ADVANCED,
     },
 
-    {
+    /* {
       technology: "Redis",
       image: "redis-original.svg",
       expLevel: BEGINNER,
-    },
+    }, */
   ],
 
   tools: [
@@ -249,9 +249,21 @@ export const skills = {
     },
 
     {
+      technology: "Github Pages",
+      image: "github-original.svg",
+      expLevel: INTERMEDIATE,
+    },
+
+    {
       technology: "Vercel",
       image: "Vercel_logo_black.png",
       expLevel: INTERMEDIATE,
+    },
+
+    {
+      technology: "Prepros",
+      image: "prepros.png",
+      expLevel: BEGINNER,
     },
 
     {
@@ -287,6 +299,12 @@ export const skills = {
     {
       technology: "Truffle",
       image: "logo.png",
+      expLevel: BEGINNER,
+    },
+
+    {
+      technology: "Ganache",
+      image: "ganache-logo.png",
       expLevel: BEGINNER,
     },
 

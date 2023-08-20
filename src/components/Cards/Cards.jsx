@@ -34,11 +34,20 @@ export default function Cards({ isDark = false }) {
     }
   };
 
-  useEffect(() => Aos.init({ duration: 1500 }), []);
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+
+    return () => {
+      Aos.refresh();
+    };
+  }, []);
 
   return (
     <div className="projects">
-      <h2 className={`projects__title ${isDark ? "projects__title--dark" : ""}`} data-aos="flip-left">
+      <h2
+        className={`projects__title ${isDark ? "projects__title--dark" : ""}`}
+        data-aos="flip-left"
+      >
         PROYECTOS
       </h2>
 

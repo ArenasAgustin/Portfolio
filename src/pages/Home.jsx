@@ -26,6 +26,10 @@ export default function Home({ setIsDark, isDark = false }) {
       if (window.scrollY > 100) setBackToTop(true);
       else setBackToTop(false);
     });
+
+    return () => {
+      window.removeEventListener("scroll", () => {});
+    };
   }, []);
 
   return (
