@@ -36,6 +36,7 @@ export const PHPMYADMIN = "phpMyAdmin";
 export const POSTGRESQL = "PostgreSQL";
 export const POSTMAN = "Postman";
 export const PREPROS = "Prepros";
+export const PRISMA = "Prisma";
 export const PYTHON = "Python";
 export const REACT = "React";
 export const REDIS = "Redis";

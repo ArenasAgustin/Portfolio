@@ -35,6 +35,7 @@ import {
   PHPMYADMIN,
   POSTGRESQL,
   PREPROS,
+  PRISMA,
   PYTHON,
   REACT,
   REDUX,
@@ -205,6 +206,12 @@ export const skills = {
       technology: MONGOOSE,
       image: "mongoose5_62x30_transparent.png",
       expLevel: ADVANCED,
+    },
+
+    {
+      technology: PRISMA,
+      image: "prisma.png",
+      expLevel: BEGINNER,
     },
 
     {
