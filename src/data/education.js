@@ -10,7 +10,7 @@ export const education = [
     institution: "Facultad de Ciencias Exactas, Físicas y Naturales",
     title: "Carrera de Ingeniería en Computación",
     start: "Febrero de 2020",
-    end: "Julio de 2022",
+    end: "Actual",
   },
 
   {
