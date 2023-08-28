@@ -1,25 +1,3 @@
-import {
-  BOOTSTRAP,
-  FIGMA,
-  GITHUB,
-  GITLAB,
-  HEROKU,
-  JAVASCRIPT,
-  JQUERY,
-  JUPYTER,
-  MYSQL,
-  NEXT,
-  NGINX,
-  NPM,
-  PHPMYADMIN,
-  PYTHON,
-  REACT,
-  REDUX,
-  SCSS,
-  VERCEL,
-  WEB3,
-} from "./technologies";
-
 export const experience = [
   {
     business: "Sellers Latam",
