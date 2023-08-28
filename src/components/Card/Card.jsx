@@ -59,16 +59,16 @@ export default function Card({
               isDark={isDark}
             />
 
-            <a
+            <Button
               href={github}
               target="_blank"
               rel="noreferrer"
-              className={`card__txt-links-github ${
-                github ? "" : "card__txt-links-github--no-link"
+              txt="Github"
+              className={`btn__link--margin-right ${
+                github ? "" : "btn__link--no-link"
               }`}
-            >
-              Github
-            </a>
+              isDark={isDark}
+            />
           </div>
         </div>
 

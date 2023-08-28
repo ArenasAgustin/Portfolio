@@ -95,10 +95,13 @@
 
 .card__img-picture {
   @extend .card__img;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
 }
 
 .card__img-card {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
   height: auto;
   opacity: 0.8;
