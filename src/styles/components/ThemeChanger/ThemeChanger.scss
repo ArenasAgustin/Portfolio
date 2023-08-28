@@ -6,25 +6,36 @@
 }
 
 .theme-changer__btn {
-  background: var(--background-image-gradient);
-  border: none;
-  margin: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  cursor: pointer;
+  @extend .btn__link;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.8rem;
+
+  &:hover {
+    .theme-changer__svg {
+      color: var(--color-primary);
+    }
+  }
 }
 
 .theme-changer__svg {
-  color: var(--color-primary);
-  font-size: large;
-  font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @extend .btn__txt;
+  font-size: 1.5rem;
+  color: var(--color-quaternary);
 }
 
-.theme-changer__svg--dark {
-  color: var(--color-secondary);
+.theme-changer__btn--dark {
+  @extend .btn__link--dark;
+
+  &:hover {
+    .theme-changer__svg--dark {
+      -webkit-text-fill-color: var(--color-secondary);
+    }
+  }
+
+  &:hover {
+    .theme-changer__svg {
+      color: var(--color-secondary);
+    }
+  }
 }

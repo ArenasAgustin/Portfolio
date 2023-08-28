@@ -25,7 +25,9 @@ export default function ThemeChanger({
   return (
     <div className="theme-changer">
       <button
-        className="theme-changer__btn"
+        className={`theme-changer__btn ${
+          isDark ? "theme-changer__btn--dark" : ""
+        }`}
         onClick={handleThemeChange}
         title="Theme changer"
         aria-label="Theme changer"

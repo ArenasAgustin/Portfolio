@@ -22,7 +22,7 @@ export default function ScrollToTop({ isDark = false }) {
   return (
     <div className="scroll-top" data-aos="fade-up">
       <button
-        className="scroll-top__btn"
+        className={`scroll-top__btn ${isDark ? "scroll-top__btn--dark" : ""}`}
         onClick={scrollToTop}
         title="Scroll to top"
         aria-label="Scroll to top"
