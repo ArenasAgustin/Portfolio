@@ -1,7 +1,10 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { skills } from "../../data/skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Loader from "../Loader/Loader";
+
+const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function Skills({ isDark = false }) {
   const [skillsArray, setSkillsArray] = useState(skills.frontEnd);
@@ -71,11 +74,13 @@ export default function Skills({ isDark = false }) {
           {skillsArray.map((skill, index) => (
             <div className="skills__skill" key={index}>
               <div className="skills__skill-img">
-                <img
-                  src={`${process.env.PUBLIC_URL}/assets/icons/${skill.image}`}
-                  alt={skill.technology}
-                  className="skills__skill-img-element"
-                />
+                <Suspense fallback={renderLoader(isDark)}>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/assets/icons/${skill.image}`}
+                    alt={skill.technology}
+                    className="skills__skill-img-element"
+                  />
+                </Suspense>
               </div>
 
               <div className="skills__skill-technology">

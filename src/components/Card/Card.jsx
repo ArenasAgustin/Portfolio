@@ -1,7 +1,10 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
+import Loader from "../Loader/Loader";
+
+const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function Card({
   title,
@@ -71,17 +74,19 @@ export default function Card({
 
         <div className="card__img" data-aos="fade-up-left">
           <picture className="card__img-picture">
-            <source
-              srcSet={`${imageSrc}.webp`}
-              type="image/webp"
-              alt={title}
-              className="card__img-card"
-            />
-            <img
-              src={`${imageSrc}.png`}
-              alt={title}
-              className="card__img-card"
-            />
+            <Suspense fallback={renderLoader(isDark)}>
+              <source
+                srcSet={`${imageSrc}.webp`}
+                type="image/webp"
+                alt={title}
+                className="card__img-card"
+              />
+              <img
+                src={`${imageSrc}.png`}
+                alt={title}
+                className="card__img-card"
+              />
+            </Suspense>
           </picture>
         </div>
       </div>

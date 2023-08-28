@@ -1,18 +1,16 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import Loader from "../components/Loader/Loader";
+import Cards from "../components/Cards/Cards";
+import Intro from "../components/Intro/Intro";
+import About from "../components/About/About";
+import Contact from "../components/Contact/Contact";
+import Footer from "../components/Footer/Footer";
+import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
+import Education from "../components/Education/Education";
+import Skills from "../components/Skills/Skills";
+import Experience from "../components/Experience/Experience";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 
-const Cards = lazy(() => import("../components/Cards/Cards"));
-const Intro = lazy(() => import("../components/Intro/Intro"));
-const About = lazy(() => import("../components/About/About"));
-const Contact = lazy(() => import("../components/Contact/Contact"));
-const Footer = lazy(() => import("../components/Footer/Footer"));
-const ThemeChanger = lazy(() =>
-  import("../components/ThemeChanger/ThemeChanger")
-);
-const Education = lazy(() => import("../components/Education/Education"));
-const Skills = lazy(() => import("../components/Skills/Skills"));
-const Experience = lazy(() => import("../components/Experience/Experience"));
-const ScrollToTop = lazy(() => import("../components/ScrollToTop/ScrollToTop"));
 const Avatar = lazy(() => import("../components/Avatar/Avatar"));
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
@@ -34,55 +32,33 @@ export default function Home({ setIsDark, isDark = false }) {
 
   return (
     <div className="home">
-      <Suspense fallback={renderLoader(isDark)}>
-        <ThemeChanger
-          isDark={isDark}
-          setIsDark={setIsDark}
-          setEasterEgg={setEasterEgg}
-        />
-      </Suspense>
+      <ThemeChanger
+        isDark={isDark}
+        setIsDark={setIsDark}
+        setEasterEgg={setEasterEgg}
+      />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Intro isDark={isDark} />
-      </Suspense>
+      <Intro isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <About isDark={isDark} />
-      </Suspense>
+      <About isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Education isDark={isDark} />
-      </Suspense>
+      <Education isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Skills isDark={isDark} />
-      </Suspense>
+      <Skills isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Experience isDark={isDark} />
-      </Suspense>
+      <Experience isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Cards isDark={isDark} />
-      </Suspense>
+      <Cards isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Contact isDark={isDark} />
-      </Suspense>
+      <Contact isDark={isDark} />
 
-      <Suspense fallback={renderLoader(isDark)}>
-        <Footer isDark={isDark} />
-      </Suspense>
+      <Footer isDark={isDark} />
 
       <Suspense fallback={renderLoader(isDark)}>
         <Avatar />
       </Suspense>
 
-      {backToTop ? (
-        <Suspense fallback={renderLoader(isDark)}>
-          <ScrollToTop isDark={isDark} />
-        </Suspense>
-      ) : null}
+      {backToTop ? <ScrollToTop isDark={isDark} /> : null}
 
       {easterEgg ? (
         <Suspense fallback={renderLoader(isDark)}>
