@@ -50,10 +50,6 @@ import {
   YARN,
 } from "./technologies";
 
-const ADVANCED = "skills__level-item-circle--advanced";
-const INTERMEDIATE = "skills__level-item-circle--intermediate";
-const BEGINNER = "skills__level-item-circle--beginner";
-
 export const skills = {
   frontEnd: [
     {

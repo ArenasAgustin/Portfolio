@@ -2,8 +2,11 @@ import { FiSmartphone, FiMail } from "react-icons/fi";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Contact({ isDark = false }) {
+  const { t } = useTranslation("global");
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
 
@@ -18,7 +21,7 @@ export default function Contact({ isDark = false }) {
         className={`contact__title ${isDark ? "contact__title--dark" : ""}`}
         data-aos="flip-left"
       >
-        CONTACTO
+        {t("contact.title")}
       </h1>
 
       <div

@@ -10,6 +10,7 @@ import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
 import Experience from "../components/Experience/Experience";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import { useTranslation } from "react-i18next";
 
 const Avatar = lazy(() => import("../components/Avatar/Avatar"));
 
@@ -19,11 +20,15 @@ export default function Home({ setIsDark, isDark = false }) {
   const [easterEgg, setEasterEgg] = useState(false);
   const [backToTop, setBackToTop] = useState(false);
 
+  const { i18n } = useTranslation("global");
+
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) setBackToTop(true);
       else setBackToTop(false);
     });
+
+    i18n.changeLanguage("es");
 
     return () => {
       window.removeEventListener("scroll", () => {});

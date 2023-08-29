@@ -1,8 +1,11 @@
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 
 export default function Intro({ isDark = false }) {
   const scramble = useRef(null);
+
+  const { t } = useTranslation("global");
 
   useEffect(() => {
     class TextScramble {
@@ -72,9 +75,9 @@ export default function Intro({ isDark = false }) {
     }
 
     const phrases = [
-      "Full Stack Developer",
-      "Frontend Developer",
-      "Web Developer",
+      t("intro.option1"),
+      t("intro.option2"),
+      t("intro.option3"),
       //"Córdoba, Argentina",
     ];
 
@@ -103,8 +106,8 @@ export default function Intro({ isDark = false }) {
     <div className="introduction" id="home">
       <div className="introduction__title">
         <h1 className="introduction__title-h1">
-          Hola, soy{" "}
-          <span className="introduction__title-name">Agustín Arenas</span>
+          {t("intro.title")}{" "}
+          <span className="introduction__title-name">{t("intro.name")}</span>
         </h1>
 
         <h1
@@ -118,7 +121,7 @@ export default function Intro({ isDark = false }) {
 
         <Button
           href="#about"
-          txt="Conocer más"
+          txt={t("intro.btn")}
           className={`btn__link--intro ${
             isDark ? "btn__link--intro-dark" : ""
           }`}

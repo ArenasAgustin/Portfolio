@@ -1,0 +1,36 @@
+{
+    "about": {
+        "title": "About",
+        "description1": "Programmer and web developer, imaginative, curious and capable of solving various problems. I am a programmer willing to help my colleagues.",
+        "description2": "I am interested in studying different technologies. I also enjoy music and drawing.",
+        "btn": "Descargar CV"
+    },
+    "intro": {
+        "title": "Hi, I am",
+        "name": "Agustín Arenas",
+        "btn": "Know more",
+        "option1": "Full Stack Developer",
+        "option2": "Frontend Developer",
+        "option3": "Web Developer"
+    },
+    "contact": {
+        "title": "Contact"
+    },
+    "skills": {
+        "title": "Skills",
+        "Frontend": "Frontend",
+        "Backend": "Backend y Database",
+        "Tools": "Tools and others"
+    },
+    "education": {
+        "title": "Education"
+    },
+    "experience": {
+        "title": "Experience"
+    },
+    "projects": {
+        "title": "Projects",
+        "seeMore": "See more",
+        "seeLess": "See less"
+    }
+}

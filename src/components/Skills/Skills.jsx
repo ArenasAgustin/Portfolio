@@ -3,12 +3,15 @@ import { skills } from "../../data/skills";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Loader from "../Loader/Loader";
+import { useTranslation } from "react-i18next";
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function Skills({ isDark = false }) {
   const [skillsArray, setSkillsArray] = useState(skills.frontEnd);
   const [selectedCategory, setSelectedCategory] = useState("frontEnd");
+
+  const { t } = useTranslation("global");
 
   const handleSelectCategory = (category) => setSelectedCategory(category);
 
@@ -37,7 +40,7 @@ export default function Skills({ isDark = false }) {
         className={`skills__title ${isDark ? "skills__title--dark" : ""}`}
         data-aos="flip-left"
       >
-        Habilidades
+        {t("skills.title")}
       </h1>
 
       <div className="skills__container">
@@ -48,7 +51,7 @@ export default function Skills({ isDark = false }) {
             } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("frontEnd")}
           >
-            Front End
+            {t("skills.Frontend")}
           </button>
 
           <button
@@ -57,7 +60,7 @@ export default function Skills({ isDark = false }) {
             } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("backEnd")}
           >
-            Back End y Database
+            {t("skills.Backend")}
           </button>
 
           <button
@@ -66,7 +69,7 @@ export default function Skills({ isDark = false }) {
             } ${isDark ? "skills__category--dark" : ""}`}
             onClick={() => handleSelectCategory("tools")}
           >
-            Herramientas y Extras
+            {t("skills.Tools")}
           </button>
         </div>
 

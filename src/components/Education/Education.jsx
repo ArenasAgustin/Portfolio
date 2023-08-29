@@ -2,8 +2,11 @@ import { useEffect } from "react";
 import { education as educationArray } from "../../data/education";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Education({ isDark = false }) {
+  const { t } = useTranslation("global");
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
 
@@ -18,7 +21,7 @@ export default function Education({ isDark = false }) {
         className={`education__title ${isDark ? "education__title--dark" : ""}`}
         data-aos="flip-left"
       >
-        Educación
+        {t("education.title")}
       </h2>
 
       <div className="education__cards">

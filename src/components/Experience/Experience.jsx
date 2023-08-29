@@ -2,8 +2,11 @@ import { useEffect } from "react";
 import { experience as experienceArray } from "../../data/experience";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { useTranslation } from "react-i18next";
 
 export default function Experience({ isDark = false }) {
+  const { t } = useTranslation("global");
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
 
@@ -20,7 +23,7 @@ export default function Experience({ isDark = false }) {
         }`}
         data-aos="flip-left"
       >
-        Experiencia
+        {t("experience.title")}
       </h2>
 
       <div className="experience__container">

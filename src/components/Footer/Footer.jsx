@@ -5,10 +5,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__container">
-        <a href="#home" className="footer__home" aria-label="Home">
-          <IoIosArrowUp />
-        </a>
-
         <div className="footer__links">
           <a
             target="_blank"

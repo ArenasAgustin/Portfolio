@@ -6,10 +6,13 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
 import Loader from "../Loader/Loader";
+import { useTranslation } from "react-i18next";
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function About({ isDark = false }) {
+  const { t } = useTranslation("global");
+
   useEffect(() => {
     Aos.init({ duration: 1500 });
 
@@ -28,7 +31,7 @@ export default function About({ isDark = false }) {
         className={`about__title ${isDark ? "about__title--dark" : ""}`}
         data-aos="flip-left"
       >
-        SOBRE MI
+        {t("about.title")}
       </h1>
 
       <div className="about__container">
@@ -50,21 +53,14 @@ export default function About({ isDark = false }) {
         </div>
 
         <div className="about__container-card">
-          <p className="about-txt">
-            Programador y web developer, imaginativo, curioso y capaz de
-            resolver diversos problemas. Soy un programador dispuesto a ayudar a
-            mis colegas.
-          </p>
-          <p className="about__container-txt">
-            Tengo interés por el estudio de diferentes tecnologías. También
-            disfruto con la música y el dibujo.
-          </p>
+          <p className="about-txt">{t("about.description1")}</p>
+          <p className="about__container-txt">{t("about.description2")}</p>
 
           <Button
             download={true}
             href={Cv}
             className={`btn__link--cv ${isDark ? "btn__link--cv-dark" : ""}`}
-            txt="Ver resumen"
+            txt={t("about.btn")}
             isDark={isDark}
           />
         </div>

@@ -5,6 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
 import Loader from "../Loader/Loader";
+import { useTranslation } from "react-i18next";
 
 const Card = lazy(() => import("../Card/Card"));
 
@@ -14,6 +15,8 @@ export default function Cards({ isDark = false }) {
   const [counter, setCounter] = useState(4);
   const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
   const [seeMore, setSeeMore] = useState(true);
+
+  const { t } = useTranslation("global");
 
   const handleClick = async () => {
     let newCounter = counter + 4;
@@ -48,7 +51,7 @@ export default function Cards({ isDark = false }) {
         className={`projects__title ${isDark ? "projects__title--dark" : ""}`}
         data-aos="flip-left"
       >
-        PROYECTOS
+        {t("projects.title")}
       </h2>
 
       <div className="projects__cards">
@@ -74,7 +77,7 @@ export default function Cards({ isDark = false }) {
           <Button
             className="btn__link--see-more"
             onClick={handleClick}
-            txt={seeMore ? "Ver más" : "Ver menos"}
+            txt={seeMore ? t("projects.seeMore") : t("projects.seeLess")}
             isDark={isDark}
           />
         </div>
