@@ -1,0 +1,21 @@
+{
+    "title": "Education",
+    "henry": {
+        "institution": "Soy Henry",
+        "title": "Full Stack Web Developer",
+        "start": "July 2021",
+        "end": "November 2021"
+    },
+    "fcefyn": {
+        "institution": "Facultad de Ciencias Exactas, Físicas y Naturales",
+        "title": "Computer Engineering Career",
+        "start": "February 2020",
+        "end": "Current"
+    },
+    "sarmiento": {
+        "institution": "Instituto de Enseñanza Domingo F. Sarmiento",
+        "title": "Secondary Technical Senior Master Builder",
+        "start": "March de 2015",
+        "end": "December de 2019"
+    }
+}

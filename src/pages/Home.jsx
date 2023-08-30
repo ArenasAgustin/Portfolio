@@ -5,7 +5,7 @@ import Intro from "../components/Intro/Intro";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Footer from "../components/Footer/Footer";
-import ThemeChanger from "../components/ThemeChanger/ThemeChanger";
+import NavBtn from "../components/NavBtn/NavBtn";
 import Education from "../components/Education/Education";
 import Skills from "../components/Skills/Skills";
 import Experience from "../components/Experience/Experience";
@@ -35,12 +35,18 @@ export default function Home({ setIsDark, isDark = false }) {
     };
   }, []);
 
+  const handleLanguageChange = () => {
+    if (i18n.language === "es") i18n.changeLanguage("en");
+    else i18n.changeLanguage("es");
+  };
+
   return (
     <div className="home">
-      <ThemeChanger
+      <NavBtn
         isDark={isDark}
         setIsDark={setIsDark}
         setEasterEgg={setEasterEgg}
+        handleLanguageChange={handleLanguageChange}
       />
 
       <Intro isDark={isDark} />

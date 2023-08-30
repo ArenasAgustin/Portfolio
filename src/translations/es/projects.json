@@ -1,0 +1,117 @@
+{
+    "title": "Projects",
+    "seeMore": "Ver más",
+    "seeLess": "Ver menos",
+    "brainGames": {
+        "title": "Brain Games Es",
+        "description": "Les presento un proyecto que llamo Brain Games Es, es un juego que consta (por el momento) de 10 niveles para descifrar una palabra encriptada, puntaje y pistas."
+    },
+    "waveMusic": {
+        "title": "Wave Music",
+        "description": "En este proyecto se utilizó para poder comprender el GitHub flow, la metodología de scrum y las responsabilidades del trabajo en equipo. En el deploy se utilizó Mongo Atlas para la base de datos, Heroku para el servidor y Firebase para el front."
+    },
+    "blackparadox": {
+        "title": "Blackparadox - portfolio",
+        "description": "Proyecto realizado a partir de un curso en Udemy para mejorar en tecnologías como HTML, Scss, JQuery, Ajax y aprender un poco de Php y Prepros."
+    },
+    "morseDecoder": {
+        "title": "Morse Decoder",
+        "description": "Morse decoder es una aplicación web que permite decodificar mensajes en código morse."
+    },
+    "urlShortener": {
+        "title": "Url Shortener",
+        "description": "Proyecto realizado para practicar y mejorar en tecnologías como TypeScrip, Tailwind CSS, Next.js, React, PostgreSQL y Prisma ORM."
+    },
+    "cinema": {
+        "title": "Cinema",
+        "description": "Proyecto para aprender a utilizar Php y Laravel. En el se puede ver una lista de peliculas, ver los detalles de cada una, agregar peliculas, editarlas y eliminarlas. Tambien se pueden agregar, editar y eliminar tanto generos como usuarios."
+    },
+    "dungeonGame": {
+        "title": "Dungeon Game",
+        "description": "Es un juego hecho solamente en Html , Css y JavaScript . Se puede mover con las flechas del teclado o con los botones de la cruz, consta de 3 niveles donde tenes que buscar la llave y escapar del nivel sin que te alcancen los monstruos. Para jugar hay que prender la gameboy."
+    },
+    "pikemons": {
+        "title": "Pikemons",
+        "description": "Esta es mi primera aplicacion Full Stack, esta realizada consumiento datos de la API 'pokeapi' para buscar los pokemons existentes, en ella encontras con 40 pokemons precargados pero podes buscar mas, crear pokemons propios, ver las caracteristicas de cada pokemon y contas con distintos tipos de filtrado."
+    },
+    "boxTest": {
+        "title": "Box | Custodia y gestión digital - Test",
+        "description": "Este proyecto es un test de aplicación de Box | Custodia y gestión digital, la app consta de un front que se comunica con una api para buscar documentos y mostrar los pdf."
+    },
+    "extrimianDapp": {
+        "title": "Extriman Dapp - Test",
+        "description": "Este proyecto es una Dapp, para un test de aplicación de Extrimian, que se comunica con un smart contract desplegado en una red testnet blockchain ethereum. El proyecto se conecta con la cuenta de Metamask de la persona que usa la app para poder mostrar las primeras 10 transacciones realizadas con la cuenta, las transacciones las obtiene de la API Rinkeby. La app guarda en la blockchain la cuenta y la cambia al conectar una cuenta nueva."
+    },
+    "beGoTest": {
+        "title": "BeGo - Test",
+        "description": "Este proyecto es un test de aplicación de Be Go, La app consta de un front diseñado con Scss, JavaScript y React."
+    },
+    "cv": {
+        "title": "Curriculum vitae",
+        "description": "Proyecto para poder mostrar mi Cv de manera mas practica y poder compartirlo."
+    },
+    "gastly": {
+        "title": "Gastly",
+        "description": "Proyecto para poder mejorar en el uso de Css y HTML."
+    },
+    "haunter": {
+        "title": "Haunter",
+        "description": "Proyecto para poder mejorar en el uso de Css y HTML."
+    },
+    "rubik": {
+        "title": "Cubo de Rubik",
+        "description": "Proyecto para poder mejorar en el uso de Css y HTML."
+    },
+    "xmasTree2": {
+        "title": "Christmas Tree 2.0",
+        "description": "Proyecto festejar que se aserca la época navideña."
+    },
+    "xmasTree": {
+        "title": "Christmas Tree",
+        "description": "Proyecto festejar que se aserca la época navideña."
+    },
+    "pikelart": {
+        "title": "My avatar en pixelart",
+        "description": "Proyecto para poder mejorar en el uso de Css, HTML y React."
+    },
+    "phone": {
+        "title": "Celular con Css",
+        "description": "Proyecto para poder mejorar en el uso de Css y HTML."
+    },
+    "pokeball": {
+        "title": "Pokeball",
+        "description": "Proyecto para poder mejorar en el uso de Css y HTML."
+    },
+    "valientaTest": {
+        "title": "Valienta Frontend - Test",
+        "description": "Este proyecto es un test de aplicación de Valienta, la app consta de un front que se comunica con una api para buscar y guardar en MongoDB personajes de Rick y Morty, Episodios y Lugares."
+    },
+    "todoTypescript": {
+        "title": "To do App (TypeScript)",
+        "description": "Este proyecto lo utilice para poder aprender a utilizar el lenguaje TypeScript."
+    },
+    "todoJavaScript": {
+        "title": "To do App (JavaScript)",
+        "description": "Con este proyecto evaluaron cuanto aprendi sobre el funcionamiento de react + redux."
+    },
+    "agusWeather": {
+        "title": "AgusWeather",
+        "description": "Con esta app aprendi la utilizacion e implementación de una Api en un proyecto."
+    },
+    "friendsPage": {
+        "title": "Friends Page",
+        "description": "En este proyecto me meti en el mundo de AJAX para poder entender y aprender de la tecnologia para poder avanzar con otras tecnologias más inovadoras. Sumado a practicar estilos con Css."
+    },
+    "responsiveWeb": {
+        "title": "Responsive Web",
+        "description": "Proyecto para poder aprender y enteder Less, en este proyecto se agarro una pagina y se le dio estilos con less para intentar dejarla como en las imagenes de la carpeta diseño."
+    },
+    "grootBash": {
+        "title": "GrootBash",
+        "description": "Este proyecto de escribir mi propia shell utilizada para implementar funcionalidades y herramientas que voy aprendiendo. Inspirado en Bash."
+    },
+    "myPromises": {
+        "title": "MyPromises",
+        "description": "En este proyecto desarrolle mis propias promesas para entender por completo el funcionamiento de las Promesas."
+    }
+}

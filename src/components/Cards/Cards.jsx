@@ -57,14 +57,15 @@ export default function Cards({ isDark = false }) {
       <div className="projects__cards">
         {projectsArray?.length &&
           projectsArray?.map((project, index) =>
-            project.title !== "Portfolio" ? (
+            project.name !== "portfolio" ? (
               <Suspense fallback={renderLoader()} key={index}>
                 <Card
                   image={project.image}
-                  description={project.description}
+                  description={t(`projects.${project.name}.description`)}
+                  technologies={project.technologies}
                   deploy={project.deploy}
                   github={project.github}
-                  title={project.title}
+                  title={t(`projects.${project.name}.title`)}
                   isDark={isDark}
                 />
               </Suspense>

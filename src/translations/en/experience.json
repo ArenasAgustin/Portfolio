@@ -1,0 +1,67 @@
+{
+    "title": "Experience",
+    "sellers": {
+        "business": "Sellers Latam",
+        "position": "Frontend Developer",
+        "responsibilities": [
+            "Style fix and responsive design",
+            "Script for Tiendanube",
+            "Creation of new pages with UX/UI design"
+        ],
+        "start": "March 2022",
+        "end": "Present"
+    },
+    "python2": {
+        "business": "Basic programming course in Python",
+        "position": "Programming Teacher",
+        "responsibilities": [
+            "Teaching programming classes",
+            "Plan/prepare classes",
+            "Correction of exercises and final project"
+        ],
+        "start": "April 2023",
+        "end": "June 2023"
+    },
+    "python1": {
+        "business": "Basic programming course in Python",
+        "position": "Programming Teacher",
+        "responsibilities": [
+            "Teaching programming classes",
+            "Plan/prepare classes",
+            "Correction of exercises and final project"
+        ],
+        "start": "August 2022",
+        "end": "September 2022"
+    },
+    "lastHorde": {
+        "business": "Last Horde",
+        "position": "Full Stack Developer",
+        "responsibilities": [
+            "Style fix and responsive design",
+            "NFT Marketplace and NFT Bundles",
+            "Server to store data"
+        ],
+        "start": "February 2022",
+        "end": "July 2022"
+    },
+    "praga": {
+        "business": "Praga Revestimientos",
+        "position": "Sales and customer service",
+        "responsibilities": [
+            "Tracking customer satisfaction for all company products and services",
+            "Assistance in solving problems and finding solutions for existing problems"
+        ],
+        "start": "August 2020",
+        "end": "November 2021"
+    },
+    "muni": {
+        "business": "Customer Service (Internships)",
+        "position": "Municipality of Cordoba",
+        "responsibilities": [
+            "Personal management of customer inquiries",
+            "Management of internal operations to improve the quality of service"
+        ],
+        "start": "October 2019",
+        "end": "November 2019"
+    }
+}

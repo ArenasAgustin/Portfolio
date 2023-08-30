@@ -1,8 +1,11 @@
-.theme-changer {
+.nav {
   position: fixed;
   z-index: 100;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-changer__btn {
@@ -18,10 +21,19 @@
   }
 }
 
+.language-changer__btn {
+  @extend .theme-changer__btn;
+}
+
 .theme-changer__svg {
   @extend .btn__txt;
   font-size: 1.5rem;
   color: var(--color-quaternary);
+}
+
+.language-changer__language {
+  @extend .theme-changer__svg;
+  font-size: 1.2rem;
 }
 
 .theme-changer__btn--dark {
@@ -38,4 +50,8 @@
       color: var(--color-secondary);
     }
   }
+}
+
+.language-changer__btn--dark {
+  @extend .theme-changer__btn--dark;
 }

@@ -1,13 +1,17 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
 
-export default function ThemeChanger({
+export default function NavBtn({
   isDark = false,
   setIsDark,
   setEasterEgg,
+  handleLanguageChange,
 }) {
   const [easterEggCount, setEasterEggCount] = useState(1);
+
+  const { i18n } = useTranslation();
 
   const handleThemeChange = () => {
     setIsDark(!isDark);
@@ -23,7 +27,20 @@ export default function ThemeChanger({
   };
 
   return (
-    <div className="theme-changer">
+    <div className="nav">
+      <button
+        className={`language-changer__btn ${
+          isDark ? "language-changer__btn--dark" : ""
+        }`}
+        onClick={handleLanguageChange}
+        title="Change language"
+        aria-label="Change language"
+      >
+        <span className="language-changer__language">
+          {i18n.language === "es" ? "ES" : "EN"}
+        </span>
+      </button>
+
       <button
         className={`theme-changer__btn ${
           isDark ? "theme-changer__btn--dark" : ""

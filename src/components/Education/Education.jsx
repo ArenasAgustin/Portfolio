@@ -41,14 +41,17 @@ export default function Education({ isDark = false }) {
                 isDark ? "education__card--dark" : ""
               }`}
             >
-              <h4 className="education__card-title">{education.title}</h4>
+              <h4 className="education__card-title">
+                {t(`education.${education}.title`)}
+              </h4>
 
               <p className="education__card-institution">
-                {education.institution}
+                {t(`education.${education}.institution`)}
               </p>
 
               <p className="education__card-duration">
-                {education.start} - {education.end}
+                {t(`education.${education}.start`)} -{" "}
+                {t(`education.${education}.end`)}
               </p>
             </div>
           </div>

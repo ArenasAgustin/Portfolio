@@ -49,15 +49,16 @@ export default function Experience({ isDark = false }) {
 
               <div className="experience__card">
                 <h4 className="experience__card-title">
-                  {experience.position}
+                  {t(`experience.${experience}.position`)}
                 </h4>
 
                 <p className="experience__card-institution">
-                  {experience.business}
+                  {t(`experience.${experience}.business`)}
                 </p>
 
                 <p className="experience__card-duration">
-                  {experience.start} - {experience.end}
+                  {t(`experience.${experience}.start`)} -{" "}
+                  {t(`experience.${experience}.end`)}
                 </p>
               </div>
             </div>

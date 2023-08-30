@@ -21,16 +21,5 @@
         "Frontend": "Frontend",
         "Backend": "Backend y Database",
         "Tools": "Herramientas y extras"
-    },
-    "education": {
-        "title": "Educación"
-    },
-    "experience": {
-        "title": "Experiencia"
-    },
-    "projects": {
-        "title": "Proyectos",
-        "seeMore": "Ver más",
-        "seeLess": "Ver menos"
     }
 }

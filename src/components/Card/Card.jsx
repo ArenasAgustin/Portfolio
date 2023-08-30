@@ -10,6 +10,7 @@ export default function Card({
   title,
   image,
   description,
+  technologies,
   deploy,
   github,
   isDark = false,
@@ -32,10 +33,10 @@ export default function Card({
             <span>&lt; </span> {title} <span> &#47;&gt;</span>
           </h2>
 
-          <p className="card__txt-description">{description?.txt}</p>
+          <p className="card__txt-description">{description}</p>
 
           <div className="card__txt-technologies">
-            {description?.technologies.map((tech, index) => (
+            {technologies?.map((tech, index) => (
               <span
                 key={index}
                 className={`card__txt-technologies-tech ${
