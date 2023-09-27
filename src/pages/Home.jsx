@@ -78,6 +78,8 @@ export default function Home({ setIsDark, isDark = false }) {
             alt="easter egg"
             loading="lazy"
             className="easter-egg"
+            width="100%"
+            height="100%"
           />
         </Suspense>
       ) : null}

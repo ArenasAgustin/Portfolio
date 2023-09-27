@@ -82,6 +82,9 @@ export default function Skills({ isDark = false }) {
                     src={`${process.env.PUBLIC_URL}/assets/icons/${skill.image}`}
                     alt={skill.technology}
                     className="skills__skill-img-element"
+                    loading="lazy"
+                    width="100%"
+                    height="100%"
                   />
                 </Suspense>
               </div>

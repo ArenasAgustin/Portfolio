@@ -26,6 +26,8 @@ export default function Avatar() {
             src={Avatar1}
             alt="profile"
             loading="lazy"
+            width="100%"
+            height="100%"
           />
         </picture>
       </div>

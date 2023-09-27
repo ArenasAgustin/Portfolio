@@ -83,6 +83,8 @@ export default function Card({
                 alt={title}
                 className="card__img-card"
                 loading="lazy"
+                width="100%"
+                height="100%"
               />
             </Suspense>
           </picture>
