@@ -26,12 +26,12 @@ export default function About({ isDark = false }) {
       id="about"
       data-aos="fade-up"
     >
-      <h1
+      <h2
         className={`about__title ${isDark ? "about__title--dark" : ""}`}
         data-aos="flip-left"
       >
         {t("about.title")}
-      </h1>
+      </h2>
 
       <div className="about__container">
         <div className="about__container-image">

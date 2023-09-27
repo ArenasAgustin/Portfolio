@@ -41,9 +41,9 @@ export default function Education({ isDark = false }) {
                 isDark ? "education__card--dark" : ""
               }`}
             >
-              <h4 className="education__card-title">
+              <p className="education__card-title">
                 {t(`education.${education}.title`)}
-              </h4>
+              </p>
 
               <p className="education__card-institution">
                 {t(`education.${education}.institution`)}
