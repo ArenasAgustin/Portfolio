@@ -1,4 +1,3 @@
-import { IoIosArrowUp } from "react-icons/io";
 import { FaLinkedinIn, FaGithub, FaGitlab } from "react-icons/fa";
 
 export default function Footer() {
