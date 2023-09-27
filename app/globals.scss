@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  width: 10px;
+  background: var(--color-primary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-tertiary);
+  @extend .transitionSlow;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #01a1e0;
+}
+
+@import "styles/common/variables.scss";
+@import "styles/common/mixins.scss";
+@import "styles/common/index.scss";
+
+@import "styles/index.scss";
+
+@import "styles/pages/Home.scss";
+
+@import "styles/components/Button/Button.scss";
+@import "styles/components/NavBtn/NavBtn.scss";
+@import "styles/components/ScrollToTop/ScrollToTop.scss";
+
+@import "styles/components/Intro/Intro.scss";
+@import "styles/components/About/About.scss";
+@import "styles/components/Education/Education.scss";
+@import "styles/components/Skills/Skills.scss";
+@import "styles/components/Experience/Experience.scss";
+@import "styles/components/Cards/Cards.scss";
+@import "styles/components/Card/Card.scss";
+@import "styles/components/Contact/Contact.scss";
+@import "styles/components/Footer/Footer.scss";
+@import "styles/components/Loader/Loader.scss";
+
+@import "styles/components/Avatar/Avatar.scss";
+
+@import "styles/theme/dark.scss";
