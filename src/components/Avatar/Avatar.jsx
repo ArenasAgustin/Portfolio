@@ -23,7 +23,7 @@ export default function Avatar() {
         <picture>
           <img
             className="avatar__img"
-            src={Avatar1}
+            src={randomAvatar}
             alt="profile"
             loading="lazy"
             width="100%"

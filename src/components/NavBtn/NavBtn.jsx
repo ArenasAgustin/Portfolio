@@ -34,7 +34,6 @@ export default function NavBtn({
         }`}
         onClick={handleLanguageChange}
         title="Change language"
-        aria-label="Change language"
       >
         <span className="language-changer__language">
           {i18n.language === "es" ? "ES" : "EN"}
@@ -47,7 +46,6 @@ export default function NavBtn({
         }`}
         onClick={handleThemeChange}
         title="Theme changer"
-        aria-label="Theme changer"
       >
         {isDark ? (
           <FiSun className="theme-changer__svg theme-changer__svg--dark" />

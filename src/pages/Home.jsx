@@ -33,7 +33,7 @@ export default function Home({ setIsDark, isDark = false }) {
     return () => {
       window.removeEventListener("scroll", () => {});
     };
-  }, []);
+  }, [i18n]);
 
   const handleLanguageChange = () => {
     if (i18n.language === "es") i18n.changeLanguage("en");
