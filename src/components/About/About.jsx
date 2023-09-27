@@ -1,5 +1,5 @@
 import Cv from "../../assets/CV - Agustin Arenas - Full Stack Web Developer.pdf";
-import Profile from "../../assets/profile.jpg";
+import Profile from "../../assets/profile.webp";
 import { Suspense, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
