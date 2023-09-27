@@ -73,7 +73,12 @@ export default function Home({ setIsDark, isDark = false }) {
 
       {easterEgg ? (
         <Suspense fallback={renderLoader(isDark)}>
-          <img src="/astronaut.png" alt="easter egg" className="easter-egg" />
+          <img
+            src="/astronaut.png"
+            alt="easter egg"
+            loading="lazy"
+            className="easter-egg"
+          />
         </Suspense>
       ) : null}
     </div>

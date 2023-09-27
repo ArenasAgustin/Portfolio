@@ -1,6 +1,5 @@
 import Cv from "../../assets/CV - Agustin Arenas - Full Stack Web Developer.pdf";
-import Profile from "../../assets/profile.png";
-import ProfileWebp from "../../assets/profile.webp";
+import Profile from "../../assets/profile.jpg";
 import { Suspense, useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -38,15 +37,11 @@ export default function About({ isDark = false }) {
         <div className="about__container-image">
           <picture>
             <Suspense fallback={renderLoader(isDark)}>
-              <source
-                className="about__container-img"
-                srcSet={ProfileWebp}
-                type="image/webp"
-              />
               <img
                 className="about__container-img"
                 src={Profile}
                 alt="profile"
+                loading="lazy"
               />
             </Suspense>
           </picture>

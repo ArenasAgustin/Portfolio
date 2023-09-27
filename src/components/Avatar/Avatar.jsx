@@ -21,12 +21,12 @@ export default function Avatar() {
     <div className="avatar">
       <div className="avatar__container">
         <picture>
-          <source
+          <img
             className="avatar__img"
-            srcSet={randomAvatar}
-            type="image/webp"
+            src={Avatar1}
+            alt="profile"
+            loading="lazy"
           />
-          <img className="avatar__img" src={Avatar1} alt="profile" />
         </picture>
       </div>
     </div>

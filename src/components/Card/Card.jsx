@@ -76,16 +76,13 @@ export default function Card({
         <div className="card__img" data-aos="fade-up-left">
           <picture className="card__img-picture">
             <Suspense fallback={renderLoader(isDark)}>
-              <source
-                srcSet={`${imageSrc}.webp`}
-                type="image/webp"
-                alt={title}
-                className="card__img-card"
-              />
               <img
-                src={`${imageSrc}.png`}
+                src={`${imageSrc}-300.jpg`}
+                srcSet={`${imageSrc}-300.jpg 320w, ${imageSrc}-800.jpg 854w, ${imageSrc}.jpg 1366w`}
+                sizes={`(min-width: 920px) 720px, calc(84.33vw - 39px)`}
                 alt={title}
                 className="card__img-card"
+                loading="lazy"
               />
             </Suspense>
           </picture>
