@@ -42,6 +42,8 @@ export default function About({ isDark = false }) {
                 src={Profile}
                 alt="profile"
                 loading="lazy"
+                width="100%"
+                height="100%"
               />
             </Suspense>
           </picture>
