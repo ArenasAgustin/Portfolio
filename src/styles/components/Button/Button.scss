@@ -48,6 +48,7 @@
 
 .btn__link--intro {
   width: 7em;
+  font-size: 1.8rem;
 
   @include media-up-max(md600) {
     font-size: 1.3rem;
@@ -56,6 +57,7 @@
 
   @include media-up-max(md800) {
     font-size: 1.2rem;
+    width: 8em;
   }
 }
 
