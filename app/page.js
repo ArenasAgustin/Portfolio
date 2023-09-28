@@ -18,6 +18,7 @@ import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Loader from "./components/Loader/Loader";
 import i18n from "./i18n";
 import Image from "next/image";
+import Head from "next/head";
 
 const Avatar = lazy(() => import("./components/Avatar/Avatar"));
 
@@ -52,7 +53,7 @@ export default function Home() {
 
   useEffect(() => {
     const script = document.createElement("script");
-    script.src = "../../js/particlesItInit.js";
+    script.src = "./js/particlesItInit.js";
     script.defer = true;
     script.type = "text/javascript";
     script.id = "particles-it-init";
@@ -68,50 +69,56 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <I18nextProvider i18n={i18n}>
-        <div className="home">
-          <NavBtn
-            isDark={isDark}
-            setIsDark={handleChangeTheme}
-            setEasterEgg={setEasterEgg}
-            handleLanguageChange={handleLanguageChange}
-          />
+        <div className={`App ${isDark ? "dark" : ""}`}>
+          <div id="particles-js"></div>
 
-          <Intro isDark={isDark} />
+          <div className="home">
+            <NavBtn
+              isDark={isDark}
+              setIsDark={handleChangeTheme}
+              setEasterEgg={setEasterEgg}
+              handleLanguageChange={handleLanguageChange}
+            />
 
-          <About isDark={isDark} />
+            <Intro isDark={isDark} />
 
-          <Education isDark={isDark} />
+            <About isDark={isDark} />
 
-          <Skills isDark={isDark} />
+            <Education isDark={isDark} />
 
-          <Experience isDark={isDark} />
+            <Skills isDark={isDark} />
 
-          <Cards isDark={isDark} />
+            <Experience isDark={isDark} />
 
-          <Contact isDark={isDark} />
+            <Cards isDark={isDark} />
 
-          <Footer isDark={isDark} />
+            <Contact isDark={isDark} />
 
-          <Suspense fallback={renderLoader(isDark)}>
-            <Avatar />
-          </Suspense>
+            <Footer isDark={isDark} />
 
-          {backToTop ? <ScrollToTop isDark={isDark} /> : null}
-
-          {easterEgg ? (
             <Suspense fallback={renderLoader(isDark)}>
-              <Image
-                src="/astronaut.png"
-                alt="easter egg"
-                loading="lazy"
-                className="easter-egg"
-                width="100%"
-                height="100%"
-              />
+              <Avatar />
             </Suspense>
-          ) : null}
+
+            {backToTop ? <ScrollToTop isDark={isDark} /> : null}
+
+            {easterEgg ? (
+              <Suspense fallback={renderLoader(isDark)}>
+                <Image
+                  src={require("./astronaut.png")}
+                  alt="easter egg"
+                  loading="lazy"
+                  className="easter-egg"
+                  width="100%"
+                  height="100%"
+                />
+              </Suspense>
+            ) : null}
+          </div>
         </div>
       </I18nextProvider>
+
+      <script defer src="./js/particles.min.js" type="text/javascript"></script>
     </main>
   );
 }
