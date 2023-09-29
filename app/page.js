@@ -66,6 +66,9 @@ export default function Home() {
 
             <Intro isDark={isDark} />
 
+            <div id="about" />
+            <br />
+
             <About isDark={isDark} />
 
             <Education isDark={isDark} />

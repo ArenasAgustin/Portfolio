@@ -7,6 +7,13 @@ export default function Intro({ isDark = false }) {
 
   const { t } = useTranslation("global");
 
+  const focusToAbout = () => {
+    const about = document.getElementById("about");
+    about.focus();
+    about.scrollIntoView();
+    console.log(about);
+  };
+
   useEffect(() => {
     class TextScramble {
       constructor(el) {
@@ -126,6 +133,7 @@ export default function Intro({ isDark = false }) {
             isDark ? "btn__link--intro-dark" : ""
           }`}
           isDark={isDark}
+          onClick={focusToAbout}
         />
       </div>
     </div>

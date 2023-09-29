@@ -22,11 +22,7 @@ export default function About({ isDark = false }) {
   }, []);
 
   return (
-    <div
-      className={`about ${isDark ? "about--dark" : ""}`}
-      id="about"
-      data-aos="fade-up"
-    >
+    <div className={`about ${isDark ? "about--dark" : ""}`} data-aos="fade-up">
       <h2
         className={`about__title ${isDark ? "about__title--dark" : ""}`}
         data-aos="flip-left"
