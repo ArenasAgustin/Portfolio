@@ -10,6 +10,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://www.linkedin.com/in/agustin-arenas-barea/"
             className="footer__links-a"
+            aria-label="LinkedIn"
           >
             <FaLinkedinIn />
           </a>
@@ -19,6 +20,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://github.com/ArenasAgustin"
             className="footer__links-a"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
@@ -28,6 +30,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://gitlab.com/ArenasAgustin"
             className="footer__links-a"
+            aria-label="GitLab"
           >
             <FaGitlab />
           </a>
@@ -37,6 +40,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             href="https://codepen.io/arenasagustin/pens/public"
             className="footer__links-a"
+            aria-label="CodePen"
           >
             <FaCodepen />
           </a>
