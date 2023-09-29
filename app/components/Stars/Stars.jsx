@@ -1,9 +1,9 @@
-export default function Stars() {
+export default function Stars({ isDark }) {
   return (
-    <>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </>
+    <div className="starsContainer">
+      <div className={`stars ${isDark ? "stars--dark" : ""}`}></div>
+      <div className={`stars2 ${isDark ? "stars2--dark" : ""}`}></div>
+      <div className={`stars3 ${isDark ? "stars3--dark" : ""}`}></div>
+    </div>
   );
 }

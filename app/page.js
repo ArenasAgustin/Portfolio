@@ -100,7 +100,7 @@ export default function Home() {
             ) : null}
           </div>
 
-          <Stars />
+          <Stars isDark={isDark} />
         </div>
       </I18nextProvider>
     </main>
