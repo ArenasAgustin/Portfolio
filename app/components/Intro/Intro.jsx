@@ -10,8 +10,7 @@ export default function Intro({ isDark = false }) {
   const focusToAbout = () => {
     const about = document.getElementById("about");
     about.focus();
-    about.scrollIntoView();
-    console.log(about);
+    about.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
@@ -123,7 +122,7 @@ export default function Intro({ isDark = false }) {
           }`}
           ref={scramble}
         >
-          {" "}
+          {t("intro.option1")}
         </h1>
 
         <Button
