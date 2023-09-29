@@ -19,6 +19,7 @@ import Loader from "./components/Loader/Loader";
 import i18n from "./i18n";
 import Image from "next/image";
 import Head from "next/head";
+import Stars from "./components/Stars/Stars";
 
 const Avatar = lazy(() => import("./components/Avatar/Avatar"));
 
@@ -51,27 +52,10 @@ export default function Home() {
     };
   }, [i18n]);
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "./js/particlesItInit.js";
-    script.defer = true;
-    script.type = "text/javascript";
-    script.id = "particles-it-init";
-
-    if (!document.getElementById("particles-it-init"))
-      document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
     <main className={styles.main}>
       <I18nextProvider i18n={i18n}>
         <div className={`App ${isDark ? "dark" : ""}`}>
-          <div id="particles-js"></div>
-
           <div className="home">
             <NavBtn
               isDark={isDark}
@@ -115,10 +99,10 @@ export default function Home() {
               </Suspense>
             ) : null}
           </div>
+
+          <Stars />
         </div>
       </I18nextProvider>
-
-      <script defer src="./js/particles.min.js" type="text/javascript"></script>
     </main>
   );
 }
