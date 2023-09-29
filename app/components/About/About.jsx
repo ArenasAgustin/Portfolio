@@ -1,4 +1,3 @@
-// import Cv from "../../assets/CV - Agustin Arenas - Full Stack Web Developer.pdf";
 import Profile from "../../assets/profile.webp";
 import { Suspense, useEffect } from "react";
 import Aos from "aos";
@@ -50,13 +49,14 @@ export default function About({ isDark = false }) {
           <p className="about-txt">{t("about.description1")}</p>
           <p className="about__container-txt">{t("about.description2")}</p>
 
-          {/* <Button
+          <Button
             download={true}
-            href={Cv}
+            href="./assets/CV - Agustin Arenas - Full Stack Web Developer.pdf"
+            rel="noreferrer"
             className={`btn__link--cv ${isDark ? "btn__link--cv-dark" : ""}`}
             txt={t("about.btn")}
             isDark={isDark}
-          /> */}
+          />
         </div>
       </div>
     </div>
