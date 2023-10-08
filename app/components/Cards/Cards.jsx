@@ -1,11 +1,11 @@
 import { lazy, Suspense, useState } from "react";
-import { projects } from "../../data/projects";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import Button from "../Button/Button";
 import Loader from "../Loader/Loader";
 import { useTranslation } from "react-i18next";
+import { getProjects } from "@/app/api";
 
 const Card = lazy(() => import("../Card/Card"));
 
@@ -13,10 +13,17 @@ const renderLoader = () => <Loader />;
 
 export default function Cards({ isDark = false }) {
   const [counter, setCounter] = useState(4);
-  const [projectsArray, setProjectsArray] = useState(projects.slice(0, 4));
+  const [projectsArray, setProjectsArray] = useState([]);
+  const [projects, setProjects] = useState([]);
   const [seeMore, setSeeMore] = useState(true);
 
   const { t } = useTranslation("global");
+
+  const getProjectsFromApi = async () => {
+    const response = await getProjects();
+    setProjects(response);
+    setProjectsArray(response.projects.slice(0, counter));
+  };
 
   const handleClick = async () => {
     let newCounter = counter + 4;
@@ -39,6 +46,7 @@ export default function Cards({ isDark = false }) {
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
+    getProjectsFromApi();
 
     return () => {
       Aos.refresh();
@@ -55,7 +63,7 @@ export default function Cards({ isDark = false }) {
       </h2>
 
       <div className="projects__cards">
-        {projectsArray?.length &&
+        {projectsArray?.length ? (
           projectsArray?.map((project, index) =>
             project.name !== "portfolio" ? (
               <Suspense fallback={renderLoader()} key={index}>
@@ -70,7 +78,10 @@ export default function Cards({ isDark = false }) {
                 />
               </Suspense>
             ) : null
-          )}
+          )
+        ) : (
+          <Loader isDark={isDark} />
+        )}
       </div>
 
       {projectsArray?.length && (
