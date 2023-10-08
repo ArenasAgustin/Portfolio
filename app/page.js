@@ -13,7 +13,6 @@ import Footer from "../components/Footer/Footer";
 import Intro from "../components/Intro/Intro";
 import NavBtn from "../components/NavBtn/NavBtn";
 import Skills from "../components/Skills/Skills";
-import styles from "./page.module.css";
 import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
 import Loader from "../components/Loader/Loader";
 import Image from "next/image";
@@ -25,7 +24,7 @@ const Avatar = lazy(() => import("../components/Avatar/Avatar"));
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
 export default function Home() {
-  const [easterEgg, setEasterEgg] = useState(false);
+  const [easterEgg, setEasterEgg] = useState(0);
   const [backToTop, setBackToTop] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
@@ -34,8 +33,9 @@ export default function Home() {
   const { i18n } = useTranslation("global");
 
   const handleLanguageChange = () => {
-    if (i18n.language === "es") i18n.changeLanguage("en");
-    else i18n.changeLanguage("es");
+    i18n.language === "es"
+      ? i18n.changeLanguage("en")
+      : i18n.changeLanguage("es");
   };
 
   useEffect(() => {
@@ -52,7 +52,7 @@ export default function Home() {
   }, [i18n]);
 
   return (
-    <main className={styles.main}>
+    <main>
       <I18nextProvider i18n={i18n}>
         <div className={`App ${isDark ? "dark" : ""}`}>
           <div className="home">
