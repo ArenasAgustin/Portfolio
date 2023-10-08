@@ -1,15 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import global_es from "./translations/es/global.json";
-import education_es from "./translations/es/education.json";
-import experience_es from "./translations/es/experience.json";
-import projects_es from "./translations/es/projects.json";
+import global_es from "../translations/es/global.json";
+import education_es from "../translations/es/education.json";
+import experience_es from "../translations/es/experience.json";
+import projects_es from "../translations/es/projects.json";
 
-import global_en from "./translations/en/global.json";
-import education_en from "./translations/en/education.json";
-import experience_en from "./translations/en/experience.json";
-import projects_en from "./translations/en/projects.json";
+import global_en from "../translations/en/global.json";
+import education_en from "../translations/en/education.json";
+import experience_en from "../translations/en/experience.json";
+import projects_en from "../translations/en/projects.json";
 
 const resources = {
   es: {

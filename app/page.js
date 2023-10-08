@@ -4,24 +4,23 @@ import { I18nextProvider } from "react-i18next";
 import { useTranslation } from "react-i18next";
 import { lazy, Suspense, useEffect, useState } from "react";
 
-import About from "./components/About/About";
-import Cards from "./components/Cards/Cards";
-import Contact from "./components/Contact/Contact";
-import Education from "./components/Education/Education";
-import Experience from "./components/Experience/Experience";
-import Footer from "./components/Footer/Footer";
-import Intro from "./components/Intro/Intro";
-import NavBtn from "./components/NavBtn/NavBtn";
-import Skills from "./components/Skills/Skills";
+import About from "../components/About/About";
+import Cards from "../components/Cards/Cards";
+import Contact from "../components/Contact/Contact";
+import Education from "../components/Education/Education";
+import Experience from "../components/Experience/Experience";
+import Footer from "../components/Footer/Footer";
+import Intro from "../components/Intro/Intro";
+import NavBtn from "../components/NavBtn/NavBtn";
+import Skills from "../components/Skills/Skills";
 import styles from "./page.module.css";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
-import Loader from "./components/Loader/Loader";
-import i18n from "./i18n";
+import ScrollToTop from "../components/ScrollToTop/ScrollToTop";
+import Loader from "../components/Loader/Loader";
 import Image from "next/image";
-import Head from "next/head";
-import Stars from "./components/Stars/Stars";
+import Stars from "../components/Stars/Stars";
+import i18n from "./i18n";
 
-const Avatar = lazy(() => import("./components/Avatar/Avatar"));
+const Avatar = lazy(() => import("../components/Avatar/Avatar"));
 
 const renderLoader = (isDark = false) => <Loader isDark={isDark} />;
 
