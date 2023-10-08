@@ -10,7 +10,7 @@ export default function Button({
 }) {
   return (
     <>
-      {href && rel ? (
+      {href ? (
         <a
           rel={rel}
           className={`btn__link ${className} ${

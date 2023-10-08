@@ -126,7 +126,6 @@ export default function Intro({ isDark = false }) {
         </h1>
 
         <Button
-          href="#about"
           txt={t("intro.btn")}
           className={`btn__link--intro ${
             isDark ? "btn__link--intro-dark" : ""

@@ -8,6 +8,7 @@ export default function NavBtn({
   setIsDark,
   setEasterEgg,
   handleLanguageChange,
+  lang,
 }) {
   const [easterEggCount, setEasterEggCount] = useState(1);
 
@@ -36,7 +37,7 @@ export default function NavBtn({
         title="Change language"
       >
         <span className="language-changer__language">
-          {i18n.language === "es" ? "ES" : "EN"}
+          {i18n.language === "es" || lang === "es" ? "ES" : "EN"}
         </span>
       </button>
 
